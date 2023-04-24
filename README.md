@@ -51,12 +51,12 @@ scoop install ar/wub
 scoop update *
 ```
 
-单个软件的更新可以使用下列命令，大多数情况下软件名不重复的话，可以省略 `vi/`，只需要执行类似 `scoop update xray` 的命令
+单个软件的更新可以使用下列命令，大多数情况下软件名不重复的话，可以省略 `ar/`，只需要执行类似 `scoop update xray` 的命令
 
 ```powershell
-scoop update vi/xray
-scoop update vi/windterm
-scoop update vi/screentogif
+scoop update ar/xray
+scoop update ar/windterm
+scoop update ar/screentogif
 .......
 ```
 
