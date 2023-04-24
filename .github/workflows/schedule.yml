@@ -1,0 +1,21 @@
+on:
+  workflow_dispatch:
+  schedule:
+    # run every 4 hours
+    - cron: "20 */8 * * *"
+name: Excavator
+jobs:
+  excavate:
+    name: Excavate
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Excavate
+        uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SKIP_UPDATED: "1"
+          USER_NAME: "ViCrack"
+          USER_EMAIL: "18179821+ViCrack@users.noreply.github.com"
+          BUCKET: "ViCrack/scoop-bucket"
+          THROW_ERROR: "0"

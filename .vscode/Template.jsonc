@@ -1,0 +1,133 @@
+{
+    //#region General Information
+    "##": "Some general comment for other maintainers",
+    "version": "1.0",
+    "description": "Meaningful description.",
+    "homepage": "https://ash258.com",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://ash258.com" // Whenever possible attach a program specific URL, otherwise do not use
+    },
+    "notes": [ // String or Array Of Strings
+        "Some notes shown after installation"
+    ],
+    //#endregion General Information
+    //#region Requirements
+    // "depends": "MANIFEST",
+    // or Array of string
+    "depends": [
+        "bucket/someManifest",
+        "manifest"
+    ],
+    "suggest": {
+        "COSI": "COSI"
+        // "Array": [
+        //    "bucket/manifest",
+        //    "manifest",
+        // ]
+    },
+    //#endregion Requirements
+    //#region Downloading
+    "cookie": {
+        "name": "value"
+    },
+    "architecture": { // Or platform specific below (URL, Hash, extract)
+        "64bit": {
+            "url": "https://ash258.com",
+            "hash": "899346f9f283a4fd5aa03015a3f58cde5b9c0b6a5c4d64c2cc74e9b22c1348d7",
+            "extract_dir": "DIRECTORY INSIDE ARCHIVE"
+        },
+        "32bit": {
+            "url": [
+                "https://ash258.com",
+                "https://ash258.com#/cosi.zip"
+            ],
+            "hash": [
+                "899346f9f283a4fd5aa03015a3f58cde5b9c0b6a5c4d64c2cc74e9b22c1348d7",
+                "md5:899346f9f283a4fd5aa03015a3f58cde"
+            ],
+            "extract_dir": [
+                "DirectoryInFirstURL",
+                "DirectoryInSecondtURL"
+            ]
+        }
+    },
+    //#endregion Downloading
+    //#region Extracting
+    "innosetup": true,
+    "extract_dir": "FOLDER",
+    "extract_to": "folder",
+    //#endregion Extracting
+    //#region Installing
+    "pre_install": [ // String or Array Of Strings
+        "Run some powershell commands executed before running installer",
+        "other command"
+    ],
+    "installer": {
+        "file": "filename.exe", // Not needed to be specified if installer is downloaded file
+        "args": "ARGUMENT" // String or Array Of Strings
+    },
+    "post_install": "Some powershell commands executed after running installer",
+    //#region UnInstalling
+    "uninstaller": {
+        "file": "uninstaller.exe",
+        "args": "ARGUMENT" // String or Array Of Strings
+    },
+    //$endregion UnInstalling
+    //#endregion Installing
+    //#region Links
+    "bin": [ // String or Array Of Array Of Strings
+        "singlebinary.exe",
+        [
+            "singlebinary.exe",
+            "withOtherName"
+        ],
+        [
+            "singlebinary.exe",
+            "withOtherName",
+            "andSomeArguments"
+        ]
+    ],
+    "shortcuts": [ // Array Of Array Of Strings (similar to bin)
+        [
+            "file.exe",
+            "Shortcut Name"
+        ],
+        [
+            "singlebinary.exe",
+            "withOtherName",
+            "", // Keep blank if none
+            "withOtherIcon.ico"
+        ]
+    ],
+    "psmodule": {
+        "name": "moduleName"
+    },
+    "env_add_path": "bin", // String or Array Of Strings
+    "env_set": {
+        "KEY": "value"
+    },
+    "persist": [ // String or Array Of Strings
+        "FOLDERTOPERSIST",
+        "FILETOPERSIST.extension"
+    ],
+    //#endregion Links
+    //#region Updating
+    // "checkver": "regex", Match regex inside string on homepage
+    // "checkver": "github", If homepage is set to github repo
+    "checkver": {
+        "url": "https://exampleurl.cz",
+        "jsonpath": "$.cosi",
+        "regex": "REGEXTOMATCH([\\d.]+)",
+        "replace": "$1"
+    },
+    "autoupdate": {
+        "url": "https://ash258.com#/newName.zip",
+        "hash": { // Some vendors do not ship hashes
+            "url": "https://ash258.com",
+            "regex": "do not write regexes for hash algorithms, use variables ($md5, $sha1, $sha256, $sha512, $checksum)"
+        },
+        "note": "Note after autoupdate"
+    }
+    //#endregion Updating
+}

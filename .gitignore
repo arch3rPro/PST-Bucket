@@ -1,0 +1,4 @@
+/checkver*
+/.cache/
+/.vagrant/
+.history/
