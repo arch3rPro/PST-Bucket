@@ -1,0 +1,22 @@
+{
+    "version": "1.0.9",
+    "description": "ct 是一款性简单易用的域名爆破工具",
+    "homepage": "https://github.com/knownsec/ct",
+    "notes": "https://github.com/ViCrack/scoop-bucket/blob/master/bucket/afrog.json",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zan8in/afrog/releases/download/v2.2.2/afrog_2.2.2_windows_amd64.zip",
+            "hash": "858c253ac1a12007da7908244413395e836303cbcfb77af1ba6505d2c7167450"
+        }
+    },
+    "bin": "afrog.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zan8in/afrog/releases/download/v$version/afrog_$version_windows_amd64.zip"
+            }
+        }
+    }
+}
