@@ -64,7 +64,9 @@ scoop update ar/screentogif
 
 ---
 
-> | **关注持续更新, 有问题提 issue**
+> [!INFO] 提示
+>
+>  | **关注持续更新, 有问题提 issue**
 
 ---
 
