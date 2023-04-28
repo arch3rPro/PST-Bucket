@@ -2,7 +2,7 @@
     "version": "2.2.2",
     "description": "afrog 是一款性能卓越、快速稳定、PoC 可定制化的漏洞扫描工具 - A tool for finding vulnerabilities",
     "homepage": "https://github.com/zan8in/afrog",
-    "notes": "https://github.com/ViCrack/scoop-bucket/blob/master/bucket/afrog.json",
+    "notes": "https://github.com/arch3rPro/scoop-bucket/tree/main/bucket/afrog.json",
     "license": "MIT",
     "architecture": {
         "64bit": {
