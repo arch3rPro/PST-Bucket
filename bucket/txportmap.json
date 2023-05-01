@@ -9,11 +9,12 @@
             "hash": "f02f4c22992830ee15fba7a4fbf9f26ae7942dffdc98b9e32f1ec30e8e00c1f4"
         }
     },
-    "bin": "TxPortMap_windows_x64.exe",
-    "shortcuts": [
+    "bin": [
+        "TxPortMap_windows_x64.exe",
         [
             "TxPortMap_windows_x64.exe",
-            "TxPortMap"
+            "tx",
+            "tx"
         ]
     ],
     "checkver": "github",
