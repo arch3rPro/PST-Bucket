@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/arch3rPro/PTC/raw/main/bantam.zip",
-            "hash": "9f6271d339e8c02aeeade0e06c874294458caef827880f501db9af183dad9de6"
+            "hash": "6be7f1ab3f1920abda5519f509cc42c4d38dfaba766a6c457f613980fe738439"
         }
     },
     "bin": "bantam.exe",
