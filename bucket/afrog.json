@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/zan8in/afrog/releases/download/v2.2.2/afrog_2.2.2_windows_amd64.zip",
-            "hash": "858c253ac1a12007da7908244413395e836303cbcfb77af1ba6505d2c7167450"
+            "hash": "06d1775047e56bb88d4c699856675d9cede88b697d48f11d999d213527a78e7d"
         }
     },
     "bin": "afrog.exe",
