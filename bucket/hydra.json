@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/maaaaz/thc-hydra-windows/releases/download/v9.1/thc-hydra-windows-v9.1.zip",
-            "hash": "06d1775047e56bb88d4c699856675d9cede88b697d48f11d999d213527a78e7d"
+            "hash": "9187807a0eb685af0449b7af030f8966fc4bf61dbfa2b06039c29535d8b2d343"
         }
     },
     "bin": "hydra.exe",
