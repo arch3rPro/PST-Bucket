@@ -1,0 +1,21 @@
+{
+    "version": "9.1",
+    "description": "The great THC-HYDRA tool compiled for Windows",
+    "homepage": "https://github.com/vanhauser-thc/thc-hydra",
+    "license": "AGPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/maaaaz/thc-hydra-windows/releases/download/v9.1/thc-hydra-windows-v9.1.zip",
+            "hash": "06d1775047e56bb88d4c699856675d9cede88b697d48f11d999d213527a78e7d"
+        }
+    },
+    "bin": "hydra.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/maaaaz/thc-hydra-windows/releases/download/v$version/thc-hydra-windows-v$version.zip"
+            }
+        }
+    }
+}
