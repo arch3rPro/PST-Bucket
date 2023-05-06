@@ -6,5 +6,10 @@
     "notes": "需要自行注册",
     "url": "http://pan.assass1n.top/directlink/share/BurpSuite-v2023.4.1.zip",
     "hash": "cbef245eeea2899794cd11ac81feadc995f631d4a575279dbf7cc9215e5f6bb2",
-    "bin": "CNBurp(无CMD窗口).VBS"
+    "bin": [
+        [
+            "CNBurp(无CMD窗口).VBS",
+            "Burpsuite"
+        ]
+    ]
 }
