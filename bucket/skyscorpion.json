@@ -1,0 +1,23 @@
+{
+    "version": "1.0",
+    "description": "基于冰蝎加密流量进行WebShell通信管理客户端",
+    "homepage": "https://github.com/shack2/skyscorpion",
+    "license": "Freeware",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/shack2/skyscorpion/releases/download/1.0.release.20210322/V1.0.20210322.zip",
+    "hash": "cb928044b91859b7d6b6ea33600388e2d2b6802f3d77319b2543e4a130143780",
+    "pre_install": "Set-Content \"$dir\\skyscorpion.bat\" '@pushd %~dp0\n@start javaw.exe -jar \"天蝎权限管理工具.jar\" %*\n@popd' -Encoding Ascii",
+    "bin": "skyscorpion.bat",
+    "shortcuts": [
+        [
+            "skyscorpion.bat",
+            "skyscorpion"
+        ]
+    ],
+    "persist": "config/data.db"
+}
