@@ -2,6 +2,7 @@
     "version": "1.2.0-sp1",
     "description": "Cyber Security ALL-IN-ONE Platform",
     "homepage": "https://github.com/yaklang/yakit",
+    "notes": "安装成功后需手动启动并下载引擎^-^",
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
