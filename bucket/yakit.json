@@ -1,0 +1,21 @@
+{
+    "version": "1.2.0-sp1",
+    "description": "Cyber Security ALL-IN-ONE Platform",
+    "homepage": "https://github.com/yaklang/yakit",
+    "license": "AGPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/yaklang/yakit/releases/download/v1.2.0-sp1/Yakit-1.2.0-sp1-windows-amd64.exe",
+            "hash": "c75ba7759be2b109584a94375581dc9ac926962a7c08ba295370e895b79834ec"
+        }
+    },
+    "bin": "Yakit.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/yaklang/yakit/releases/download/v$version/Yakit-$version-windows-amd64.exe"
+            }
+        }
+    }
+}
