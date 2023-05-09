@@ -4,7 +4,7 @@
         "64bit": {
             "url": "https://github.com/rhaidiz/broxy/releases/download/v1.0.0-alpha.2/broxy_windows_amd64_v1.0.0-alpha.2.zip",
             "bin": [
-                "broxy.exe"
+                "windows/broxy.exe"
             ],
             "hash": "b5a6a9ef29fb54a03941412cbb624c553f426c5fc1e9e06d6ed36a1cd26ceb0a"
         }
