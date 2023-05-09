@@ -11,5 +11,10 @@
     },
     "url": "https://jaist.dl.sourceforge.net/project/dirbuster/DirBuster%20%28jar%20%2B%20lists%29/1.0-RC1/DirBuster-1.0-RC1.zip",
     "hash": "da80d17bd363bc60d3e7216a3c43329617cbd620ac55e55e2751bd3177d09ea1",
+    "installer": {
+        "script": [
+            "Move-Item \"$dir\\DirBuster-1.0-RC1\\*\" \"$dir\" -Force"
+        ]
+    },
     "bin": "DirBuster.bat"
 }
