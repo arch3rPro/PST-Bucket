@@ -16,5 +16,5 @@
             "Move-Item \"$dir\\DirBuster-1.0-RC1\\*\" \"$dir\" -Force"
         ]
     },
-    "bin": "DirBuster.bat"
+    "bin": "DirBuster-1.0-RC1.bat"
 }
