@@ -1,0 +1,19 @@
+{
+    "version": "v2.2",
+    "description": "GUI frontend to John the Ripper password cracker",
+    "homepage": "https://openwall.info/wiki/john/johnny",
+    "license": {
+        "identifier": "GPL-2.0-or-later",
+        "url": "https://github.com/openwall/johnny/blob/master/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "http://pan.assass1n.top/directlink/share/johnny.zip",
+            "hash": "4ff3693bffb3588f43c5f2176cb899093c6f34791463c00986042584045749bd",
+            "extract_dir": "john-1.9.0-jumbo-1-win64"
+        }
+    },
+    "bin": [
+        "johnny.exe"
+    ]
+}
