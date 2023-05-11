@@ -1,0 +1,17 @@
+{
+    "version": "1.3.4",
+    "description": "Windows Mac平台下的一款集成Nginx、PHP、MySQL、Redis等服务的GUI集成环境",
+    "homepage": "https://github.com/xianyunleo/EasySrv",
+    "license": "MIT",
+    "url": "https://github.com/xianyunleo/EasySrv/releases/download/v1.3.4/EasySrv-1.3.4-win.zip",
+    "hash": "276e091d5bb8edfc4bc6219e8458240acac6e8667c562e40ba1704486749cfd9",
+    "bin": "EasySrv.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/xianyunleo/EasySrv/releases/download/v$version/EasySrv-$version-win.zip"
+            }
+        }
+    }
+}
