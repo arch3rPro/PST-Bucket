@@ -14,7 +14,11 @@
     "bin": [
         [
             "server.exe",
-            "client.exe"
+            "reverse_ssh-svr"
+        ],
+        [
+            "client.exe",
+            "reverse_ssh-cli"
         ]
     ],
     "checkver": "github",
