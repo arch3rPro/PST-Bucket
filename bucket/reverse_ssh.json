@@ -1,0 +1,29 @@
+{
+    "version": "v2.0.0",
+    "description": "SSH based reverse shell",
+    "homepage": "https://github.com/NHAS/reverse_ssh",
+    "license": "MIT",
+    "url": [
+        "https://github.com/NHAS/reverse_ssh/releases/download/v2.0.0/server.exe",
+        "https://github.com/NHAS/reverse_ssh/releases/download/v2.0.0/client.exe"
+    ],
+    "hash": [
+        "1e8070a3b2b87ac9ad617747e2e27f62c93bc842370e29eb4b9d642401afe32f",
+        "4749d6751aa43cacd669bf92795d3c61219b5807d96bf9578e34192197228f91"
+    ],
+    "bin": [
+        [
+            "server.exe",
+            "client.exe"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/NHAS/reverse_ssh/releases/download/$version/server.exe",
+                "url": "https://github.com/NHAS/reverse_ssh/releases/download/$version/client.exe"
+            }
+        }
+    }
+}
