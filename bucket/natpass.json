@@ -23,11 +23,11 @@
     "bin": [
         [
             "np-svr.exe",
-            "natpass-svr"
+            "np-svr"
         ],
         [
             "np-cli.exe",
-            "natpass-cli"
+            "np-cli"
         ]
     ],
     "checkver": "github",
