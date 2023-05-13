@@ -20,6 +20,16 @@
             "np-cli.exe"
         ]
     ],
+    "bin": [
+        [
+            "np-svr.exe",
+            "natpass-svr"
+        ],
+        [
+            "np-cli.exe",
+            "natpass-cli"
+        ]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
