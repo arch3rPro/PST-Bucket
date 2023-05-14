@@ -3,7 +3,6 @@
     "description": "Quake Command-Line Application",
     "homepage": "https://quake.360.cn",
     "license": "Apache-2.0",
-    "notes": "https://github.com/ViCrack/scoop-bucket/blob/master/bucket/quake_rs.json",
     "architecture": {
         "64bit": {
             "url": "https://github.com/360quake/quake_rs/releases/download/v3.0.2/quake_rs-windows-x86_64.zip",
