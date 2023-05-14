@@ -9,7 +9,7 @@
             "hash": "6d3306fc2d31395d104c846584a1169c3545935db20f5dc577c297f3763bcd7a"
         }
     },
-    "bin": "afrog.exe",
+    "bin": "shellcodeLoader.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
