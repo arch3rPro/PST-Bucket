@@ -1,0 +1,20 @@
+{
+    "version": "1.7.4.4",
+    "description": "Socat 是Linux 下的一个多功能的网络工具",
+    "notes": "github上下载，请自行检测后门",
+    "homepage": "https://github.com/valorisa/socat-1.7.4.4_for_Windows",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://raw.githubusercontent.com/valorisa/socat-1.7.4.4_for_Windows/main/socat-1.7.4.4.rar",
+            "hash": "00DF17923272D7E01F70EC0C0B89583E517C5A93CF55E45ACDE9D9F51919C16E"
+        }
+    },
+    "bin": [
+        [
+            "socat-1.7.4.4\\socat.exe",
+            "socat"
+        ]
+    ],
+    "checkver": "github"
+}
