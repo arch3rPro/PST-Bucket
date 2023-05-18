@@ -36,16 +36,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": [
-                    "https://github.com/ehang-io/nps/releases/download/v$version/windows_amd64_server.tar.gz",
-                    "https://github.com/ehang-io/nps/releases/download/v$version/windows_amd64_client.tar.gz"
-                ],
+                "url": "https://github.com/ehang-io/nps/releases/download/v$version/windows_amd64_server.tar.gz",
+                "url": "https://github.com/ehang-io/nps/releases/download/v$version/windows_amd64_client.tar.gz"
             },
             "32bit": {
-                "url": [
-                    "https://github.com/ehang-io/nps/releases/download/v$version/windows_386_server.tar.gz",
-                    "https://github.com/ehang-io/nps/releases/download/v$version/windows_386_client.tar.gz"
-                ]
+                "url": "https://github.com/ehang-io/nps/releases/download/v$version/windows_386_server.tar.gz",
+                "url": "https://github.com/ehang-io/nps/releases/download/v$version/windows_386_client.tar.gz"
             }
         }
     }
