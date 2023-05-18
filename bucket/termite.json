@@ -1,0 +1,23 @@
+{
+    "version": "v2",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/rootkiter/Termite/raw/master/download/Termite.zip",
+            "hash": "b5a6a9ef29fb54a03941412cbb624c553f426c5fc1e9e06d6ed36a1cd26ceb0a",
+            "extract_dir": "Termite"
+        }
+    },
+    "bin": [
+        [
+            "admin_Win32.exe",
+            "termite-admin"
+        ],
+        [
+            "agent_Win32.exe",
+            "termite-agent"
+        ]
+    ],
+    "homepage": "https://github.com/rootkiter/Termite",
+    "license": "Freeware",
+    "description": "Tool for tunnel (Version 2)."
+}
