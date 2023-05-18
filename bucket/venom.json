@@ -20,12 +20,11 @@
             "venom-agent"
         ]
     ],
-    "persist": "conf",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Dliv3/Venom/releases/download/$version/Venom.$version.7z",
+                "url": "https://github.com/Dliv3/Venom/releases/download/$version/Venom.$version.7z"
             }
         }
     }
