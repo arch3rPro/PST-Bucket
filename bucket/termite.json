@@ -3,7 +3,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/rootkiter/Termite/raw/master/download/Termite.zip",
-            "hash": "b5a6a9ef29fb54a03941412cbb624c553f426c5fc1e9e06d6ed36a1cd26ceb0a",
+            "hash": "2b8eb2a6eda0c8a811a0e5294a7db053a832f2858f63cf544f14af00a1e8b4a8",
             "extract_dir": "Termite"
         }
     },
@@ -20,4 +20,4 @@
     "homepage": "https://github.com/rootkiter/Termite",
     "license": "Freeware",
     "description": "Tool for tunnel (Version 2)."
-}
+}~
