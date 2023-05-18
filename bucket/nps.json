@@ -14,7 +14,11 @@
     "bin": [
         [
             "nps.exe",
-            "npc.exe"
+            "nps"
+        ],
+        [
+            "npc.exe",
+            "npc"
         ]
     ],
     "persist": "conf",
