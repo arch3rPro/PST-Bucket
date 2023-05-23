@@ -6,5 +6,11 @@
     "license": "MIT",
     "url": "http://pan.assass1n.top/directlink/share/SearchDiggity.msi",
     "hash": "74b2fb0d9222e3aec2d190a8d15f19738d8912fa810703ef93b7ba4e712a3b29",
-    "bin": "SearchDiggity.Client.exe"
+    "bin": [
+        [
+            "SearchDiggity.Client.exe",
+            "SearchDiggity"
+        ]
+    ]
+
 }
