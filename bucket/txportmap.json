@@ -13,7 +13,7 @@
         "TxPortMap_windows_x64.exe",
         [
             "TxPortMap_windows_x64.exe",
-            "tx",
+            "TxPortMap",
             "tx"
         ]
     ],
