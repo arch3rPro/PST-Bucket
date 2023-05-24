@@ -16,7 +16,6 @@
             "scaninfo"
         ]
     ],
-    "bin": "",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
