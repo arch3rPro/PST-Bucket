@@ -1,12 +1,12 @@
 {
-    "version": "2.2.2",
+    "version": "2.5.1",
     "description": "afrog 是一款性能卓越、快速稳定、PoC 可定制化的漏洞扫描工具 - A tool for finding vulnerabilities",
     "homepage": "https://github.com/zan8in/afrog",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zan8in/afrog/releases/download/v2.2.2/afrog_2.2.2_windows_amd64.zip",
-            "hash": "06d1775047e56bb88d4c699856675d9cede88b697d48f11d999d213527a78e7d"
+            "url": "https://github.com/zan8in/afrog/releases/download/v2.5.1/afrog_2.5.1_windows_amd64.zip",
+            "hash": "b5b0bf3e039a4390d34a7d3118f1655037c6b46862ed5b9e0ceee18ce1890618"
         }
     },
     "bin": "afrog.exe",
