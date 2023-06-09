@@ -15,7 +15,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SKIP_UPDATED: "1"
-          USER_NAME: "ViCrack"
-          USER_EMAIL: "18179821+ViCrack@users.noreply.github.com"
-          BUCKET: "ViCrack/scoop-bucket"
+          USER_NAME: "arch3rPro"
+          USER_EMAIL: "wh1tecat@protonmail.com"
+          BUCKET: "arch3rPro/scoop-bucket"
           THROW_ERROR: "0"
