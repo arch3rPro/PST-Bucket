@@ -1,8 +1,6 @@
-```
 <p align="center">
     <h1 align="center">Scoop Bucket</h1>
 </p>
-```
 
 ### SCOOP介绍
 
