@@ -15,8 +15,6 @@ Scoop bucket **就是一个软件仓库**,本项目旨在服务于项目[Pentest
 
 ### scoop基础使用
 
----
-
 官网安装说明书： [ScoopInstaller](https://github.com/ScoopInstaller)
 
 1. 先决条件
@@ -53,8 +51,6 @@ Scoop bucket **就是一个软件仓库**,本项目旨在服务于项目[Pentest
 
 ### 安装该软件仓库中的软件
 
----
-
 确保你已经有 Scoop 环境后，执行以下命令订阅本软件仓库：
 
 ```powershell
@@ -82,8 +78,6 @@ scoop install ar/antsword -g
 
 ### 软件自动更新
 
----
-
 这个仓库已经添加 github ci 自动化，每隔几个小时会自动更新所有软件到最新版本
 
 使用者可以自行在系统中加个定时任务，这样就能自动更新 scoop 软件了，当然也可以手工更新
@@ -102,8 +96,6 @@ scoop update ar/screentogif
 ```
 
 ## 现有适配软件
-
----
 
 | **关注持续更新, 有问题提 issue**
 
