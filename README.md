@@ -6,7 +6,6 @@
 |
 <b><a href="https://github.com/arch3rPro/Pentest-Windows">Pentest-Windows</a></b>
 </p>
----
 
 ### SCOOP介绍
 
