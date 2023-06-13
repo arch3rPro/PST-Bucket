@@ -1,7 +1,11 @@
 <p align="center">
     <h1 align="center">Scoop Bucket</h1>
 </p>
-
+<p align="center">
+<b><a href="https://github.com/arch3rPro/PentestTools">PentestTools</a></b>
+|
+<b><a href="https://github.com/arch3rPro/Pentest-Windows">Pentest-Windows</a></b>
+</p>
 ### SCOOP介绍
 
 Scoop**是一款适用于Windows平台的命令行软件（包）管理工具**。 简单来说，就是可以通过命令行工具（PowerShell、CMD等）实现软件（包）的安装管理等需求，通过简单的一行代码实现软件的下载、安装、卸载、更新等操作。
