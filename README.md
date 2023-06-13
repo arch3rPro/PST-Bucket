@@ -147,14 +147,16 @@ scoop update ar/screentogif
 | scoop install mateuszex         | bypass AV生成工具                                            | https://github.com/sairson/MateuszEx                         |
 | scoop install maye              | Maye 一个简洁小巧的快速启动工具                              | <https://blog.arae.cc/post/25830.html>                       |
 | scoop install mdut              | MDUT - Multiple Database Utilization Tools                   | <https://github.com/SafeGroceryStore/MDUT>                   |
+| scoop install  mimikatz         | 一款功能强大的轻量级调试神器,通常用来获取系统账号密码        | https://github.com/gentilkiwi/mimikatz                       |
 | scoop install myexploit         | 一款扩展性高的渗透测试框架渗透测试框架端                     | <https://github.com/achuna33/MYExploit>                      |
 | scoop install naabu             | projectdiscovery/naabu: A fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests | <https://github.com/projectdiscovery/naabu/>                 |
-| scoop install newfiletime       | NewFileTime is a Windows tool that provides you easy access to correct or manipulate any of the timestamps for any file and folder on Windows! | <http://www.softwareok.com/?seite=Microsoft/NewFileTime>     |
-| scoop install notepad--         | 一个支持 windows/linux/mac 的文本编辑器，目标是要替换 notepad++，来自中国。 | <https://github.com/cxasm/notepad-->                         |
-| scoop install notify            | Notify is a Go-based assistance package that enables you to stream the output of several tools (or read from a file) and publish it to a variety of supported platforms | <https://projectdiscovery.io>                                |
-| scoop install nuclei            | Fast and customizable vulnerability scanner based on simple YAML based DSL | <https://nuclei.projectdiscovery.io>                         |
-| scoop install observerward      | Cross platform community web fingerprint identification tool | <https://0x727.github.io/ObserverWard/>                      |
-| scoop install postman-cn        | Postman 中文版, Complete API development environment.        | <https://github.com/hlmd/postman-cn>                         |
+| scoop install natpass           | 🔥居家办公，远程开发神器                                      | <https://github.com/lwch/natpass>                            |
+| scoop install netsparker        | 综合型的web应用安全漏洞扫描工具                              | https://www.invicti.com/                                     |
+| scoop install nimscan           | 一款快速端口扫描器                                           | <https://github.com/elddy/NimScan>                           |
+| scoop install  nps              | 十分强大的内网穿透代理工具，自带WebUI管理端                  | https://github.com/ehang-io/nps                              |
+| scoop install nuclei            | 基于简单的基于 YAML 的 DSL 的快速且可定制的漏洞扫描器        | <https://nuclei.projectdiscovery.io>                         |
+| scoop install observerward      | 跨平台社区网页指纹识别工具                                   | <https://0x727.github.io/ObserverWard/>                      |
+| scoop install peass-ng          | PEASS - 非常牛逼的特权升级查询工具                           | <https://github.com/carlospolop/PEASS-ng>                    |
 | scoop install PowerRun          | PowerRun (Run with highest privileges) 可以使用 TrustedInstaller/System 的权限来启动一些程序 | <https://www.sordum.org/downloads/?power-run>                |
 | scoop install proguard          | ProGuard, Java optimizer and obfuscator                      | <https://github.com/Guardsquare/proguard>                    |
 | scoop install quake_rs          | Quake Command-Line Application                               | <https://quake.360.cn>                                       |
