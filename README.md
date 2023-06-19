@@ -158,15 +158,28 @@ scoop update ar/screentogif
 | scoop install nuclei            | 基于简单的基于 YAML 的 DSL 的快速且可定制的漏洞扫描器        | <https://nuclei.projectdiscovery.io>                         |
 | scoop install observerward      | 跨平台社区网页指纹识别工具                                   | <https://0x727.github.io/ObserverWard/>                      |
 | scoop install peass-ng          | PEASS - 非常牛逼的特权升级查询工具                           | <https://github.com/carlospolop/PEASS-ng>                    |
+| scoop install phpenv            | 专业优雅强大的PHP集成环境                                    | https://www.phpenv.cn/                                       |
+| scoop install platypus          | 🔨用 go 编写的现代多反向 shell 会话管理器                     | https://github.com/WangYihang/Platypus                       |
+| scoop install portforward       | Golang开发的端口转发工具，解决某些场景下内外网无法互通的问题 | https://github.com/knownsec/PortForward                      |
+| scoop install postman-cn        | Postman中文版, Complete API development environment          | https://github.com/hlmd/postman-cn                           |
 | scoop install PowerRun          | PowerRun (Run with highest privileges) 可以使用 TrustedInstaller/System 的权限来启动一些程序 | <https://www.sordum.org/downloads/?power-run>                |
+| scoop install PrintNotifyPotato | 又一个土豆，使用PrintNotify COM服务进行提权                  | https://github.com/BeichenDream/PrintNotifyPotatog           |
 | scoop install proguard          | ProGuard, Java optimizer and obfuscator                      | <https://github.com/Guardsquare/proguard>                    |
-| scoop install quake_rs          | Quake Command-Line Application                               | <https://quake.360.cn>                                       |
-| scoop install quasar            | Remote Administration Tool for Windows                       | <https://github.com/quasar/Quasar>                           |
+| scoop install pyxis             | pyxis可以自动识别http和https请求，并获取响应头、状态码、响应大小、响应时间、指纹识别工具（favicon has、service、CMS、framework等） | https://github.com/zan8in/pyxis                              |
+| scoop install quake_rs          | Quake搜索引擎-命令行工具                                     | <https://quake.360.cn>                                       |
+| scoop install quasar            | Windows远程管理工具-RAT                                      | <https://github.com/quasar/Quasar>                           |
 | scoop install rad               | 一款专为安全扫描而生的浏览器爬虫                             | <https://github.com/chaitin/rad>                             |
+| scoop install rakshasa          | 基于go编写的跨平台、稳定、隐秘的多级代理内网穿透工具         | https://github.com/Mob2003/rakshasa                          |
 | scoop install RegConverter      | Reg Converter is a portable freeware utility to convert .reg data to .bat, .vbs, or .au3. (RegConverter 可以将.reg 文件转换为.bat，.vbs 或.au3。这对于需要管理员权限才能合并到注册表中的文件或无人参与的自动化安装时特别有用。) | <https://www.sordum.org/downloads/?reg-converter>            |
-| scoop install scan4all          | Official repository vuls Scan: 15000+PoCs; 23 kinds of application password crack; 7000+Web fingerprints; 146 protocols and 90000+ rules Port scanning; Fuzz, HW, awesome BugBounty( ͡° ͜ʖ ͡°).. | <https://scan4all.51pwn.com>                                 |
+| scoop install reverse_ssh       | 基于SSH的反弹shell工具                                       | https://github.com/NHAS/reverse_ssh                          |
+| scoop install rport             | 适用于 Windows、macOS 和 Linux 的自托管开源远程管理解决方案  | https://github.com/realvnc-labs/rport                        |
+| scoop install rubick            | 基于 electron 的开源工具箱，自由集成丰富插件（类uTools工具） | https://rubickcenter.github.io/rubick/                       |
+| scoop install rustcat           | 现代端口侦听器和反向shell,用Rust编写的类netcat工具           | https://github.com/robiot/rustcat                            |
+| scoop install scan4all          | 官方仓库vuls扫描：15000+PoC；23种应用密码破解；7000+网页指标；146个协议和90000+条规则端口扫描；Fuzz, HW,很棒的BugBounty(͡°͜ʖ͡°)... | https://github.com/hktalent/scan4all                         |
 | scoop install screentogif       | Screen, webcam and sketchboard recorder with an integrated editor. | <https://www.screentogif.com/>                               |
-| scoop install siyuan            | SiYuan is a local-first personal knowledge management system, support fine-grained block-level reference and Markdown instant-render editing. | <https://github.com/siyuan-note/siyuan>                      |
+| scoop install searchdiggity     | Google Hacking Diggity是一个利用搜索引擎（如 Google、Bing）快速识别系统弱点和敏感数据的工具集项目 | https://resources.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/ |
+| scoop install shellcodeloader   | shellcode加载器                                              | https://github.com/knownsec/shellcodeloader                  |
+| scoop install skyscorpion       | 基于冰蝎加密流量进行WebShell通信管理客户端                   | <https://github.com/shack2/skyscorpion>                      |
 | scoop install sliver            | Adversary Emulation Framework                                | <https://github.com/BishopFox/sliver>                        |
 | scoop install subfinder         | Subfinder is a subdomain discovery tool that discovers valid subdomains for websites. Designed as a passive framework to be useful for bug bounties and safe for penetration testing | <https://projectdiscovery.io>                                |
 | scoop install super-xray        | XRAY GUI Starter (Web Vulnerability Scanner)                 | <https://github.com/4ra1n/super-xray>                        |
