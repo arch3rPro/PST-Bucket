@@ -120,6 +120,7 @@ scoop update ar/screentogif
 | scoop install dirbuster         | DirBuster是一个多线程的基于Java的应用程序设计用于暴力破解Web 应用服务器上的目录名和文件名的工具 | <https://sourceforge.net/projects/dirbuster/>                |
 | scoop install dnsx              | A fast and multi-purpose DNS toolkit allow to run multiple DNS queries | <https://github.com/projectdiscovery/dnsx>                   |
 | scoop install ehole             | EHole(棱洞)3.0 重构版-红队重点攻击系统指纹探测工具           | https://github.com/EdgeSecurityTeam/EHole                    |
+| scoop install feroxbuster       | 用 Rust 编写的快速、简单、递归的内容发现工具                 | https://github.com/epi052/feroxbuster                        |
 | scoop install ffuf              | Fast web fuzzer written in Go                                | <https://github.com/ffuf/ffuf>                               |
 | scoop install finalshell        | 国产软件 FinalShell SSH 工具,服务器管理,远程桌面加速软件,支持 Windows,macOS,Linux | <https://www.hostbuf.com/t/988.html>                         |
 | scoop install fluentsearch      | 支持工作流的高颜值 Windows 搜索启动器                        | <https://www.fluentsearch.net/>                              |
