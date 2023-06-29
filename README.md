@@ -157,6 +157,8 @@ scoop update ar/screentogif
 | scoop install  nps              | 十分强大的内网穿透代理工具，自带WebUI管理端                  | https://github.com/ehang-io/nps                              |
 | scoop install nuclei            | 基于简单的基于 YAML 的 DSL 的快速且可定制的漏洞扫描器        | <https://nuclei.projectdiscovery.io>                         |
 | scoop install observerward      | 跨平台社区网页指纹识别工具                                   | <https://0x727.github.io/ObserverWard/>                      |
+| scoop install oneforall         | OneForAll是一款功能强大的子域收集工具                        | https://github.com/shmilylty/OneForAll                       |
+| scoop install  pagodo           | pagodo (Passive Google Dork) - Automate Google Hacking Database scraping and searching | https://github.com/opsdisk/pagodo                            |
 | scoop install peass-ng          | PEASS - 非常牛逼的特权升级查询工具                           | <https://github.com/carlospolop/PEASS-ng>                    |
 | scoop install phpenv            | 专业优雅强大的PHP集成环境                                    | https://www.phpenv.cn/                                       |
 | scoop install platypus          | 🔨用 go 编写的现代多反向 shell 会话管理器                     | https://github.com/WangYihang/Platypus                       |
@@ -176,26 +178,33 @@ scoop update ar/screentogif
 | scoop install rubick            | 基于 electron 的开源工具箱，自由集成丰富插件（类uTools工具） | https://rubickcenter.github.io/rubick/                       |
 | scoop install rustcat           | 现代端口侦听器和反向shell,用Rust编写的类netcat工具           | https://github.com/robiot/rustcat                            |
 | scoop install scan4all          | 官方仓库vuls扫描：15000+PoC；23种应用密码破解；7000+网页指标；146个协议和90000+条规则端口扫描；Fuzz, HW,很棒的BugBounty(͡°͜ʖ͡°)... | https://github.com/hktalent/scan4all                         |
+| scoop install  scaninfo         | 红队快速漏洞扫描工具                                         | https://github.com/redtoolskobe/scaninfo                     |
 | scoop install screentogif       | Screen, webcam and sketchboard recorder with an integrated editor. | <https://www.screentogif.com/>                               |
 | scoop install searchdiggity     | Google Hacking Diggity是一个利用搜索引擎（如 Google、Bing）快速识别系统弱点和敏感数据的工具集项目 | https://resources.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/ |
 | scoop install shellcodeloader   | shellcode加载器                                              | https://github.com/knownsec/shellcodeloader                  |
 | scoop install skyscorpion       | 基于冰蝎加密流量进行WebShell通信管理客户端                   | <https://github.com/shack2/skyscorpion>                      |
 | scoop install sliver            | Adversary Emulation Framework                                | <https://github.com/BishopFox/sliver>                        |
+| scoop install  socat            | Socat 是Linux 下的一个多功能的网络工具，此处为非官方的windows版本 | https://github.com/StudioEtrange/socat-windows               |
+| scoop install stowaway          | 渗透测试多层网络代理、跳板工具                               | https://github.com/ph4ntonn/Stowaways                        |
 | scoop install subfinder         | Subfinder is a subdomain discovery tool that discovers valid subdomains for websites. Designed as a passive framework to be useful for bug bounties and safe for penetration testing | <https://projectdiscovery.io>                                |
+| scoop install suo5              | 一款高性能 HTTP 代理隧道工具                                 | A high-performance http proxy tunneling tool                 |
 | scoop install super-xray        | XRAY GUI Starter (Web Vulnerability Scanner)                 | <https://github.com/4ra1n/super-xray>                        |
+| scoop install termite           | Tool for tunnel (Version 2)                                  | https://github.com/rootkiter/Termite                         |
+| scoop install tidefinger        | TideFinger——指纹识别小工具，汲取整合了多个web指纹库，结合了多种指纹检测方法，让指纹检测更快捷、准确 | https://github.com/TideSec/TideFinger                        |
 | scoop install transfer          | 集合多个 API 的大文件传输工具                                | <https://github.com/Mikubill/transfer>                       |
 | scoop install treesize          | TreeSize 纯净版是一款功能强大的磁盘空间管理软件，为用户提供了功能强大的磁盘空间管理功能，帮助更好的管理内存空间，为文件管理提供了帮助。软件已经进行了整体优化，去除了各种无用的功能和界面，满足用户的各种软件纯净版使用需求 | <https://www.jam-software.com/treesize>                      |
+| scoop install  txportmap        | 端口扫描、指纹识别工具                                       | https://github.com/4dogs-cn/TXPortMap                        |
+| scoop install venom             | 渗透测试多层网络代理、跳板工具                               | https://github.com/Dliv3/Venom                               |
 | scoop install verycapture       | 支持长截图，矩形截图，延时截图，任意区域截图，gif 录制，录屏，ocr 翻译等功能 | <https://verycapture.com/cn/download.html>                   |
 | scoop install vscan             | 开源、轻量、快速、跨平台 的网站漏洞扫描工具，帮助您快速检测网站安全隐患。功能 端口扫描(port scan) 指纹识别(fingerprint) 漏洞检测(nday check) 智能爆破 (admin brute) 敏感文件扫描(file fuzz) | <https://github.com/veo/vscan>                               |
 | scoop install w3cschool         | w3cschool 离线版，包含 HTML,CSS,Javascript,jQuery,C,PHP,Java,Python,Sql,Mysql 等编程语言和开源技术的在线教程及使用手册 | <https://www.w3cschool.cn>                                   |
+| scoop install webpathbrute      | 7kbscan-WebPathBrute Web路径暴力探测工具                     | https://github.com/7kbstorm/7kbscan-WebPathBrute             |
 | scoop install webshell_generate | 用于生成各类免杀 webshell                                    | <https://github.com/cseroad/Webshell_Generate>               |
+| scoop install websocat          | A command-line client for WebSockets, like netcat (or curl) for ws:// with advanced socat-like functions. | https://github.com/vi/websocat                               |
 | scoop install windterm          | A professional cross-platform SSH/Sftp/Shell/Telnet/Serial terminal. | <https://github.com/kingToolbox/WindTerm>                    |
 | scoop install windynamicdesktop | Port of macOS Mojave Dynamic Desktop feature to Windows 10   | <https://github.com/t1m0thyj/WinDynamicDesktop>              |
 | scoop install wub               | wub 彻底关闭 Win10 自动更新工具(Windows Update Blocker)      | <https://www.sordum.org/downloads/?st-windows-update-blocker> |
 | scoop install xray              | 一款完善的安全评估工具，支持常见 web 安全问题扫描和自定义 poc | <https://github.com/chaitin/xray>                            |
-| scoop install anew              | A tool for adding new lines to files, skipping duplicates    | <https://github.com/tomnomnom/anew>                          |
-| scoop install gowitness         | gowitness - a golang, web screenshot utility using Chrome Headless | <https://github.com/sensepost/gowitness>                     |
-| scoop install suo5              | 一款高性能 HTTP 代理隧道工具                                 | A high-performance http proxy tunneling tool                 |
-| scoop install rubick            | Electron based open source toolbox, free integration of rich plug-ins. 基于 electron 的开源工具箱，自由集成丰富插件。 | <https://rubickcenter.github.io/rubick/>                     |
-| scoop install pyxis             | pyxis can automatically identify http and https requests, and get response headers, status codes, response size, response time, tools for fingerprinting (favicon has, service, CMS, framework, etc.) | <https://github.com/zan8in/pyxis>                            |
-| scoop install rakshasa          | 基于go编写的跨平台、稳定、隐秘的多级代理内网穿透工具         | <https://github.com/Mob2003/rakshasa>                        |
+| scoop install yakit             | 交互式应用安全测试平台，安装成功后需手动启动并初始化本地引擎 | https://github.com/yaklang/yakit                             |
+| scoop install ysomap            | Java反序列化利用工具-很棒                                    | <https://github.com/wh1t3p1g/ysomap>                         |
+| scoop install yujianportscan    | 一个基于VB.NET + IOCP模型开发的高效端口扫描工具，支持IP区间合并，端口区间合并，端口指纹深度探测。 | <https://github.com/foryujian/yujianportscan>                |
