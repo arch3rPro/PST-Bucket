@@ -192,7 +192,6 @@ scoop update ar/screentogif
 | scoop install termite           | Tool for tunnel (Version 2)                                  | https://github.com/rootkiter/Termite                         |
 | scoop install tidefinger        | TideFinger——指纹识别小工具，汲取整合了多个web指纹库，结合了多种指纹检测方法，让指纹检测更快捷、准确 | https://github.com/TideSec/TideFinger                        |
 | scoop install transfer          | 集合多个 API 的大文件传输工具                                | <https://github.com/Mikubill/transfer>                       |
-| scoop install treesize          | TreeSize 纯净版是一款功能强大的磁盘空间管理软件，为用户提供了功能强大的磁盘空间管理功能，帮助更好的管理内存空间，为文件管理提供了帮助。软件已经进行了整体优化，去除了各种无用的功能和界面，满足用户的各种软件纯净版使用需求 | <https://www.jam-software.com/treesize>                      |
 | scoop install  txportmap        | 端口扫描、指纹识别工具                                       | https://github.com/4dogs-cn/TXPortMap                        |
 | scoop install venom             | 渗透测试多层网络代理、跳板工具                               | https://github.com/Dliv3/Venom                               |
 | scoop install verycapture       | 支持长截图，矩形截图，延时截图，任意区域截图，gif 录制，录屏，ocr 翻译等功能 | <https://verycapture.com/cn/download.html>                   |
