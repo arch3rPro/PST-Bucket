@@ -8,8 +8,8 @@
     "hash": "f0595921c5d50a3b599f72e04f5248890b377d90620b0856367265a5a2440ff8",
     "pre_install": "Set-Content \"$dir\\gitminer.bat\" '@pushd %~dp0\npython3 \"gitminer-v2.0.py\" %*\n@popd' -Encoding Ascii",
     "post_install": [
-        "Move-Item -Path \"$dir\\gitminer_V$version\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\gitminer_V$version\" -Force -Recurse"
+        "Move-Item -Path \"$dir\\Gitminer\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\Gitminer\" -Force -Recurse"
     ],
     "bin": "gitminer.bat",
     "checkver": "github",
