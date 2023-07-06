@@ -9,7 +9,8 @@
     "pre_install": "Set-Content \"$dir\\SiteScan.bat\" '@pushd %~dp0\npython3 \"main.py\" %*\n@popd' -Encoding Ascii",
     "post_install": [
         "Move-Item -Path \"$dir\\SiteScan.v$version\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\SiteScan.v$version\" -Force -Recurse"
+        "Remove-Item \"$dir\\SiteScan.v$version\" -Force -Recurse",
+        "pip3 install -r \"$dir\\requirements.txt\""
     ],
     "bin": "SiteScan.bat",
     "checkver": "github",
