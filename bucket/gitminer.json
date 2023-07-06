@@ -9,7 +9,8 @@
     "pre_install": "Set-Content \"$dir\\gitminer.bat\" '@pushd %~dp0\npython3 \"gitminer-v2.0.py\" %*\n@popd' -Encoding Ascii",
     "post_install": [
         "Move-Item -Path \"$dir\\Gitminer\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\Gitminer\" -Force -Recurse"
+        "Remove-Item \"$dir\\Gitminer\" -Force -Recurse",
+        "pip3 install -r \"$dir\\requirements.txt\""
     ],
     "bin": "gitminer.bat",
     "checkver": "github",
