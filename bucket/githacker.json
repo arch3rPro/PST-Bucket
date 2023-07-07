@@ -10,7 +10,7 @@
     "post_install": [
         "Move-Item -Path \"$dir\\GitHacker-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\GitHacker-$version\" -Force -Recurse",
-        "pip3 install githacer"
+        "pip3 install githacker"
     ],
     "bin": "githacker.bat",
     "checkver": "github",
