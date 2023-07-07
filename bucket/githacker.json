@@ -11,7 +11,6 @@
         "Remove-Item \"$dir\\GitHacker-$version\" -Force -Recurse",
         "pip3 install githacker"
     ],
-    "bin": "githacker.exe",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/WangYihang/GitHacker/archive/refs/tags/v$version.zip"
