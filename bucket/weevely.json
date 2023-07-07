@@ -11,5 +11,5 @@
         "Remove-Item \"$dir\\weevely3-master\" -Force -Recurse",
         "pip3 install -r \"$dir\\requirements.txt\""
     ],
-    "bin": "CMSeeK.bat"
+    "bin": "weevely.bat"
 }
