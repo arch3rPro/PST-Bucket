@@ -5,7 +5,7 @@
     "license": "Free",
     "suggest": "python3.7",
     "url": "https://github.com/WangYihang/GitHacker/archive/refs/tags/v1.1.3.zip",
-    "hash": "e267b0f505ecef0b366e626fb5602f418af82428107a72c1735fae747a324beb",
+    "hash": "3e81c9d84b934e4b764cbf95188eb9923588e05526dcf7ec478e4e109e9d7b12",
     "pre_install": "Set-Content \"$dir\\githacker.bat\" '@pushd %~dp0\n \"githacker\" %*\n@popd' -Encoding Ascii",
     "post_install": [
         "Move-Item -Path \"$dir\\GitHacker-$version\\*\" -Destination \"$dir\\\"",
