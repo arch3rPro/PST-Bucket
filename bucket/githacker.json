@@ -6,13 +6,12 @@
     "suggest": "python3.7",
     "url": "https://github.com/WangYihang/GitHacker/archive/refs/tags/v1.1.3.zip",
     "hash": "3e81c9d84b934e4b764cbf95188eb9923588e05526dcf7ec478e4e109e9d7b12",
-    "pre_install": "Set-Content \"$dir\\githacker.bat\" '@pushd %~dp0\n \"githacker\" %*\n@popd' -Encoding Ascii",
     "post_install": [
         "Move-Item -Path \"$dir\\GitHacker-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\GitHacker-$version\" -Force -Recurse",
         "pip3 install githacker"
     ],
-    "bin": "githacker.bat",
+    "bin": "githacker.exe",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/WangYihang/GitHacker/archive/refs/tags/v$version.zip"
