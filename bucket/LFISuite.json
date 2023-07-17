@@ -10,7 +10,7 @@
     "post_install": [
         "Move-Item -Path \"$dir\\LFISuite-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\LFISuite-$version\" -Force -Recurse",
-        "pip2 install termcolor requests"
+        "pip2 install termcolor requests win_inet_pton"
     ],
     "bin": "lfisuite.bat",
     "checkver": "github",
