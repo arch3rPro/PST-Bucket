@@ -10,7 +10,7 @@
     "post_install": [
         "Move-Item -Path \"$dir\\fuxploider-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\fuxploider-$version\" -Force -Recurse",
-        "pip3 install -r requirements.txt"
+        "pip3 install -r \"$dir\\requirements.txt\""
     ],
     "bin": "fuxploider.bat",
     "checkver": "github",
