@@ -9,7 +9,7 @@
     "pre_install": "Set-Content \"$dir\\lfisuite.bat\" '@pushd %~dp0\npython2 \"lfisuite.py\" %*\n@popd' -Encoding Ascii",
     "post_install": [
         "Move-Item -Path \"$dir\\LFISuite-$version\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\LFISuite-$version\" -Force -Recurse",
+        "Remove-Item \"$dir\\LFISuite-$version\" -Force -Recurse"
     ],
     "bin": "POC-T.bat",
     "checkver": "github",
