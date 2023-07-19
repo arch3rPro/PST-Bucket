@@ -10,6 +10,7 @@
         "Remove-Item \"$dir\\houndsploit-master\" -Force -Recurse",
         "powershell.exe -ExecutionPolicy Bypass -File \"$dir\\install_db_windows.ps1\"",
         "pip3 install -r \"$dir\\requirements.txt\"",
-        "python3 \"$dir\\setup.py\" install"
+        "cd \"$dir\"",
+        "python3 \".\\setup.py\" install"
     ]
 }
