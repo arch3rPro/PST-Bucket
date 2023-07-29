@@ -1,0 +1,42 @@
+{
+    "version": "1.6",
+    "description": "🕳 godoh - A DNS-over-HTTPS C2 (Scoop bucket by arch3rpro)",
+    "homepage": "https://github.com/sensepost/godoh",
+    "license": "GPL-3.0",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/sensepost/godoh/releases/download/1.6/godoh-windows32.exe",
+            "hash": "bb141fb92bcd492552d5d6c09fbf39f7f674eb49"
+        },
+        "64bit": {
+            "url": [
+            "https://github.com/sensepost/godoh/releases/download/1.6/godoh-windows64.exe",
+            "https://github.com/sensepost/godoh/releases/download/1.6/godoh-linux64",
+            "https://github.com/sensepost/godoh/releases/download/1.6/godoh-darwin64"
+            ],
+            "hash": [
+            "cc9f09bbdb9277265fd71b7575b1fdda3bc2f946",
+            "86445d7ef450ddcb190f14c6f7fc8a1a33945c45",
+            "5e5a0618107570e45d2d2559d13658fb0e08f732"
+            ]
+        }
+    },
+    "bin": [
+        [
+            "godoh-windows64.exe",
+            "godoh"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": [
+                "https://github.com/sensepost/godoh/releases/download/$version/godoh-windows64.exe",
+                "https://github.com/sensepost/godoh/releases/download/$version/godoh-linux64",
+                "https://github.com/sensepost/godoh/releases/download/$version/godoh-darwin64"
+                ]
+            }
+        }
+    }
+}
