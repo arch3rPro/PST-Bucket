@@ -37,5 +37,5 @@
             }
         }
     },
-    "post_install": "7z x -y -pmerlin -o$dir * -r; Remove-Item *.7z -Force"
+    "post_install": "7z x -y -pmerlin -o$dir * -r; Remove-Item *.7z#dl.7z_ -Force"
 }
