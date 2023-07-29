@@ -39,8 +39,6 @@
     },
     "pre_install": [
         "7z x -y $dir\\* -pmerlin $('-o' + $dir) | Out-Null",
-        "Remove-Item *.7z#dl.7z_ -Force"
+        "Remove-Item $dir\\*.7z#dl.7z_ -Force"
     ]
 }
-
-
