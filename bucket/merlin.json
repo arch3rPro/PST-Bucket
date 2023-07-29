@@ -38,8 +38,9 @@
         }
     },
     "pre_install": [
-        "$7zip=(Get-ChildItem $dir\\merlin*).Name", 
-        "7z x -y $dir\\$7zip -pmerlin $('-o' + $dir) | Out-Null",
+        "7z x -y $dir\\* -pmerlin $('-o' + $dir) | Out-Null",
         "Remove-Item *.7z#dl.7z_ -Force"
     ]
 }
+
+
