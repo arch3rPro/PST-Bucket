@@ -5,7 +5,7 @@
     "license": "unkown",
     "url": "https://github.com/r00t-3xp10it/meterpeter/archive/refs/tags/v2.10.13.zip",
     "hash": "34B349C8ACC9AFC3CB5950DF31B9EF7F37B557B8252DC0AFC6BF8A41B252FBB8",
-    "post_install": [
+    "pre_install": [
         "Move-Item -Path \"$dir\\meterpeter-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\meterpeter-$version\" -Force -Recurse"
     ],
