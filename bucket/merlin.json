@@ -15,6 +15,7 @@
         "BEA2D43299ACF4DCDE7BAEC1C2E72BAAD785DEE6FE94489B6629AA7098A3197E",
         "3DC8B93BB3AFA57FB7E644EAB9CFDD0D83E1585F5C6EEEB2108D5796F624A1C2"
     ],
+    "pre_install": "Get-ChildItem -Filter '*.7z' | ForEach-Object { $d = $_.DirectoryName; 7z x -y -pmerlin -o\"$d\" $_.FullName; Remove-Item $_.FullName -Force }",
     "bin": [
         [
             "merlinServer-Windows-x64.exe",
