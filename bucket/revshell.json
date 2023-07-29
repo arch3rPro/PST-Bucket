@@ -10,8 +10,8 @@
         }
     },
     "post_install": [
-        "Rename-Item (Join-Path $dir 'server.exe') 'revshell.exe'",
-        "Rename-Item (Join-Path $dir 'server-multisession') 'revshell-multisession.exe'"
+        "Move-Item -Path $dir\\server.exe -Destination $dir\\revshell.exe -Force",
+        "Move-Item -Path $dir\\server-multisession.exe -Destination $dir\\revshell-multisession.exe -Force"
     ],
     "bin": [
         [
