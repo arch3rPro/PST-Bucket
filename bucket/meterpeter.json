@@ -7,7 +7,7 @@
     "hash": "34B349C8ACC9AFC3CB5950DF31B9EF7F37B557B8252DC0AFC6BF8A41B252FBB8",
     "post_install": [
         "Move-Item -Path \"$dir\\meterpeter-$version\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\pwnxss-$version\" -Force -Recurse"
+        "Remove-Item \"$dir\\meterpeter-$version\" -Force -Recurse"
     ],
     "bin": "meterpeter.ps1",
     "checkver": "github",
