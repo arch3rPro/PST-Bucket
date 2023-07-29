@@ -9,7 +9,7 @@
             "hash": "AECAA752A1D42D8C70B6E0CEF32552E706E01252ABFED2A554D785D4FDB3D5EC"
         }
     },
-    "post_install": [
+    "pre_install": [
         "Move-Item -Path $dir\\server.exe -Destination $dir\\revshell.exe -Force",
         "Move-Item -Path $dir\\server-multisession.exe -Destination $dir\\revshell-multisession.exe -Force"
     ],
