@@ -6,5 +6,8 @@
     "suggest": "Dotnet SDK 3.1",
     "url": "http://pan.assass1n.top/directlink/share/Covenant.zip",
     "pre_install": "Set-Content \"$dir\\Covenant.bat\" '@pushd %~dp0\ndotnet run %*\n@popd' -Encoding Ascii",
-    "bin": "Covenant.bat"
+    "bin": [
+        "Covenant.bat",
+        "Covenant"
+    ]
 }
