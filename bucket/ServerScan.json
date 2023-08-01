@@ -58,7 +58,7 @@
                 "url": [
                     "https://github.com/Adminisme/ServerScan/releases/download/$version/ServerScan_Air_$version_windows_x64.exe",
                     "https://github.com/Adminisme/ServerScan/releases/download/$version/ServerScan_Pro_$version_windows_x64.exe"
-                ],
+                ]
             }
         }
     }
