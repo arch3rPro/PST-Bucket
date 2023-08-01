@@ -15,7 +15,7 @@
         "architecture": {
             "64bit": {
                 "url": [
-                    "https://github.com/AlessandroZ/LaZagne/releases/download/$version/LaZagne.exe",
+                    "https://github.com/AlessandroZ/LaZagne/releases/download/$version/LaZagne.exe"
                 ]
             }
         }
