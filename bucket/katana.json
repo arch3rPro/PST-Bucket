@@ -1,6 +1,6 @@
 {
     "version": "1.0.2",
-    "description": "A next-generation crawling and spidering framework",
+    "description": "A next-generation crawling and spidering framework(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/projectdiscovery/katana",
     "license": "MIT",
     "architecture": {
