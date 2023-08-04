@@ -6,7 +6,7 @@
     "url": "https://github.com/xianyunleo/EasySrv/releases/download/v1.6.9/EasySrv-1.6.9-win.zip",
     "hash": "C0CEF68B94F6CE291A7D6247E0E340165147EF7ADF639D3514DC121FFF73E112",
     "bin": [
-        "/bin/phpenv.exe",
+        "EasySrv.exe",
         "/core/software/php/php-7.4/php.exe",
         "/core/software/server/mysql-5.7/mysql.exe",
         "/core/software/server/nginx/nginx.exe"
