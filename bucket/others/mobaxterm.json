@@ -17,6 +17,8 @@
         "        New-Item \"$dir\\$file\" -Type File | Out-Null",
         "    }",
         "}",
+        "    # Crack ",
+        "Invoke-WebRequest -Uri http://192.99.11.204:5000/gen?name=MobaXterm&ver=$version -OutFile Custom.mxtpro",                
         "@('MobaXterm backup.zip', 'MobaXterm.ini') | ForEach-Object { PersistsFile $_ }"
     ],
     "bin": "MobaXterm.exe",
