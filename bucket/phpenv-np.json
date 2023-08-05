@@ -5,6 +5,7 @@
     "license": "Freeware",
     "url": "https://dl-cdn.phpenv.cn/release/phpEnv8.9.5-Setup.exe",
     "hash": "de19959975652c74c426c4267adbc83095854ab0101e074d17c8c5cb41dd78ca",
+    "innosetup": true,
     "post_install": [
         "    # 初始化phpenv",
         "Start-Process -FilePath \"$dir\\bin\\phpenv.exe\"",
