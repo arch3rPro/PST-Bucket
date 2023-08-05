@@ -17,6 +17,14 @@
         "bin/nginx/nginx-1.14.0/nginx.exe",
         "bin/sendmail/sendmail.exe"
     ],
+    "pre_install": [
+        "    # 初始化laragon",
+        "Start-Process -FilePath \"$dir\\laragon.exe\"",
+        "    # 等待10秒初始化",
+        "for ($i = 10; $i -gt 0; $i--) { Write-Output \"Countdown: $i seconds...\"; Start-Sleep -Seconds 1 }",
+        "    # 结束laragon ",
+        "Stop-Process -Name laragon -Force"
+      ],
     "persist": [
         "etc",
         "tmp",
