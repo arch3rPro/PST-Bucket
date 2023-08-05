@@ -32,4 +32,5 @@
     },
     "autoupdate": {
         "url": "https://dl-cdn.phpenv.cn/release/phpEnv$version-Setup.exe"
+    }
 }
