@@ -5,16 +5,13 @@
     "license": "Freeware",
     "url": "http://pan.assass1n.top/directlink/share/phpEnv8.9.2.zip",
     "hash": "530ae0cffce4b13ce60352ad01aeacd010f4c0ed0ae6d61e652f5211a736e845",
-    "post_install": [
-        {
-         "powershell": "Start-Process -FilePath \"$dir\\phpEnv快捷启动.bat\""
-       },
-        {
-         "powershell": "for ($i = 10; $i -gt 0; $i--) { Write-Output \"Countdown: $i seconds...\"; Start-Sleep -Seconds 1 }"
-        },
-        {
-          "powershell": "Stop-Process -Name phpenv -Force"
-        }
+    "pre_install": [
+        "    # 初始化phpenv",
+        "Start-Process -FilePath \"$dir\\phpEnv快捷启动.bat\"",
+        "    # 等待10秒初始化",
+        "for ($i = 10; $i -gt 0; $i--) { Write-Output \"Countdown: $i seconds...\"; Start-Sleep -Seconds 1 }",
+        "    # 结束phpenv ",
+        "Stop-Process -Name phpenv -Force"
       ],
     "bin": "/bin/phpenv.exe"
 }
