@@ -15,7 +15,7 @@
         "Stop-Process -Name phpenv -Force"
       ],
     "bin": [
-        "/bin/phpenv.exe",
+        "bin/phpenv.exe",
         "php/php-7.4/php.exe",
         "server/mysql/mysql-5.7/bin/mysql.exe",
         "server/mysql/mysql-5.7/bin/mysqladmin.exe",
