@@ -14,7 +14,7 @@
         "bin/mysql/mysql-5.1.72-win32/bin/mysqldump.exe",
         "bin/nginx/nginx-1.14.0/nginx.exe",
         "bin/php/php-5.4.9-nts-Win32-VC9-x86/php.exe",
-        "server/nginx/nginx.exe",
+        "bin/nginx/nginx-1.14.0/nginx.exe",
         "bin/sendmail/sendmail.exe"
     ],
     "persist": [
