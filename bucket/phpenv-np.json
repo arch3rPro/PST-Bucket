@@ -3,9 +3,9 @@
     "description": "专业优雅强大的PHP集成环境(Scoop bucket by arch3rpro)",
     "homepage": "https://www.phpenv.cn/",
     "license": "Freeware",
-    "url": "http://pan.assass1n.top/directlink/share/phpEnv8.9.2.zip",
-    "hash": "530ae0cffce4b13ce60352ad01aeacd010f4c0ed0ae6d61e652f5211a736e845",
-    "pre_install": [
+    "url": "https://dl-cdn.phpenv.cn/release/phpEnv8.9.5-Setup.exe",
+    "hash": "A88F2B2CF9D561119B4C998E3803E72BD07FACCEF6131D51EAF6418E0610A2B4",
+    "post_install": [
         "    # 初始化phpenv",
         "Start-Process -FilePath \"$dir\\bin\\phpenv.exe\"",
         "    # 等待10秒初始化",
@@ -13,5 +13,16 @@
         "    # 结束phpenv ",
         "Stop-Process -Name phpenv -Force"
       ],
-    "bin": "/bin/phpenv.exe"
+    "bin": [
+        "/bin/phpenv.exe",
+        "php/php-7.4/php.exe",
+        "server/mysql/mysql-5.7/bin/mysql.exe",
+        "server/mysql/mysql-5.7/bin/mysqladmin.exe",
+        "server/mysql/mysql-5.7/bin/mysqldump.exe",
+        "server/mysql/mysql-5.7/bin/echo.exe",
+        "tools/Composer/composer.bat",
+        "tools/HeidiSQL/heidisql.exe",
+        "server/nginx/nginx.exe",
+        "server/nginx/php-fpm.exe"
+    ]
 }
