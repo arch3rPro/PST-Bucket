@@ -13,11 +13,11 @@ Scoop**是一款适用于Windows平台的命令行软件（包）管理工具**�
 
 Scoop bucket **就是一个软件仓库**,本项目旨在服务于项目[Pentest-Windows](https://github.com/arch3rPro/Pentest-Windows)，提供windows渗透测试环境工具进行快捷安装、管理和自动更新。
 
-** 私人仓库，未经授权，禁止其他桶合并 **
+
 
 #### 黑名单：
 
-**私人仓库，未经授权，禁止其他桶合并**
+**个人仓库，未经授权，禁止其他桶合并**
 
 - [https://github.com/lzwme/scoop-proxy-cn](https://github.com/lzwme/scoop-proxy-cn)
 - [https://github.com/okibcn/ScoopMaster](https://github.com/okibcn/ScoopMaster)
