@@ -54,7 +54,7 @@ Scoop bucket **就是一个软件仓库**,本项目旨在服务于项目[Pentest
 确保你已经有 Scoop 环境后，执行以下命令订阅本软件仓库：
 
 ```powershell
-scoop bucket add ar https://github.com/arch3rPro/scoop-bucket
+scoop bucket add ar https://github.com/arch3rPro/PST-Bucket
 ```
 
 执行以下命令安装本仓库中的软件：
