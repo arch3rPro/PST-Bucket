@@ -9,7 +9,7 @@
     ],
     "suggest": "java/liberica17-jre",
     "url": "http://pan.assass1n.top/directlink/share/BurpSuite%20V2023.9.1.zip",
-    "hash": "130F6298F4D4E9308EC083C22A01C2A815AE44326D552623F339B76D89A602A1",
+    "hash": "130f6298f4d4e9308ec083c22a01c2a815ae44326d552623f339b76d89a602a1",
     "bin": [
         [
             "CNBurp(无CMD窗口).VBS",
