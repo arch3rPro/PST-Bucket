@@ -11,5 +11,12 @@
         "Move-Item -Path \"$dir\\exploitdb-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\exploitdb-$version\" -Force -Recurse"
     ],
-    "bin": "searchsploit.bat"
+    "bin": "searchsploit.bat",
+    "checkver": {
+        "url": "https://gitlab.com/exploit-database/exploitdb/-/tags",
+        "regex": "v([\\d.]+)</a>"
+    },
+    "autoupdate": {
+        "url": "https://gitlab.com/exploit-database/exploitdb/-/archive/$version/exploitdb-$version.zip"
+    }
 }
