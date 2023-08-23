@@ -9,12 +9,8 @@
             "hash": "9da47a94bbb8d9322de8b7bb34958578776a47fdd440d2cca413fec7c78bc795"
         }
     },
-    "bin": [
-        [
-            "20230417.exe",
-            "av_evasion_tool"
-        ]
-    ],
+    "pre_install": "Move-Item \"$dir\\*.exe\" \"$dir\\av_evasion_tool.exe\"",
+    "bin": "av_evasion_tool.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
