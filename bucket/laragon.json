@@ -5,6 +5,7 @@
     "license": "MIT",
     "url": "https://github.com/leokhoa/laragon/archive/refs/tags/6.0.0.zip",
     "hash": "042d95237bd729a254ef95a62920b4db28a4d3161c0dcfef46029e15286b38f3",
+    "extract_dir": "laragon-6.0.0",
     "bin": [
         "laragon.exe",
         "bin/composer/composer.bat",
