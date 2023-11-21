@@ -2,18 +2,18 @@
     "homepage": "https://u.tools/",
     "description": "新一代效率工具平台.(Scoop bucket by arch3rpro)",
     "license": "Unknown",
-    "version": "4.3.1",
+    "version": "4.3.2",
     "architecture": {
         "64bit": {
-            "url": "https://publish.u-tools.cn/version2/uTools-4.3.1.exe#/dl.7z",
-            "hash": "8d0187b991c818a2fb28f757b11f7e225b94e2b698f539fb3339826767ee32d7",
+            "url": "https://publish.u-tools.cn/version2/uTools-4.3.2.exe#/dl.7z",
+            "hash": "127403d254be809d3bd43ff44cc789b05fdd22927761b3563dee5341960a1f5a",
             "installer": {
                 "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
             }
         },
         "32bit": {
-            "url": "https://publish.u-tools.cn/version2/uTools-4.3.1-ia32.exe#/dl.7z",
-            "hash": "54c557f971b62fa309789ab9433ef0ba1d657f03cc60d03ec22a3c3092601bb3",
+            "url": "https://publish.u-tools.cn/version2/uTools-4.3.2-ia32.exe#/dl.7z",
+            "hash": "fca18a90546c3ff32c74869ddb28101e2d12a1f839f2ba4e26e68c045d44efe0",
             "installer": {
                 "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
             }
