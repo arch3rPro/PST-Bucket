@@ -1,13 +1,13 @@
 {
-    "version": "1.2.7-sp4",
+    "version": "1.2.7-sp5",
     "description": "Cyber Security ALL-IN-ONE Platform(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/yaklang/yakit",
     "notes": "安装成功后需手动启动并初始化本地引擎^-^",
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/1.2.7-sp4/Yakit-1.2.7-sp4-windows-amd64.exe#/dl.7z",
-            "hash": "0dd327b4d38633e5ff89b141719bfa00116ca3758a73b7a8143e067d47bae217",
+            "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/1.2.7-sp5/Yakit-1.2.7-sp5-windows-amd64.exe#/dl.7z",
+            "hash": "92b3c8a6b220c06f55f7e9949aa3d0ce5da87353d685d9f4772eec5ecb2ab4eb",
             "installer": {
                 "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR/app-64.7z\" \"$dir\""
             }
