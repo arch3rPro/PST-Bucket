@@ -1,13 +1,13 @@
 {
-    "version": "2.8.2",
+    "version": "2.8.3",
     "description": "新一代网络安全技术，通过为目标建立完整的资产数据库，实现快速的安全应急(Scoop bucket by arch3rpro)",
     "homepage": "https://gobysec.net/",
     "license": "https://gobysec.net/faq",
     "architecture": {
         "64bit": {
-            "url": "https://goby-storage-public.oss-cn-beijing.aliyuncs.com/2.8.2/goby-win-x64-2.8.2-Community.zip",
-            "hash": "b7ffb6a1473464fc78d6fdcf511dc2460c4c7d562c289e1c5ba04918f80ba98f",
-            "extract_dir": "goby-win-x64-2.8.2"
+            "url": "https://goby-storage-public.oss-cn-beijing.aliyuncs.com/2.8.3/goby-win-x64-2.8.3-Community.zip",
+            "hash": "2d09e1d6b961e807fd418d307f746f68f0c4d8568950c1d1ad2beb8771c5dd45",
+            "extract_dir": "goby-win-x64-2.8.3"
         }
     },
     "bin": [
