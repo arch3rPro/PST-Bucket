@@ -5,8 +5,13 @@
     "license": "GPL-2.0",
     "suggest": "perl",
     "url": "https://github.com/sullo/nikto/archive/refs/heads/nikto-2.5.0.zip",
-    "hash": "813d35d5e0099353ade605e069de1db93b7f4751cdf8e8d1261ebfd3f8824d0c",
-    "pre_install": "Set-Content \"$dir\\nikto.bat\" '@echo off\n@pushd %~dp0\nD:\\Base\\apps\\git\\current\\usr\\bin\\perl.exe \"nikto.pl\" %* <nul \n@popd' -Encoding Ascii",
+    "hash": "25dd0e3a02bfdb9fd47db73718eaf9faff59ca4fefe122c6f466bb87c126b5d7",
+    "pre_install": [
+        "Set-Content \"$dir\\nikto.bat\" '@echo off",
+        "@pushd %~dp0",
+        "D:\\Base\\apps\\git\\current\\usr\\bin\\perl.exe \"nikto.pl\" %* <nul",
+        "@popd' -Encoding Ascii"
+    ],
     "post_install": [
         "Move-Item -Path \"$dir\\nikto-nikto-$version\\program\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\nikto-nikto-$version\" -Force -Recurse"
