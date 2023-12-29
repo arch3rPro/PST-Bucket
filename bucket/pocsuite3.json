@@ -1,11 +1,11 @@
 {
-    "version": "2.0.6",
+    "version": "2.0.7",
     "description": "pocsuite3 is an open-sourced remote vulnerability testing framework developed by the Knownsec 404 Team.(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/knownsec/pocsuite3/",
     "license": "GNU",
     "suggest": "python3.x",
-    "url": "https://github.com/knownsec/pocsuite3/archive/refs/tags/v2.0.6.zip",
-    "hash": "514838b4790f0d46b464bc2ee0851451cbfeb934ba8fdb68cfc8564a69b2804c",
+    "url": "https://github.com/knownsec/pocsuite3/archive/refs/tags/v2.0.7.zip",
+    "hash": "b7c0fa0a9e560383a53b589332ad3e1ef78f954132d5bce267fa2b656f502718",
     "post_install": [
         "Move-Item -Path \"$dir\\pocsuite3-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\pocsuite3-$version\" -Force -Recurse",
