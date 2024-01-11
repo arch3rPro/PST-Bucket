@@ -1,46 +1,46 @@
 {
-  "version": "12.3.0.230727",
-  "description": "更轻更简洁的快速启动工具，功能单一化，专注于文件的快速启动",
-  "homepage": "https://t.arae.cc/p/25804.html",
-  "license": "Freeware",
-  "architecture": {
-    "64bit": {
-      "url": "https://ghproxy.com/https://github.com/25H/MayeLite/releases/download/12.3.0.230727/MayeLite-12.3.0.230727.zip",
-      "extract_dir": "MayeLite-12.3.0.230727",
-      "hash": "b34bb91159227be6793cd795b944902b632c9cc46050b5241c16b289a89573fb"
-    }
-  },
-  "bin": [
-    [
-      "Maye Lite.exe",
-      "maye-lite"
-    ]
-  ],
-  "shortcuts": [
-    [
-      "Maye Lite.exe",
-      "Maye Lite"
-    ]
-  ],
-  "pre_install": [
-    "if (!(Test-Path \"$persist_dir\\cfg.json\")) { Set-Content -Encoding ASCII -Path \"$dir\\cfg.json\" -Value '{}' }",
-    "if (!(Test-Path \"$persist_dir\\JDB.json\")) { Set-Content -Encoding ASCII -Path \"$dir\\JDB.json\" -Value '{}' }"
-  ],
-  "persist": [
-    "cache",
-    "cfg.json",
-    "JDB.json"
-  ],
-  "notes": "The configuration file: $dir\\cfg.json",
-  "checkver": {
-    "github": "https://github.com/25H/MayeLite/"
-  },
-  "autoupdate": {
+    "version": "12.4.0.240110",
+    "description": "更轻更简洁的快速启动工具，功能单一化，专注于文件的快速启动",
+    "homepage": "https://t.arae.cc/p/25804.html",
+    "license": "Freeware",
     "architecture": {
-      "64bit": {
-        "url": "https://ghproxy.com/https://github.com/25H/MayeLite/releases/download/$version/MayeLite-$version.zip",
-        "extract_dir": "MayeLite-$version"
-      }
+        "64bit": {
+            "url": "https://ghproxy.com/https://github.com/25H/MayeLite/releases/download/12.4.0.240110/MayeLite-12.4.0.240110.zip",
+            "extract_dir": "MayeLite-12.4.0.240110",
+            "hash": "a40be76b158c5d0ecb02351e9ba2f8dbe70c40b35003e5dc7786b5c04c04b64d"
+        }
+    },
+    "bin": [
+        [
+            "Maye Lite.exe",
+            "maye-lite"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Maye Lite.exe",
+            "Maye Lite"
+        ]
+    ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\cfg.json\")) { Set-Content -Encoding ASCII -Path \"$dir\\cfg.json\" -Value '{}' }",
+        "if (!(Test-Path \"$persist_dir\\JDB.json\")) { Set-Content -Encoding ASCII -Path \"$dir\\JDB.json\" -Value '{}' }"
+    ],
+    "persist": [
+        "cache",
+        "cfg.json",
+        "JDB.json"
+    ],
+    "notes": "The configuration file: $dir\\cfg.json",
+    "checkver": {
+        "github": "https://github.com/25H/MayeLite/"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://ghproxy.com/https://github.com/25H/MayeLite/releases/download/$version/MayeLite-$version.zip",
+                "extract_dir": "MayeLite-$version"
+            }
+        }
     }
-  }
 }
