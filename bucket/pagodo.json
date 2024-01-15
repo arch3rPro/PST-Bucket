@@ -1,11 +1,11 @@
 {
-    "version": "2.5.0",
+    "version": "2.6.0",
     "description": "pagodo (Passive Google Dork) - Automate Google Hacking Database scraping and searching.(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/opsdisk/pagodo",
     "license": "GPL-3.0",
     "suggest": "python3.7",
-    "url": "https://github.com/opsdisk/pagodo/archive/refs/tags/v2.5.0.zip",
-    "hash": "1cd473af4f4010e3de9864fd38695823106b12d9e3ac52c6a7a83c21ed2c71f4",
+    "url": "https://github.com/opsdisk/pagodo/archive/refs/tags/v2.6.0.zip",
+    "hash": "c6759a492aca85fc8638898cd88ea7018349a389b752a611529daee21619925e",
     "pre_install": [
         "Set-Content \"$dir\\pagodo.bat\" '@pushd %~dp0",
         "python3 \"pagodo.py\" %*",
