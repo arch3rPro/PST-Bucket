@@ -13,7 +13,7 @@
             "hash": "b4e49423fb19d21041f308b0ba724b12b72981078b5957fa7f38a50ea369810e"
         }
     },
-    "extract_dir": "natpass_0.12.3",
+    "extract_dir": "natpass_0.13.0",
     "bin": [
         [
             "np-svr.exe",
