@@ -1,10 +1,10 @@
 {
     "homepage": "https://pixpinapp.com/",
     "description": "功能强大使用简单的截图/贴图工具-snipaste替代品，支持长截图.(Scoop bucket by arch3rpro)",
-    "version": "1.5.0.0",
+    "version": "1.7.5.0",
     "license": "Freeware",
-    "url": "https://download.pixpinapp.com/PixPin_1.5.0.0.zip",
-    "hash": "04165bd4169464229a2a61e66f8ab1015cf779b2107da4825079481f522456d5",
+    "url": "https://download.pixpinapp.com/PixPin_1.7.5.0.zip",
+    "hash": "c699a9fcda94016bfc4dab6b317eb0afaf4212e091fdb16d5bfbba69fa143961",
     "extract_dir": "PixPin",
     "shortcuts": [
         [
