@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "http://pan.assass1n.top/directlink/Share/SublimeText.zip",
-            "hash": "d3a2fa586c780b22953ce8f06bcd1c3b97264b2c1893761ebb0ee7e5128c5e59"
+            "url": "http://pan.assass1n.top/d/Share/Pentest-Tools/SublimeText.zip?sign=OVGlpvGR6HYr8iSAVsfYChTXNpXETkVBORYHFRtn1OY=:0",
+            "hash": "B767E75390FC060967EBB17552BEEADB1CF30C758BFD6E629EC91552BB156DD6"
         }
     },
     "bin": "subl.exe",
