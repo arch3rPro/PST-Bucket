@@ -7,8 +7,6 @@
         "url": "https://github.com/openwall/johnny/blob/master/LICENSE"
     },
     "url": "http://pan.assass1n.top/directlink/share/johnny.zip",
-    "hash": "4ff3693bffb3588f43c5f2176cb899093c6f34791463c00986042584045749bd",
-    "bin": [
-        "johnny.exe"
-    ]
+    "hash": "cebb3a8bb4ab861403bc506ebeda6c4e783803e9a42e3b988bfd8cf97ff758eb",
+    "bin": "johnny.exe"
 }
