@@ -5,12 +5,11 @@
     "notes": "https://github.com/arch3rPro/scoop-bucket/blob/main/bucket/searchdiggity.json",
     "license": "MIT",
     "url": "http://pan.assass1n.top/directlink/share/SearchDiggity.msi",
-    "hash": "74b2fb0d9222e3aec2d190a8d15f19738d8912fa810703ef93b7ba4e712a3b29",
+    "hash": "cebb3a8bb4ab861403bc506ebeda6c4e783803e9a42e3b988bfd8cf97ff758eb",
     "bin": [
         [
             "SearchDiggity.Client.exe",
             "SearchDiggity"
         ]
     ]
-
 }
