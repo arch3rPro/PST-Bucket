@@ -58,10 +58,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://publish.u-tools.cn/version2/uTools-$version.exe#/dl.7z"
+                "url": "https://open.u-tools.cn/download/uTools-$version.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://publish.u-tools.cn/version2/uTools-$version-ia32.exe#/dl.7z"
+                "url": "https://open.u-tools.cn/download/uTools-$version-ia32.exe#/dl.7z"
             }
         }
     }
