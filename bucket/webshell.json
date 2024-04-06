@@ -1,10 +1,10 @@
 {
-    "version": "2023-09-19T06.44.03",
+    "version": "2024-04-06T13.51.13",
     "description": "This is a webshell open source project.(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/tennc/webshell",
     "license": "MIT",
     "url": "https://github.com/tennc/webshell/archive/refs/heads/master.zip",
-    "hash": "4f529db7f8ebe6876499d70021174ed91966717dc42185590d07f03704e57655",
+    "hash": "2d7048fbabe147c7e2a1c5532f904907f6a3146cf06a8c2e45cd809048661989",
     "extract_dir": "webshell-master",
     "checkver": {
         "url": "https://api.github.com/repos/tennc/webshell/commits",
