@@ -7,8 +7,8 @@
         "启动teamserver需要安装WSL并启动wslpp自动设置端口映射",
         "自行安装时注意修改实际启动的目录"
     ],
-    "url": "http://pan.assass1n.top/directlink/Share/CobaltStrike4.9.zip",
-    "hash": "E268411FDBBDB5577D1296E75704F53FABCA1E970E479580C7598748FE657051",
+    "url": "http://pan.seclions.top/d/Share/Scoop-Bucket/CobaltStrike4.9.zip?sign=btTvIZaTg_liF8ijOj8pIb6f3iz-xjVnsBLsu2oUoAg=:0",
+    "hash": ["e6dbd4d51c8eb9b65ac1617b91bdab1b2a90116233fb3a5167500f54030457be"],
     "pre_install": [
         "$teamserver = {",
         "    $argString = $args -join ' '",
