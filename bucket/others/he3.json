@@ -1,0 +1,44 @@
+{
+  "version": "2.0.20",
+  "description": "A Free, Modern Toolbox, Built for Developers",
+  "homepage": "https://he3.app",
+  "license": "Unknown",
+  "architecture": {
+    "32bit": {
+      "url": "https://he3-1309519128.cos.accelerate.myqcloud.com/2.0.20/He3_windows_installer_ia32_2.0.20.exe#/dl.7z",
+      "hash": "9c9047d5dff536dff7f19b158be8a5a4e417853207db2a5a91100fd289cfa740",
+      "pre_install": [
+        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
+        "Remove-Item \"$dir\\`$*\" -Recurse"
+      ]
+    },
+    "64bit": {
+      "url": "https://he3-1309519128.cos.accelerate.myqcloud.com/2.0.20/He3_windows_installer_x64_2.0.20.exe#/dl.7z",
+      "hash": "d3147b9da0574d7a2496348ae51bcbccb361cbe17ede67fb1729c92af36fa3a3",
+      "pre_install": [
+        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+        "Remove-Item \"$dir\\`$*\" -Recurse"
+      ]
+    }
+  },
+  "shortcuts": [
+    [
+      "He3.exe",
+      "He3"
+    ]
+  ],
+  "checkver": {
+    "url": "https://he3-1309519128.cos.accelerate.myqcloud.com/latest/latest.yml",
+    "re": "version:\\s([\\d\\.]+)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "32bit": {
+        "url": "https://he3-1309519128.cos.accelerate.myqcloud.com/$version/He3_windows_installer_ia32_$version.exe#/dl.7z"
+      },
+      "64bit": {
+        "url": "https://he3-1309519128.cos.accelerate.myqcloud.com/$version/He3_windows_installer_x64_$version.exe#/dl.7z"
+      }
+    }
+  }
+}
