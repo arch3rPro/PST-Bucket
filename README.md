@@ -46,7 +46,7 @@ Scoop bucket **就是一个软件仓库**,本项目旨在服务于项目[Pentest
 4. 管理员执行安装脚本
 
    ```
-   .\install.ps1 -RunAsAdmin -ScoopDir 'D:\Base\' -ScoopGlobalDir 'D:\Global' -NoProxy
+   .\install.ps1 -RunAsAdmin -ScoopDir 'D:\Base' -ScoopGlobalDir 'D:\Global' -NoProxy
    ```
 
    其中`-RunAsAdmin`是使用管理员角色执行脚本，`-ScoopDir`指定scoop安装目录，软件默认安装在此。`-ScoopGlobalDir`指定全局程序安装到自定义目录。
