@@ -1,20 +1,20 @@
 {
-    "version": "2.4.0-beta.7",
+    "version": "2.4.0-beta.8",
     "description": "图片上传和管理工具 (Scoop bucket by arch3rpro)",
     "homepage": "https://picgo.github.io/PicGo-Doc/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Molunerfinn/PicGo/releases/download/v2.4.0-beta.7/PicGo-Setup-2.4.0-beta.7-x64.exe#/dl.7z",
-            "hash": "sha512:a4bb63b0dceb537b93e4509866e00bb32a31c029a0df8a116add1eff00d924829bd1918fcf3803949c35f7193c0acc8be786a032d07764d250d387d15a445c1c",
+            "url": "https://github.com/Molunerfinn/PicGo/releases/download/v2.4.0-beta.8/PicGo-Setup-2.4.0-beta.8-x64.exe#/dl.7z",
+            "hash": "sha512:37b04f9a11c9513d23d540c3b5a28aae623628ae2288e30ae59af7ff44e567b7b83619a43d081d1a0fc01ac509a33560313f106b6416649451114a9c79b5a637",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://github.com/Molunerfinn/PicGo/releases/download/v2.4.0-beta.7/PicGo-Setup-2.4.0-beta.7-ia32.exe#/dl.7z",
-            "hash": "sha512:b6f813448925bdbab92ccc812084ba2763b41a626925e0ee28a8cc5de26d569fadfa5f12dc3b0311b88293784c8b935f37bf88dde898aba8931dff8cc82aa1a1",
+            "url": "https://github.com/Molunerfinn/PicGo/releases/download/v2.4.0-beta.8/PicGo-Setup-2.4.0-beta.8-ia32.exe#/dl.7z",
+            "hash": "sha512:7b118f389a6c8414e4a058a7d92c146f7f403f3328f9809ce6f59b014ae07fc88447e0119082183afa685adeaae04d4188164fa81926d5ca0b9b5854a63d7f22",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"

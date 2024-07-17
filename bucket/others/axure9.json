@@ -1,0 +1,33 @@
+{
+    "homepage": "https://www.axure.com/",
+    "description": "Prototypes, Specifications, and Diagrams in One Tool",
+    "version": "9.0.0.3740",
+    "license": "Proprietary",
+    "url": "https://axure.cachefly.net/versions/9-0/AxureRP-Setup-3740.exe#/installer.exe",
+    "hash": "55bb3b4821abec905701ec9fb260bd344ab033a022d85a3a37084b1bfbca475e",
+    "depends": "dark",
+    "installer": {
+        "script": [
+            "Expand-DarkArchive \"$dir\\installer.exe\" \"$dir\\extracted\" -Removal",
+            "Get-ChildItem -Path \"$dir\\extracted\\AttachedContainer\" -Include \"A*.msi\" -Recurse | ForEach-Object {",
+            "    Expand-MsiArchive $_ \"$dir\\msi\"",
+            "}",
+            "Move-Item \"$dir\\msi\\Axure\\Axure*\\*\" \"$dir\" -Force",
+            "Remove-Item \"$dir\\extracted\", \"$dir\\msi\" -Force -Recurse",
+            "Copy-Item \"$dir\\AxureRP*.exe\" \"$dir\\AxureRP.exe\""
+        ]
+    },
+    "shortcuts": [
+        [
+            "AxureRP.exe",
+            "AxureRP"
+        ]
+    ],
+    "checkver": {
+        "url": "C:/Users/didong/work/cic/bucket/self-bucket/vsersion/axure",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://axure.cachefly.net/versions/$majorVersion-$minorVersion/AxureRP-Setup-$buildVersion.exe#/installer.exe"
+    }
+}
