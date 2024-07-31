@@ -1,11 +1,11 @@
 {
-    "version": "2024.7.23",
+    "version": "2024.7.31",
     "description": "Cross platform community web fingerprint identification tool(Scoop bucket by arch3rpro)",
     "homepage": "https://0x727.github.io/ObserverWard/",
     "license": "MIT",
     "notes": "config location: $env:AppData/observer_ward",
-    "url": "https://github.com/0x727/ObserverWard/releases/download/v2024.7.23/observer_ward_v2024.7.23_i686-pc-windows-msvc.zip",
-    "hash": "3ac180ace532eb30b5bab86b0743000653dbee087f6d05516dd964d1ef418547",
+    "url": "https://github.com/0x727/ObserverWard/releases/download/v2024.7.31/observer_ward_v2024.7.31_i686-pc-windows-msvc.zip",
+    "hash": "72cabfb31f20b5ea178cd454cbe1400cfd933d92fe67a871b5e2473ed717c240",
     "bin": "observer_ward.exe",
     "checkver": {
         "github": "https://github.com/0x727/ObserverWard"
