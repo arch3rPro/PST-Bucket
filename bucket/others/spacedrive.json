@@ -10,7 +10,7 @@
             "extract_dir": "PFiles/Spacedrive",
             "shortcuts": [
                 [
-                    "Spacedrive.exe",
+                    "sd-desktop.exe",
                     "Spacedrive"
                 ]
             ]
