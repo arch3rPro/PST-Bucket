@@ -21,6 +21,7 @@ Scoop bucket **就是一个软件仓库**,本项目旨在服务于项目[Pentest
 
 - **https://github.com/lzwme/scoop-proxy-cn**
 - **https://github.com/okibcn/ScoopMaster**
+- **https://github.com/whoopscs/scoop-security** 【项目直接clone过去，然后把作者改成自己？】
 
 
 ### scoop基础使用
