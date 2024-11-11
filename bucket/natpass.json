@@ -1,6 +1,6 @@
 {
     "version": "0.13.0",
-    "description": "🔥居家办公，远程开发神器(Scoop bucket by arch3rpro)",
+    "description": "(Scoop bucket by arch3rpro)-🔥居家办公，远程开发神器",
     "homepage": "https://github.com/lwch/natpass",
     "license": "MIT",
     "architecture": {
@@ -11,6 +11,11 @@
         "64bit": {
             "url": "https://github.com/lwch/natpass/releases/download/v0.13.0/natpass_0.13.0_windows_amd64.zip",
             "hash": "b4e49423fb19d21041f308b0ba724b12b72981078b5957fa7f38a50ea369810e"
+        },
+        
+        "arm64": {
+            "url": "https://github.com/lwch/natpass/releases/download/v0.13.0/natpass_0.13.0_windows_arm64.zip",
+            "hash": "2b6381c955fedac2f95bb6510dcfabc745d8f620d71ab64d85c0449126cb0b96"
         }
     },
     "extract_dir": "natpass_0.13.0",
@@ -32,6 +37,9 @@
             },
             "64bit": {
                 "url": "https://github.com/lwch/natpass/releases/download/v$version/natpass_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/lwch/natpass/releases/download/v$version/natpass_$version_windows_arm64.zip"
             }
         }
     }
