@@ -11,6 +11,10 @@
         "64bit": {
             "url": "https://github.com/projectdiscovery/naabu/releases/download/v2.3.2/naabu_2.3.2_windows_amd64.zip",
             "hash": "bde82b297e195fffa7f2fdba7eb48338fbca8795fe90569930e7efe9c51101f0"
+        },
+        "arm64": {
+            "url": "https://github.com/projectdiscovery/naabu/releases/download/v2.3.2/naabu_2.3.2_windows_arm64.zip",
+            "hash": "3bf9a02e8bccac077d9a7aeb0ac669fe31eb186f03cb8ab46aba33ea8174ffa6"
         }
     },
     "bin": "naabu.exe",
@@ -22,6 +26,9 @@
             },
             "64bit": {
                 "url": "https://github.com/projectdiscovery/naabu/releases/download/v$version/naabu_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/projectdiscovery/naabu/releases/download/v$version/naabu_$version_windows_arm64.zip"
             }
         }
     }
