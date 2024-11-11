@@ -10,7 +10,7 @@
         },
         "arm64": {
             "url": "https://github.com/hahwul/dalfox/releases/download/v2.9.3/dalfox_2.9.3_windows_arm64.tar.gz",
-            "hash": "7a80f871b516b52abb1711b5ab3f73ba48f80a77f3ebcab9b8beef591495c711"
+            "hash": "cb4adc61e2bb1046285f96949bb9ae44dc8318a3ea76cdda452d9d1b654bf07b"
         }
     },
     "bin": "dalfox.exe",
