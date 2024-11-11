@@ -23,6 +23,16 @@
                     "kscan"
                 ]
             ]
+        },
+        "arm64": {
+            "url": "https://github.com/lcvvvv/kscan/releases/download/v1.85/kscan_windows_arm64.zip",
+            "hash": "f76ecffde10bc4db897277e2f24fa2d0a8a8c73ffecc58f603e50b11233ae733",
+            "bin": [
+                [
+                    "kscan_windows_arm64.exe",
+                    "kscan"
+                ]
+            ]
         }
     },
     "checkver": "github",
@@ -33,6 +43,9 @@
             },
             "64bit": {
                 "url": "https://github.com/lcvvvv/kscan/releases/download/v$version/kscan_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/lcvvvv/kscan/releases/download/v$version/kscan_windows_arm64.zip"
             }
         }
     }
