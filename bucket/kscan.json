@@ -26,7 +26,7 @@
         },
         "arm64": {
             "url": "https://github.com/lcvvvv/kscan/releases/download/v1.85/kscan_windows_arm64.zip",
-            "hash": "f76ecffde10bc4db897277e2f24fa2d0a8a8c73ffecc58f603e50b11233ae733",
+            "hash": "42bc2a639b998c72309151242052c501b487a0a75840a2f9e345f0e0542e0960",
             "bin": [
                 [
                     "kscan_windows_arm64.exe",
