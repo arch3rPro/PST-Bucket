@@ -1,10 +1,10 @@
 {
-    "version": "1.0.1-a.18",
+    "version": "1.0.1-a.19",
     "description": "A open-source browser based on the Firefox engine",
     "homepage": "https://www.zen-browser.app/",
     "license": "MPL-2.0",
-    "url": "https://github.com/zen-browser/desktop/releases/download/1.0.1-a.18/zen.win-specific.zip",
-    "hash": "fea69b478538926b79895a017ea6d79c7c337c7587e89fca8f2558b7e5a0eeae",
+    "url": "https://github.com/zen-browser/desktop/releases/download/1.0.1-a.19/zen.win-specific.zip",
+    "hash": "bc7ca16eb01093f4b2cf775bbe9225b759de6fb88b416fc552c6959d01a863fa",
     "extract_dir": "zen.win-specific\\zen",
     "bin": [
         [
