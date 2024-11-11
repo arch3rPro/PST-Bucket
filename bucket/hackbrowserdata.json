@@ -12,7 +12,7 @@
             "hash": "57d611717398735e11d600d1b1199a73c3fb349725e699ac97aba1ec47a24fab",
             "bin": [
                 [
-                    "hack-browser-data-windows-64bit.exe",
+                    "hack-browser-data.exe",
                     "hackbrowserdata"
                 ]
             ]
@@ -22,7 +22,7 @@
             "hash": "e97d6a79a172c3f837c75aa2615dea3ea556aebfdc7ddd5fe28edf920472a829",
             "bin": [
                 [
-                    "hack-browser-data-windows-32bit.exe",
+                    "hack-browser-data.exe",
                     "hackbrowserdata"
                 ]
             ]
