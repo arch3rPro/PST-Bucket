@@ -18,18 +18,18 @@
         "https://github.com/ph4ntonn/Stowaway/releases/download/v2.2/windows_x86_agent.exe"
     ],
     "hash": [
-        "90e84c4528f0b9c773ecefb8ae09e8fe9cda9e01a20247ed50aa253ce6f7071d",
-        "d8e272f50e1d699870a74f8cbed06a9371212c208bcfa8b3c992a4744e84ed87",
-        "60b669ebdac64582d87f1a681dbe7bc51fd2efd8b4dd805fcb1bed8829899074",
-        "a134f4f4a8d5efd1529dfe83ba1084083da36fd3e78963e1d5d127f7649acb24",
-        "c98f79f9fed4564d6f11e17766e958866c8cd52d114269e6ac15ee999f736b03",
-        "d19ae5afb12e96d2af465759b8369db0c8d4a30a0103e8d1b5a9439775de5a0c",
-        "7fc82b5f557b65c03032f7d8f602307dd96fa340ebc64c062459b1b0a4ea134f",
-        "203a56be57711a3b5b6751dc9e056888090d0e1b48e34f7f2b117b7606844b56",
-        "26583956c65aad7b4ec55deeb3e0811ee6c96dfca78d4b70c4ad84805e316a3d",
-        "a2c87f6f98279aefcd9c88d3640057c0b40deaac07b9c4f948de660794d4fe7d",
-        "efe712b152e0edd0e11b98f1a7687825959f682d6d9fc1a9765dde6109b7e26d",
-        "710d8bc1dba4a8e75c90ea989bef387d1aae97087d17b558f9a1fa42b70fa52e"
+        "cc9077776bf533966d5a1b3520902f5ba62831ff2f4f5b63b19fae12d8ee8d12",
+        "7c593ca40725765a0747cc3100b43a29b88ad1708ef77e915ab02686c0153001",
+        "90949fe21ae9941d5c5c52ee67b95b41dc0a398d07587e54951abbdb9532ad78",
+        "35b6c238ca23c073c2ef709242ab59daa010e86bb722dcbb1c9a3c0f4b65bbdf",
+        "3567ecf3e17e70af7321c5e736faeec712fcd5bea37a7469e09ad9c54a56e833",
+        "b58873d4c0fc688aa7bb8fcc58abed0f37bcba2bc86c3a8662a766d43bb31279",
+        "74441bd40c201abc14e7faa8bebd75f8fea5d800141e6a123f94e9bbda4c9fd9",
+        "ee16878bb79bef671eb35e8a8d4b809995199fedb7e43793ad6c8920b515047b",
+        "75f485edfe4d2587a0cd8d839b9b237a0f3914a2391dc24b97eb7634c9fb66b0",
+        "ed32d8d7e0f1172a89276086a9e030a763aad49685720a6455111edd2ec2556b",
+        "2fb44202d64112f23118be380bcc8efa7745684ab0aca2dcddc4895793e5e440",
+        "3336c07c9bc89136b435bea5f52fac9f6cda5cd93b10af40deec3d68ce7d2c8b"
     ],
     "bin": [
         [
@@ -45,7 +45,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_agent.exe"
+                "url": "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x64_agent.exe"
             }
         }
     }
