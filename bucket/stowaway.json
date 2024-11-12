@@ -43,10 +43,19 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x64_agent.exe"
-            }
-        }
+        "url": [
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x64_admin.exe",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x64_agent.exe",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/arm_eabi5_agent",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/linux_x64_admin",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/linux_x64_agent",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/linux_x86_admin",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/linux_x86_agent",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/macos_x64_admin",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/macos_x64_agent",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/mipsel_agent",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_admin.exe",
+            "https://github.com/ph4ntonn/Stowaway/releases/download/$version/windows_x86_agent.exe"
+        ]
     }
 }
