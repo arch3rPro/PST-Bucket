@@ -6,7 +6,7 @@
     "suggest": "python3",
     "url": "https://github.com/wapiti-scanner/wapiti/releases/download/3.2.0/wapiti3-3.2.0.tar.gz",
     "hash": "5121523ada959847569de49c182c81c6a349f13eb4d4ecabb933ad380f89f65a",
-    "extract_dir": "wapiti3-3.1.7",
+    "extract_dir": "wapiti3-{version}",
     "post_install": "pip3 install Wapiti3",
     "checkver": "github",
     "autoupdate": {
