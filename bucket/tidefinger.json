@@ -1,14 +1,23 @@
 {
-    "version": "1.1.0",
-    "description": "TideFinger——指纹识别小工具，汲取整合了多个web指纹库，结合了多种指纹检测方法，让指纹检测更快捷、准确(Scoop bucket by arch3rpro)",
-    "homepage": "https://github.com/TideSec/TideFinger",
-    "notes": "官网不提供下载，此版本为TideSec微信公众号获取的",
+    "version": "2.3",
+    "description": "(Scoop bucket by arch3rpro) - TideFinger——指纹识别小工具，汲取整合了多个web指纹库，结合了多种指纹检测方法，让指纹检测更快捷、准确",
+    "homepage": "https://github.com/TideSec/TideFinger_Go",
+    "notes": "原版官网不提供下载，此版本为TideSec官方发布的Go语言版本",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "http://pan.assass1n.top/directlink/share/TideFinger.exe",
-            "hash": "cebb3a8bb4ab861403bc506ebeda6c4e783803e9a42e3b988bfd8cf97ff758eb"
+            "url": "https://github.com/TideSec/TideFinger_Go/releases/download/v2.3/TideFinger_Win.exe",
+            "hash": "a14de096a0f17606411fafcfa6fc73c4d633e527aa36c65a8b9e6bbb301fac1a"
         }
     },
-    "bin": "TideFinger.exe"
+    "bin": "TideFinger.exe",
+    "installer": {
+        "script": [
+            "Rename-Item \"$dir\\TideFinger_Win.exe\" \"TideFinger.exe\""
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/TideSec/TideFinger_Go/releases/download/v$version/TideFinger_Win.exe"
+    }
 }
