@@ -1,12 +1,12 @@
 {
     "version": "2020",
-    "description": "一个基于VB.NET + IOCP模型开发的高效端口扫描工具，支持IP区间合并，端口区间合并，端口指纹深度探测(Scoop bucket by arch3rpro)",
+    "description": "(Scoop bucket by arch3rpro)一个基于VB.NET + IOCP模型开发的高效端口扫描工具，支持IP区间合并，端口区间合并，端口指纹深度探测",
     "homepage": "https://github.com/foryujian/yujianportscan",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "http://pan.assass1n.top/directlink/Share/yujianportscan2020.zip",
-            "hash": "804fce566656c90e033a4bb27d02ac3bf25f115a1571b176dbe76a298da1ee4e"
+            "url": "https://raw.githubusercontent.com/arch3rPro/PST-Files/refs/heads/main/yujianportscan2020.zip",
+            "hash": "9792ea6139d49942a2f078f939704f0e7d9fd1b34cdfbd0834a83df2cfcb3789"
         }
     },
     "pre_install": [
