@@ -5,7 +5,7 @@
     "license": "GPL-2.0",
     "suggest": "perl",
     "url": "https://github.com/sullo/nikto/archive/refs/heads/nikto-2.5.0.zip",
-    "hash": "25dd0e3a02bfdb9fd47db73718eaf9faff59ca4fefe122c6f466bb87c126b5d7",
+    "hash": "3508e40d497453f442b4c4ce5990891d916504e48fddbc9ef3f9960559418e79",
     "pre_install": [
         "Set-Content \"$dir\\nikto.bat\" '@echo off",
         "@pushd %~dp0",
