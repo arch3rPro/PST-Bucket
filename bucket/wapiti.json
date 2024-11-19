@@ -1,14 +1,12 @@
 {
-    "version": "3.2.0",
+    "version": "3.2.1",
     "description": "Web vulnerability scanner written in Python3.(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/wapiti-scanner/wapiti",
     "license": "GPL-2.0",
     "suggest": "python3",
-    "url": "https://github.com/wapiti-scanner/wapiti/releases/download/3.2.0/wapiti3-3.2.0.tar.gz",
-    "hash": "5121523ada959847569de49c182c81c6a349f13eb4d4ecabb933ad380f89f65a",
-    "pre_install": [
-        "if (!(Test-Path \"$dir\\wapiti3-$version\")) { Rename-Item -Path (Get-ChildItem \"$dir\" -Directory | Select-Object -First 1) -NewName \"wapiti3-$version\" }"
-    ],
+    "url": "https://github.com/wapiti-scanner/wapiti/releases/download/3.2.1/wapiti3-3.2.1.tar.gz",
+    "hash": "0b2608ad18c675e6681238efecc9d5ea3b548d9fa5d3fffd6f21fef24c3ac79e",
+    "pre_install": "if (!(Test-Path \"$dir\\wapiti3-$version\")) { Rename-Item -Path (Get-ChildItem \"$dir\" -Directory | Select-Object -First 1) -NewName \"wapiti3-$version\" }",
     "post_install": "pip3 install Wapiti3",
     "checkver": "github",
     "autoupdate": {
