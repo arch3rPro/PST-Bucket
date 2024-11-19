@@ -1,11 +1,12 @@
 {
-    "version": "1.2.4",
-    "description": "GooFuzz is a tool to perform fuzzing with an OSINT approach.(Scoop bucket by arch3rpro)",
+    "version": "1.2.5",
+    "description": "GooFuzz is a tool to perform fuzzing with an OSINT approach.(Scoop bucket  by arch3rpro)",
     "homepage": "https://github.com/m3n0sd0n4ld/GooFuzz",
     "license": "GPL-3.0",
+    "notes": "Scoop bucket Exclusively produced by arch3rpro(https://github.com/arch3rPro/PST-Bucket)",
     "suggest": "Git Bash",
-    "url": "https://github.com/m3n0sd0n4ld/GooFuzz/releases/download/1.2.4/GooFuzz_release_1.2.4.zip",
-    "hash": "f643d33c513f4ad91e2eec77e244413a00be8e2607dac6fca95819f25cc7524d",
+    "url": "https://github.com/m3n0sd0n4ld/GooFuzz/releases/download/1.2.5/GooFuzz.v.1.2.5.zip",
+    "hash": "b5d53c1d5fa51029d2c0afad48093955953d3852e3e9f7b938455fe52d420419",
     "pre_install": [
         "Set-Content \"$dir\\GooFuzz.bat\" '@echo off",
         "@pushd %~dp0",
@@ -13,12 +14,12 @@
         "@popd' -Encoding Ascii"
     ],
     "post_install": [
-        "Move-Item -Path \"$dir\\GooFuzz_release_$version\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\GooFuzz_release_$version\" -Force -Recurse"
+        "Move-Item -Path \"$dir\\GooFuzz v.$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\GooFuzz v.$version\" -Force -Recurse"
     ],
     "bin": "GooFuzz.bat",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/m3n0sd0n4ld/GooFuzz/releases/download/$version/GooFuzz_release_$version.zip"
+        "url": "https://github.com/m3n0sd0n4ld/GooFuzz/releases/download/$version/GooFuzz.v.$version.zip"
     }
 }
