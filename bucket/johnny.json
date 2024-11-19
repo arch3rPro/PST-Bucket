@@ -6,7 +6,7 @@
         "identifier": "GPL-2.0-or-later",
         "url": "https://github.com/openwall/johnny/blob/master/LICENSE"
     },
-    "url": "http://pan.assass1n.top/directlink/share/johnny.zip",
+    "url": "https://openwall.info/wiki/_media/john/johnny/johnny_2.2_win.zip",
     "hash": "cebb3a8bb4ab861403bc506ebeda6c4e783803e9a42e3b988bfd8cf97ff758eb",
     "bin": "johnny.exe"
 }
