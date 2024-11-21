@@ -1,8 +1,9 @@
 {
     "version": "2.9.10",
-    "description": "新一代网络安全技术，通过为目标建立完整的资产数据库，实现快速的安全应急(Scoop bucket by arch3rpro)",
+    "description": "Goby-资产测绘及实战化漏洞扫描工具(Scoop bucket by arch3rpro)",
     "homepage": "https://gobysec.net/",
     "license": "https://gobysec.net/faq",
+    "notes": "此版本内置自动安装Goby官方仓库内的27个插件，如需使用其他插件请在应用商店下载，安装脚本由arch3rpro编写",
     "architecture": {
         "64bit": {
             "url": "https://goby-storage-public.oss-cn-beijing.aliyuncs.com/2.9.10/goby-win-x64-2.9.10-Community.zip",
@@ -38,5 +39,15 @@
                 "extract_dir": "goby-win-x64-$version"
             }
         }
-    }
+    },
+    "post_install": [
+        "Write-Host '正在下载插件...'",
+        "Invoke-WebRequest -Uri 'https://github.com/gobysec/GobyExtension/archive/refs/heads/master.zip' -OutFile 'master.zip'",
+        "Write-Host '解压插件...'",
+        "Expand-Archive -Path 'master.zip' -DestinationPath '.'",
+        "Move-Item -Path 'GobyExtension-master/samples/*' -Destination \"$dir\\extensions\" -Force",
+        "Write-Host '清理临时文件...'",
+        "Remove-Item -Path 'master.zip', 'GobyExtension-master' -Recurse -Force",
+        "Write-Host '插件安装完成！'"
+    ]
 }
