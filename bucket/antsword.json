@@ -3,7 +3,7 @@
     "description": "中国蚁剑是一款跨平台的开源网站管理工具.(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/AntSwordProject/AntSword-Loader",
     "license": "MIT",
-    "notes":"安装完成后，需要打开antsword进行初始化，最新源码已经下载到./antSword目录下，选择该目录后重启即可",
+    "notes": "该版本自动初始化AntSword源码，并自动下载安装插件，脚本由arch3rpro独家编写",
     "architecture": {
         "64bit": {
             "url": "https://github.com/AntSwordProject/AntSword-Loader/releases/download/4.0.3/AntSword-Loader-v4.0.3-win32-x64.zip",
@@ -21,7 +21,21 @@
         "curl.exe -o \"$dir\\antSword.zip\" -L \"https://github.com/AntSwordProject/antSword/archive/refs/heads/master.zip\"",
         "Expand-7zipArchive \"$dir\\antSword.zip\" \"$dir\"",
         "Remove-Item \"$dir\\antSword.zip\" -Force -Recurse",
-        "Move-Item \"$dir\\antSword-master\" \"$dir\\antSword\""
+        "Move-Item \"$dir\\antSword-master\" \"$dir\\antSword\"",
+        "",
+        "Write-Host '初始化 AntSword 工作目录...'",
+        "$workdir = (Resolve-Path \"$dir\\antSword\").Path",
+        "$configFile = \"$dir\\resources\\.antSword.json\"",
+        "New-Item -ItemType File -Path $configFile -Force | Out-Null",
+        "$jsonContent = @{ workdir = $workdir } | ConvertTo-Json -Depth 1",
+        "Set-Content -Path $configFile -Value $jsonContent -Force",
+        "Write-Host 'AntSword 已初始化，工作目录为: ' $workdir",
+        "",
+        "Write-Host '下载并安装插件...'",
+        "curl.exe -o \"$dir\\antSword-Plugins.zip\" -L \"https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/antSword-Plugins.zip\"",
+        "Expand-7zipArchive \"$dir\\antSword-Plugins.zip\" \"$dir\\antSword\\antData\\plugins\"",
+        "Remove-Item \"$dir\\antSword-Plugins.zip\" -Force -Recurse",
+        "Write-Host '插件已安装至: ' \"$dir\\antSword\\antData\\plugins\""
     ],
     "shortcuts": [
         [
