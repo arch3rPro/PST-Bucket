@@ -24,4 +24,5 @@
                 "url": "https://github.com/dstotijn/hetty/releases/download/$version/hetty_$version_Windows_arm64.zip"
             }
         }
+    }
 }
