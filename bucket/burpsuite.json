@@ -1,18 +1,18 @@
 {
-    "version": "2023.9.1",
+    "version": "2024.10",
     "description": "The leading toolkit for web security testing.(Scoop bucket by arch3rpro)",
     "homepage": "https://portswigger.net/",
     "license": "Proprietary",
     "notes": [
-        "PST专用版，删除内嵌Linux|Mac浏览器，删除自带Jre，请修改bat启动脚本中的Java Home地址",
-        "需要自行注册,方法请参考文件-说明.txt"
+        "来源吾爱破解，PST专用版删除了内嵌Linux|Mac浏览器",
+        "需要自行注册,方法请参考文件-使用说明.txt"
     ],
     "suggest": "java/liberica17-jre",
-    "url": "http://pan.assass1n.top/directlink/Share/BurpSuite%20V2023.9.1.zip",
-    "hash": "cebb3a8bb4ab861403bc506ebeda6c4e783803e9a42e3b988bfd8cf97ff758eb",
+    "url": "https://sourceforge.net/projects/pst-files/files/Burp_V2024.10.zip",
+    "hash": "8a4a7e3c902427c2c6932fbe0f551e869319ebbf360184e5ea55187fa5b5352e",
     "bin": [
         [
-            "CN-JRE Burp.bat",
+            "CN_Burp.bat",
             "Burpsuite"
         ]
     ]
