@@ -15,14 +15,9 @@ Scoop bucket **就是一个软件仓库**,本项目旨在服务于项目[Pentest
 
 
 
-#### 黑名单：
+#### 版权相关：
 
-**个人仓库，未经授权，禁止其他桶合并,以下为私自合并的黑名单**
-
-- **https://github.com/lzwme/scoop-proxy-cn**
-- **https://github.com/okibcn/ScoopMaster**
-- **https://github.com/whoopscs/scoop-security**
-
+**个人仓库，未经授权，禁止其他桶合并；如需使用个别工具配置文件，请保留原作者信息，谢谢**
 
 ### scoop基础使用
 
