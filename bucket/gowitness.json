@@ -5,11 +5,11 @@
     "license": "GPL-3.0 license",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sensepost/gowitness/releases/download/3.0.5/gowitness-3.0.5-windows-amd64.exe",
+            "url": "https://github.com/sensepost/gowitness/releases/download/3.0.5/gowitness-3.0.5-windows-amd64.exe#/gowitness.exe",
             "hash": "45284210727F2D22774E07313DB974A0FE9E9108687A7C091218E7E98B041BEA"
         },
         "arm64": {
-            "url": "https://github.com/sensepost/gowitness/releases/download/3.0.5/gowitness-3.0.5-windows-arm64.exe",
+            "url": "https://github.com/sensepost/gowitness/releases/download/3.0.5/gowitness-3.0.5-windows-arm64.exe#/gowitness.exe",
             "hash": "5F1A8899E93A5DC47E658AFC06D7C196748A82877592A2F191FBD942154A9012"
         }
     },
