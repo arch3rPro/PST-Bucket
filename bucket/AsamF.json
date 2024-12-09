@@ -1,0 +1,40 @@
+{
+    "version": "0.2.5",
+    "description": "(Scoop bucket by arch3rpro)一站式企业信息资产收集、网络资产测绘工具",
+    "homepage": "https://github.com/Kento-Sec/AsamF",
+    "license": " GPL-3.0 license",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/Kento-Sec/AsamF/releases/download/v0.2.5/AsamF_windows_386.exe#/AsamF.exe",
+            "hash": "D86A072FB4A6EF88271309A0CAD0B8A49BE3EFE25E7E95952906A51CC818E96E"
+        },
+        "64bit": {
+            "url": "https://github.com/Kento-Sec/AsamF/releases/download/v0.2.5/AsamF_windows_amd64.exe#/AsamF.exe",
+            "hash": "6561C38D3FB692AFF17E80B037A2F7F17413EAA62DCEB2DBAB051DE06ADDF540"
+        },
+        "arm64": {
+            "url": "https://github.com/Kento-Sec/AsamF/releases/download/v0.2.5/AsamF_windows_arm64.exe#/AsamF.exe",
+            "hash": "2B993761B6268D12BE68C0D503447D9720EBF366E31DAAE389FA06EE73BFFA2A"
+        }
+    },
+    "bin": [
+        [
+            "AsamF.exe",
+            "AsamF"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/Kento-Sec/AsamF/releases/download/v$version/AsamF_windows_386.exe#/AsamF.exe"
+            },
+            "64bit": {
+                "url": "https://github.com/Kento-Sec/AsamF/releases/download/v$version/AsamF_windows_amd64.exe#/AsamF.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/Kento-Sec/AsamF/releases/download/v$version/AsamF_windows_arm64.exe#/AsamF.exe"
+            }
+        }
+    }
+}
