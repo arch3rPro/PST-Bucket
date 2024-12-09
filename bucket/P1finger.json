@@ -1,0 +1,30 @@
+{
+    "version": "0.0.3",
+    "description": "(Scoop bucket by arch3rpro) P1finger - 红队行动下的重点资产指纹识别工具",
+    "homepage": "https://github.com/P001water/P1finger",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/P001water/P1finger/releases/download/P1finger_0.0.3/P1finger64.exe#/P1finger.exe",
+            "hash": "25411f38add0bf7caa07376084ce5abdbaf4ab1ad76ee485b59387e0db46a32b"
+        },
+        "32bit": {
+            "url": "https://github.com/P001water/P1finger/releases/download/P1finger_0.0.3/P1finger86.exe#/P1finger.exe",
+            "hash": "FD9D9B98D56F0A52D4A426932610B86F1CF095934A817EEDBB19C8DAFE70097F"
+        }
+    },
+    "bin": "P1finger.exe",
+    "checkver": {
+        "github": "https://github.com/P001water/P1finger"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/P001water/P1finger/releases/download/P1finger_$version/P1finger64.exe#/P1finger.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/P001water/P1finger/releases/download/P1finger_$version/P1finger86.exe#/P1finger.exe"
+            }
+        }
+    }
+}
