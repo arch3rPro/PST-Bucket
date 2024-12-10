@@ -1,0 +1,37 @@
+{
+    "version": "1.1.6",
+    "description": "(Scoop bucket by arch3rpro) Gospider - Fast web spider written in Go",
+    "homepage": "https://github.com/jaeles-project/gospider",
+    "license": "MIT license",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/jaeles-project/gospider/releases/download/v1.1.6/gospider_v1.1.6_windows_i386.zip",
+            "hash": "78A527D5C36A52552CE279EBF763F7049F5047A26F4EE17FC1F7D1B37216A901",
+            "extract_dir": "gospider_v1.1.6_windows_i386"
+        },
+        "64bit": {
+            "url": "https://github.com/jaeles-project/gospider/releases/download/v1.1.6/gospider_v1.1.6_windows_x86_64.zip",
+            "hash": "71D1C81C42EC385DDE9A6FBFF9A6419D4568874E495E8C51618E39E5DAB2848C",
+            "extract_dir": "gospider_v1.1.6_windows_x86_64"
+        }
+    },
+    "bin": [
+        [
+            "gospider.exe",
+            "gospider"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/jaeles-project/gospider/releases/download/v$version/gospider_v$version_windows_i386.zip",
+                "extract_dir": "gospider_v$version_windows_i386"
+            },
+            "64bit": {
+                "url": "https://github.com/jaeles-project/gospider/releases/download/v$version/gospider_v$version_windows_x86_64.zip",
+                "extract_dir": "gospider_v$version_windows_x86_64"
+            }
+        }
+    }
+}
