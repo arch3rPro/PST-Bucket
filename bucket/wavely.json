@@ -6,10 +6,9 @@
     "license": "Unkown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/perlh/Wavely/releases/download/1.5.2/Wavely_windows_amd64_1.5.2.exe",
-            "hash": "",
+            "url": "https://github.com/perlh/Wavely/releases/download/1.5.2/Wavely_windows_amd64_1.5.2.exe#/wavely.exe",
+            "hash": "a8c9cca2812b630a7dbbc787253338d4ef0c73959ddb9240b0fbdaa5b2f4daef",
             "pre_install": [
-                "Rename-Item \"$dir\\Wavely_windows_amd64_1.5.2.exe\" 'wavely.exe'",
                 "New-Item -ItemType Directory -Force -Path \"$dir\\.wavely\\templates\"",
                 "git clone https://github.com/ExpLangcn/NucleiTP.git \"$dir\\.wavely\\templates\\NucleiTP\""
             ]
