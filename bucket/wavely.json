@@ -1,0 +1,30 @@
+{
+    "version": "1.5.2",
+    "description": "(Scoop bucket by arch3rpro) Wavely - 一个好用的nuclei GUI POC管理工具.",
+    "homepage": "https://github.com/perlh/Wavely",
+    "notes": "此配置由arch3rPro独家编写，安装时集成了NucleiTP项目，自动整合Nuclei的漏洞POC ",
+    "license": "Unkown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/perlh/Wavely/releases/download/1.5.2/Wavely_windows_amd64_1.5.2.exe",
+            "hash": "",
+            "pre_install": [
+                "Rename-Item \"$dir\\Wavely_windows_amd64_1.5.2.exe\" 'wavely.exe'",
+                "New-Item -ItemType Directory -Force -Path \"$dir\\.wavely\\templates\"",
+                "git clone https://github.com/ExpLangcn/NucleiTP.git \"$dir\\.wavely\\templates\\NucleiTP\""
+            ]
+        }
+    },
+    "bin": "wavely.exe",
+    "checkver": {
+        "url": "https://github.com/perlh/Wavely/releases",
+        "regex": "releases/download/([\\d.]+)/Wavely_windows_amd64_[\\d.]+\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/perlh/Wavely/releases/download/$version/Wavely_windows_amd64_$version.exe"
+            }
+        }
+    }
+}
