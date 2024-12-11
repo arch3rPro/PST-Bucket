@@ -1,0 +1,33 @@
+{
+    "version": "2.26.5",
+    "description": "(Scoop bucket by arch3rpro) oFx是一个应用于web安全领域的漏洞批量扫描框架",
+    "homepage": "https://github.com/bigblackhat/oFx",
+    "license": "GPL-3.0 license",
+    "suggest": "python3",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/bigblackhat/oFx/archive/refs/tags/2.26.5.zip",
+            "hash": "11ceccbcf22adfd353db0186bb6bba7bf8b542a0bc77e4fd17ad18ce6c1c667e"
+        }
+    },
+    "pre_install": [
+        "Set-Content \"$dir\\oFx.bat\" '@pushd %~dp0\npython3 \"ofx.py\" %*\n@popd' -Encoding Ascii"
+    ],
+    "post_install": [
+        "if (Test-Path \"$dir\\ofx-$version\") {",
+        "    Move-Item -Path \"$dir\\ofx-$version\\*\" -Destination \"$dir\\\" -Force",
+        "    Remove-Item \"$dir\\ofx-$version\" -Force -Recurse",
+        "}",
+        "if (Test-Path \"$dir\\requirements.txt\") {",
+        "    pip3 install -r \"$dir\\requirements.txt\"",
+        "}"
+    ],
+    "bin": "oFx.bat",
+    "checkver": {
+        "url": "https://github.com/bigblackhat/oFx/releases",
+        "regex": "tags/([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/bigblackhat/oFx/archive/refs/tags/$version.zip"
+    }
+}
