@@ -10,7 +10,8 @@
             "hash": "a8c9cca2812b630a7dbbc787253338d4ef0c73959ddb9240b0fbdaa5b2f4daef",
             "pre_install": [
                 "New-Item -ItemType Directory -Force -Path \"$dir\\.wavely\\templates\"",
-                "git clone https://github.com/ExpLangcn/NucleiTP.git \"$dir\\.wavely\\templates\\NucleiTP\""
+                "git clone https://github.com/ExpLangcn/NucleiTP.git \"$dir\\.wavely\\templates\\NucleiTP\"",
+                "git clone https://github.com/projectdiscovery/nuclei-templates \"$dir\\.wavely\\templates\\nuclei-templates\""
             ]
         }
     },
@@ -22,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/perlh/Wavely/releases/download/$version/Wavely_windows_amd64_$version.exe"
+                "url": "https://github.com/perlh/Wavely/releases/download/$version/Wavely_windows_amd64_$version.exe#/wavely.exe"
             }
         }
     }
