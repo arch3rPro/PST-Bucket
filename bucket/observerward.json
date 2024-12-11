@@ -1,16 +1,16 @@
 {
     "version": "2024.11.5",
-    "description": "Cross platform community web fingerprint identification tool(Scoop bucket by arch3rpro)",
-    "homepage": "https://0x727.github.io/ObserverWard/",
-    "license": "MIT",
+    "description": "(Scoop bucket by arch3rpro) 侦查守卫(observer_ward)Web应用和服务指纹识别工具",
+    "homepage": "https://github.com/emo-crab/observer_ward",
+    "license": "GPL-3.0 license",
     "notes": "config location: $env:AppData/observer_ward",
-    "url": "https://github.com/0x727/ObserverWard/releases/download/v2024.11.5/observer_ward_v2024.11.5_i686-pc-windows-msvc.zip",
+    "url": "https://github.com/emo-crab/observer_ward/releases/download/v2024.11.5/observer_ward_v2024.11.5_i686-pc-windows-msvc.zip",
     "hash": "1a9decb8dba6627f933da5f51577c36c6bee894a3580be9c1259908a710f5730",
     "bin": "observer_ward.exe",
     "checkver": {
-        "github": "https://github.com/0x727/ObserverWard"
+        "github": "https://github.com/emo-crab/observer_ward"
     },
     "autoupdate": {
-        "url": "https://github.com/0x727/ObserverWard/releases/download/v$version/observer_ward_v$version_i686-pc-windows-msvc.zip"
+        "url": "https://github.com/emo-crab/observer_ward/releases/download/v$version/observer_ward_v$version_i686-pc-windows-msvc.zip"
     }
 }
