@@ -1,0 +1,28 @@
+{
+    "version": "2.0.1",
+    "description": "(Scoop bucket by arch3rpro) dddd是一款使用简单的批量信息收集,供应链漏洞探测工具",
+    "homepage": "https://github.com/SleepingBag945/dddd",
+    "license": " MIT license",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/SleepingBag945/dddd/releases/download/v2.0.1/dddd.exe",
+            "hash": "d1d68a000d1893c1db06426670d833030fd14509fb5898a9edbdcd2af1ac6fe4"
+        },
+        "64bit": {
+            "url": "https://github.com/SleepingBag945/dddd/releases/download/v2.0.1/dddd64.exe#/dddd.exe",
+            "hash": "343105919aa6df8a75ecb8b06b74f23a7d3e221fca56c67b728c50ea141314bc"
+        }
+    },
+    "bin": "dddd.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/SleepingBag945/dddd/releases/download/v$version/dddd.exe"
+            },
+            "64bit": {
+                "url": "https://github.com/SleepingBag945/dddd/releases/download/v$version/dddd64.exe#/dddd.exe"
+            }
+        }
+    }
+}
