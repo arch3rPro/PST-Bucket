@@ -1,0 +1,23 @@
+{
+    "version": "2.5.1",
+    "description": "(Scoop bucket by arch3rpro) - ThunderSearch（闪电搜索器）是一款使用多个(目前支持Fofa、Shodan、Hunter、Zoomeye、360Quake)网络空间搜索引擎官方api开发的GUI界面的信息搜集工具",
+    "homepage": "https://github.com/xzajyjs/ThunderSearch",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/xzajyjs/ThunderSearch/releases/download/v2.5.1/ThunderSearch_win.zip",
+            "hash": "ac4dd8010252b197485eaba1f9109fadd9788396906145f5c23238902cf18545"
+        }
+    },
+    "bin": "ThunderSearch.exe",
+    "checkver": {
+        "github": "https://github.com/xzajyjs/ThunderSearch"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/xzajyjs/ThunderSearch/releases/download/v$version/ThunderSearch_win.zip"
+            }
+        }
+    }
+}
