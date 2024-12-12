@@ -1,9 +1,8 @@
 {
     "version": "1.2.4",
-    "description": "用于生成各类免杀webshell(Scoop bucket by arch3rpro)",
+    "description": "(Scoop bucket by arch3rpro)-用于生成各类免杀webshell",
     "homepage": "https://github.com/cseroad/Webshell_Generate",
     "license": "Freeware",
-    "notes": "https://github.com/ViCrack/scoop-bucket/blob/master/bucket/webshell_generate.json",
     "suggest": {
         "JDK": [
             "java/oraclejdk",
@@ -14,7 +13,7 @@
     "hash": "56b5c011f6714d6ffe6bc921ac4960278471f4570b51718de8ed9646eefbfa41",
     "pre_install": [
         "Set-Content \"$dir\\webshell_generate.bat\" '@pushd %~dp0",
-        "@start javaw.exe -jar \"Webshell_Generate-1.2.jar\" %*",
+        "@start javaw.exe -jar \"Webshell_Generate-1.2.4.jar\" %*",
         "@popd' -Encoding Ascii"
     ],
     "bin": "webshell_generate.bat",
