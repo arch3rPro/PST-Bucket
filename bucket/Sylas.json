@@ -1,0 +1,27 @@
+{
+    "version": "beta",
+    "description": "(Scoop bucket by arch3rpro) Sylas-数据库综合利用工具",
+    "homepage": "https://github.com/Ryze-T/Sylas",
+    "license": "Unkown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Ryze-T/Sylas/releases/download/beta/Sylas.zip",
+            "hash": "e9d98e036bd4b66f2a0d06eb5ba488c6fee6888b809a975bbcdf62a498dbfc4c"
+        }
+    },
+    "extract_dir":"Sylas",
+    "bin": [
+        [
+            "Sylas-T.exe",
+            "Sylas"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/Ryze-T/Sylas/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "([\\w.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Ryze-T/Sylas/releases/download/beta/Sylas.zip"
+    }
+}
