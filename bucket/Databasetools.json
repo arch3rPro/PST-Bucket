@@ -1,0 +1,23 @@
+{
+    "version": "1.2",
+    "description": "(Scoop bucket by arch3rpro) Databasetools是一款用Go语言编写的数据库自动化提权工具，支持Mysql、MSSQL、Postgresql、Oracle、Redis数据库提权、命令执行、爆破以及ssh连接",
+    "homepage": "https://github.com/Hel10-Web/Databasetools",
+    "Notes":"此工具为命令行工具，已添加缩写为DBTools,请在终端执行DBTools -h 查看帮助文档",
+    "license": "unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Hel10-Web/Databasetools/releases/download/1.2/DatabaseTools_windows_amd64.exe#/DatabaseTools.exe",
+            "hash": "cd15850dc6d813961d362a1c35b9473f04a1b45993008ee3074778da1cbfc8a1"
+        }
+    },
+    "bin": [
+        [
+            "DatabaseTools.exe",
+            "DBTools"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Hel10-Web/Databasetools/releases/download/$version/DatabaseTools_windows_amd64.exe#/DatabaseTools.exe"
+    }
+}
