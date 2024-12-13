@@ -1,0 +1,21 @@
+{
+    "version": "0.7",
+    "description": "(Scoop bucket by arch3rpro) Apt_t00ls - 高危漏洞利用工具",
+    "homepage": "https://github.com/White-hua/Apt_t00ls",
+    "license": "Unkown",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/White-hua/Apt_t00ls/releases/download/v0.7/apt.zip",
+    "hash": "af9238caaf8dfe867bbf4bc625485657b4b277e319ba788a5809a3c7ae129d3d",
+    "pre_install": "Set-Content \"$dir\\apt.bat\" '@pushd %~dp0\n@start javaw.exe -jar \"apt.jar\" %*\n@popd' -Encoding Ascii",
+    "bin": "apt.bat",
+    "persist": "Apt_config",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/White-hua/Apt_t00ls/releases/download/v$version/apt.zip"
+    }
+}
