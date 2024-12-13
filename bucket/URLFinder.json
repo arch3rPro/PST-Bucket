@@ -30,7 +30,7 @@
                 "url": "https://github.com/pingc0y/URLFinder/releases/download/$version/URLFinder_Windows_x86_64.zip"
             },
             "arm64": {
-                "url": "hhttps://github.com/pingc0y/URLFinder/releases/download/$version/URLFinder_Windows_arm64.zip"
+                "url": "https://github.com/pingc0y/URLFinder/releases/download/$version/URLFinder_Windows_arm64.zip"
             }
         }
     }
