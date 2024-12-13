@@ -1,0 +1,23 @@
+{
+    "version": "2.6.31",
+    "description": "(Scoop bucket by arch3rpro) Team IDE 集成MySql、Oracle、金仓、达梦、神通等数据库、SSH、FTP、Redis、Zookeeper、Kafka、Elasticsearch、Mongodb、小工具等管理工具.",
+    "homepage": "https://github.com/team-ide/teamide",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/team-ide/teamide/releases/download/v2.6.31/TeamIDE-win-2.6.31.zip",
+            "hash": "b93fb40d62a95cae5fa8cd25d514d48afd4650026b80dfc7ba74a7ed4227f9b4"
+        }
+    },
+    "bin": "TeamIDE.exe",
+    "shortcuts": [
+        [
+            "TeamIDE.exe",
+            "TeamIDE"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/team-ide/teamide/releases/download/v$version/TeamIDE-win-$version.zip"
+    }
+}
