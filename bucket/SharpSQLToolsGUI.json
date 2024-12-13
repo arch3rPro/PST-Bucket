@@ -1,0 +1,17 @@
+{
+    "version": "v1.2.3",
+    "description": "(Scoop bucket by arch3rpro) SharpSQLToolsGUI - 图形化版本，上传下载文件，xp_cmdshell与sp_oacreate执行命令回显和clr加载程序集执行相应操作",
+    "homepage": "https://github.com/RowTeam/SharpSQLTools",
+    "license": "Unkown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/RowTeam/SharpSQLTools/releases/download/%E6%96%B0%E7%89%88%E6%9C%AC/SharpSQLToolsGUI.zip",
+            "hash": "52f762608ca687adb6ebef0edb4d41295704853e5a2c599b1cc45e5624052c52"
+        }
+    },
+    "bin": "SharpSQLToolsGUI.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "ttps://github.com/RowTeam/SharpSQLTools/releases/download/$version/SharpSQLToolsGUI.zip"
+    }
+}
