@@ -1,0 +1,25 @@
+{
+    "version": "1.3.4",
+    "description": "(Scoop bucket by arch3rpro) JUso - JNDIExploit or a ysoserial",
+    "homepage": "https://github.com/qi4L/JYso",
+    "license": "GPL-3.0",
+    "notes": "此脚本有arch3rPro制作，安装后请使用JYso -j -h查看参数说明",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/qi4L/JYso/releases/download/v1.3.4/JYso-1.3.4.jar#/JYso.jar",
+    "hash": "73aad739d962c4a1091605beed886be6d3fbf324489d7d28fd3412f19d049ca3",
+    "pre_install": [
+        "Set-Content \"$dir\\jyso.bat\" '@pushd %~dp0",
+        "@start java.exe -jar \"JYso.jar\" -j %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "bin": "jyso.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/qi4L/JYso/releases/download/v$version/JYso-$version.jar#/JYso.jar"
+    }
+}
