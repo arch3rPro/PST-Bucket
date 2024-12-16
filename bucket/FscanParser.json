@@ -1,12 +1,12 @@
 {
-    "version": "2.2",
+    "version": "2.3",
     "description": "(Scoop bucket by arch3rpro)一个用于处理fsacn输出结果的图形化工具",
     "homepage": "https://github.com/teamdArk5/FscanParser",
     "license": "unkown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/teamdArk5/FscanParser/releases/download/2.2/FscanParser.exe",
-            "hash": "fd60333cde4cf2864c6aa57f6bd80daea48fbf5860387bba8b4b3dfe4d49790f"
+            "url": "https://github.com/teamdArk5/FscanParser/releases/download/2.3/FscanParser.exe",
+            "hash": "c58301e9ca459264530856c4aca12e7dce17ce63f501abe9095398bdd6321b97"
         }
     },
     "bin": "FscanParser.exe",
