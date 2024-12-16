@@ -1,0 +1,21 @@
+{
+    "version": "1.2",
+    "description": "(Scoop bucket by arch3rpro) SSTImap - Automatic SSTI detection tool with interactive interface",
+    "homepage": "https://github.com/vladko312/SSTImap",
+    "license": "GPL-3.0",
+    "notes": "具有交互式界面的自动 SSTI 检测工具",
+    "suggest": "Python3",
+    "url": "https://github.com/vladko312/SSTImap/archive/refs/tags/v1.2.zip",
+    "hash": "3afec4c5a57a7db90020046128e95b3a411d63f9f635a5c60d7f22f805758110",
+    "pre_install": "Set-Content \"$dir\\SSTImap.bat\" '@pushd %~dp0\n@python3 \"sstimap.py\" %*\n@popd' -Encoding Ascii",
+    "post_install": [
+        "Move-Item -Path \"$dir\\SSTImap-$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\SSTImap-$version\" -Force -Recurse",
+        "pip3 install -r \"$dir\\requirements.txt\""
+    ],
+    "bin": "SSTImap.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/vladko312/SSTImap/archive/refs/tags/v$version.zip"
+    }
+}
