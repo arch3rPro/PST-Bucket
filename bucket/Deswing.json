@@ -1,0 +1,20 @@
+{
+    "version": "0.0.2",
+    "description": "(Scoop bucket by arch3rpro) Deswing - 图形化Java反序列化利用工具，集成Ysoserial",
+    "homepage": "https://github.com/0ofo/Deswing",
+    "license": "Unkown",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/0ofo/Deswing/releases/download/0.0.2/deswing_for_windows_x64.7z",
+    "hash": "5da3b1a47fe4e24ea4a9f2522ea17bac3f3fafd257654dae09eae51eb4061e4a",
+    "pre_install": "Set-Content \"$dir\\Deswing.bat\" '@pushd %~dp0\n@start bin\\javaw.exe -jar \"deswing.jar\" %*\n@popd' -Encoding Ascii",
+    "bin": "Deswing.bat",
+    "checkver": "github",    
+    "autoupdate": {
+        "url": "https://github.com/0ofo/Deswing/releases/download/$version/deswing.jar"
+    }
+}
