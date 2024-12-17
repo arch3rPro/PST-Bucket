@@ -1,0 +1,17 @@
+{
+    "version": "1.2",
+    "description": "(Scoop bucket by arch3rpro) SqlKnife - 适合在命令行中使用的轻巧的SQL Server数据库安全检测工具",
+    "homepage": "https://github.com/0x727/SqlKnife_0x727",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/0x727/SqlKnife_0x727/releases/download/1.2/SqlKnifeV1.2.zip",
+            "hash": "bab167746b9e75f8a8b4be85c1be5efc522cbdeb408021ece480c05bb8a92c6f"
+        }
+    },
+    "bin": "SqlKnife.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/0x727/SqlKnife_0x727/releases/download/$version/SqlKnifeV$version.zip"
+    }
+}
