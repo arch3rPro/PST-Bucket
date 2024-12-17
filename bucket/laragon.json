@@ -1,10 +1,10 @@
 {
-    "version": "6.0.0",
+    "version": "7.0.0",
     "description": "Laragon 是一个可移植、隔离、快速且强大的通用开发环境，本仓库新增各种环境变量并在安装时进行初始化.(Scoop bucket by arch3rpro)",
     "homepage": "https://laragon.org/",
     "license": "MIT",
-    "url": "https://github.com/leokhoa/laragon/archive/refs/tags/6.0.0.zip",
-    "hash": "042d95237bd729a254ef95a62920b4db28a4d3161c0dcfef46029e15286b38f3",
+    "url": "https://github.com/leokhoa/laragon/archive/refs/tags/7.0.0.zip",
+    "hash": "de48ddc298b884851a09b566e2006edfbd9b0f2a4dcb344ac4e0c9bfe52ec556",
     "extract_dir": "laragon-6.0.0",
     "bin": [
         "laragon.exe",
@@ -25,7 +25,7 @@
         "for ($i = 10; $i -gt 0; $i--) { Write-Output \"Countdown: $i seconds...\"; Start-Sleep -Seconds 1 }",
         "    # 结束laragon ",
         "Stop-Process -Name laragon -Force"
-      ],
+    ],
     "persist": [
         "etc",
         "tmp",
