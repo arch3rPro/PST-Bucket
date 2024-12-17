@@ -1,0 +1,25 @@
+{
+    "version": "1.2.2",
+    "description": "(Scoop bucket by arch3rpro) PPPYSO - proof-of-concept for generating Java deserialization payload | Proxy MemShell",
+    "homepage": "https://github.com/Whoopsunix/PPPYSO",
+    "license": "Unkown",
+    "notes": "此脚本有arch3rPro制作，安装后请使用PPPYSO -h查看参数说明",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/Whoopsunix/PPPYSO/releases/download/1.2.2/PPPYSO-1.2.2.jar#/PPPYSO.jar",
+    "hash": "",
+    "pre_install": [
+        "Set-Content \"$dir\\PPPYSO.bat\" '@pushd %~dp0",
+        "java.exe -jar \"PPPYSO.jar\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "bin": "PPPYSO.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Whoopsunix/PPPYSO/releases/download/$version/PPPYSO-$version.jar#/PPPYSO.jar"
+    }
+}
