@@ -1,0 +1,25 @@
+{
+    "version": "0.0.6",
+    "description": "(Scoop bucket by arch3rpro) ysoserial - A proof-of-concept tool for generating payloads that exploit unsafe Java object deserialization.",
+    "homepage": "https://github.com/frohoff/ysoserial",
+    "license": "MIT",
+    "notes": "此脚本有arch3rPro制作，安装后请使用ysoserial -h查看参数说明",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/frohoff/ysoserial/releases/download/v0.0.6/ysoserial-all.jar#/ysoserial.jar",
+    "hash": "2c9bddd6a1a4ec66c1078ea97dacb61eb66d1c41aec7b6d21e3c72214ce170f1",
+    "pre_install": [
+        "Set-Content \"$dir\\ysoserial.bat\" '@pushd %~dp0",
+        "java.exe -jar \"ysoserial.jar\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "bin": "ysoserial.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/frohoff/ysoserial/releases/download/$version/ysoserial-all.jar#/ysoserial.jar"
+    }
+}
