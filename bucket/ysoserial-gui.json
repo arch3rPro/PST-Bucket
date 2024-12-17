@@ -1,0 +1,24 @@
+{
+    "version": "1.2",
+    "description": "(Scoop bucket by arch3rpro) ysoserial-gui - ysoserial 图形化，探测 Gadget，探测 Class，命令执行，注入哥斯拉冰蝎内存马，加载字节码等",
+    "homepage": "https://github.com/Lotus6/ysoserial",
+    "license": "Unkown",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/Lotus6/ysoserial/releases/download/v1.2/ysoserial-gui-1.2-jar-with-dependencies.jar#/ysoserial-gui.jar",
+    "hash": "304e4a0d6c5e286d2732373158348fd75e4ca9cc0a0e35dc4a88fe4ec3e5fccf",
+    "pre_install": [
+        "Set-Content \"$dir\\ysoserial-gui.bat\" '@pushd %~dp0",
+        "java.exe -jar \"ysoserial-gui.jar\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "bin": "ysoserial-gui.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Lotus6/ysoserial/releases/download/v$version/ysoserial-gui-$version-jar-with-dependencies.jar#/ysoserial-gui.jar"
+    }
+}
