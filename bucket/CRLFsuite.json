@@ -1,0 +1,18 @@
+{
+    "version": "2.5.2",
+    "description": "(Scoop bucket by arch3rpro) CRLFsuite - The most powerful CRLF injection (HTTP Response Splitting) scanner.",
+    "homepage": "https://github.com/Raghavd3v/CRLFsuite",
+    "license": "Unknown",
+    "suggest": "Python3",
+    "url": "https://github.com/Raghavd3v/CRLFsuite/archive/refs/tags/v2.5.2.zip",
+    "hash": "81df63658f9608d71a0bdd8a1efe9bef6b5c67481bb79b78418d693bf9af4977",
+    "post_install": [
+        "Move-Item -Path \"$dir\\CRLFsuite-$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\CRLFsuite-$version\" -Force -Recurse",
+        "pip3 install crlfsuite -U"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Raghavd3v/CRLFsuite/archive/refs/tags/v$version.zip"
+    }
+}
