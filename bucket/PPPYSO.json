@@ -11,7 +11,7 @@
         ]
     },
     "url": "https://github.com/Whoopsunix/PPPYSO/releases/download/1.2.2/PPPYSO-1.2.2.jar#/PPPYSO.jar",
-    "hash": "",
+    "hash": "8b30f0a63660c6c84f95a4016150b44254190c3022b46cffe2360c22c6114de7",
     "pre_install": [
         "Set-Content \"$dir\\PPPYSO.bat\" '@pushd %~dp0",
         "java.exe -jar \"PPPYSO.jar\" %*",
