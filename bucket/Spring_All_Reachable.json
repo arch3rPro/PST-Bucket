@@ -1,0 +1,24 @@
+{
+    "version": "2.1",
+    "description": "(Scoop bucket by arch3rpro) Spring_All_Reachable - Spring漏洞综合利用工具",
+    "homepage": "https://github.com/savior-only/Spring_All_Reachable",
+    "license": "Unkown",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/savior-only/Spring_All_Reachable/releases/download/v2.1/Spring_All_Reachable-2.1.jar#/Spring_All_Reachable.jar",
+    "hash": "b253914cec85aa91605815de3521ffebfb54e10ff757f88ec2bc6bc95a42cad8",
+    "pre_install": [
+        "Set-Content \"$dir\\Spring_All_Reachable.bat\" '@pushd %~dp0",
+        "java.exe -jar \"Spring_All_Reachable.jar\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "bin": "Spring_All_Reachable.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/savior-only/Spring_All_Reachable/releases/download/v$version/Spring_All_Reachable-$version.jar#/Spring_All_Reachable.jar"
+    }
+}
