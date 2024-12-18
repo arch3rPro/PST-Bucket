@@ -1,0 +1,21 @@
+{
+    "version": "1.6.8",
+    "description": "(Scoop bucket by arch3rpro) FrameScan - 一款python3编写的简易的cms漏洞检测框架。",
+    "homepage": "https://github.com/qianxiao996/FrameScan",
+    "license": "Unkown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/qianxiao996/FrameScan/releases/download/v1.6.8/FrameScan.v1.6.8.20230804.zip",
+            "hash": "6fc7da68a396721d1f5b4a657ca5e415dbc8658cb8f93aeeb0b362970c7f4337"
+        }
+    },
+    "bin":"FrameScan.exe",
+    "persist": [
+        "VULN_DB.db",
+        "Plugins"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/qianxiao996/FrameScan/releases/download/v$version/FrameScan.v$version.zip"
+    }
+}
