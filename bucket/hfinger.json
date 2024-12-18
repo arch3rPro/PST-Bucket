@@ -1,0 +1,17 @@
+{
+    "version": "1.0.6",
+    "description": "(Scoop bucket by arch3rpro) hfinger - 一个用于web框架、CDN和CMS指纹识别的高性能命令行工具",
+    "homepage": "https://github.com/HackAllSec/hfinger",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/HackAllSec/hfinger/releases/download/v1.0.6/hfinger_windows_amd64.zip",
+            "hash": "852f612d4eb9366fea5675904cdad6945e55930ccd85999e4851987f97039b4b"
+        }
+    },
+    "bin": "hfinger.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/HackAllSec/hfinger/releases/download/v$version/hfinger_windows_amd64.zip"
+    }
+}
