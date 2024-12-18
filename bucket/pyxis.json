@@ -1,17 +1,16 @@
 {
-    "version": "0.1.3",
-    "description": "pyxis can automatically identify http and https requests, and get response headers, status codes, response size, response time, tools for fingerprinting (favicon has, service, CMS, framework, etc.)(Scoop bucket by arch3rpro)",
+    "version": "0.1.5",
+    "description": "(Scoop bucket by arch3rpro) pyxis can automatically identify http and https requests, and get response headers, status codes, response size, response time, tools for fingerprinting ",
     "homepage": "https://github.com/zan8in/pyxis",
     "license": "MIT",
-    "notes": "https://github.com/ViCrack/scoop-bucket/blob/master/bucket/pyxis.json",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/zan8in/pyxis/releases/download/v0.1.3/pyxis_0.1.3_windows_386.zip",
-            "hash": "896e0c81d86b87120628b0275fad4e2edcb01ecec2ddc64ce4c607ad4a87fdbc"
+            "url": "https://github.com/zan8in/pyxis/releases/download/v0.1.5/pyxis_0.1.3_windows_386.zip",
+            "hash": "21c5967e9b7cff90a07d00054abb8e8f172007f87c4283ee3806361bb9f58560"
         },
         "64bit": {
-            "url": "https://github.com/zan8in/pyxis/releases/download/v0.1.3/pyxis_0.1.3_windows_amd64.zip",
-            "hash": "aa8861ba7f9a5fa1f3a0b150fdbe8f258f85c2b1868f82d6ea795377acbbd6dd"
+            "url": "https://github.com/zan8in/pyxis/releases/download/v0.1.5/pyxis_0.1.3_windows_amd64.zip",
+            "hash": "36f34f7803e8d2c7bfa278ae70c89dab88278219d131cf3848e7dfb5b91f7898"
         }
     },
     "bin": "pyxis.exe",
