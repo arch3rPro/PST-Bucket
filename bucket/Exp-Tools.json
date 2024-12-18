@@ -1,0 +1,24 @@
+{
+    "version": "1.3.1",
+    "description": "(Scoop bucket by arch3rpro) Exp-Tools - 一款集成高危漏洞exp的实用性工具",
+    "homepage": "https://github.com/cseroad/Exp-Tools",
+    "license": "Unkown",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/cseroad/Exp-Tools/releases/download/v1.3.1/Exp-Tools-1.3.1-encrypted.jar#/Exp-Tools.jar",
+    "hash": "5069d62dca7cf964a9b1b69615cc306c308c7da8721ea5abb4ee6fbee536baf1",
+    "pre_install": [
+        "Set-Content \"$dir\\Exp-Tools.bat\" '@pushd %~dp0",
+        "java.exe -javaagent:Exp-Tools.jar -jar Exp-Tools.jar %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "bin": "Exp-Tools.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/cseroad/Exp-Tools/releases/download/v$version/Exp-Tools-$version-encrypted.jar#/Exp-Tools.jar"
+    }
+}
