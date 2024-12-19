@@ -1,0 +1,22 @@
+{
+    "version": "1.0",
+    "description": "(Scoop bucket by arch3rpro) SBSCAN - 一款专注于spring框架的渗透测试工具，可以对指定站点进行springboot未授权扫描/敏感信息扫描以及进行spring框架漏洞扫描与验证的综合利用工具",
+    "homepage": "https://github.com/sule01u/SBSCAN",
+    "license": "MIT",
+    "suggest": "Python3",
+    "url": "https://github.com/sule01u/SBSCAN/archive/refs/tags/v1.0.zip",
+    "hash": "655aa1f47f6e8fc53ca7ac627bff8a2cded11a14fbe27c3a1d081a45eeb714ba",
+    "pre_install": "Set-Content \"$dir\\sbscan.bat\" '@echo off\npushd %~dp0\ncall \"%~dp0\\sbscan_env\\Scripts\\activate.bat\"\npython3 \"%~dp0\\sbscan.py\" %*\npopd' -Encoding Ascii",
+    "post_install": [
+        "Move-Item -Path \"$dir\\SBSCAN-$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\SBSCAN-$version\" -Force -Recurse",
+        "python3 -m venv \"$dir\\sbscan_env\"",
+        "& \"$dir\\sbscan_env\\Scripts\\activate\"",
+        "pip3 install -r \"$dir\\requirements.txt\""
+    ],
+    "bin": "sbscan.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/sule01u/SBSCAN/archive/refs/tags/v$version.zip"
+    }
+}
