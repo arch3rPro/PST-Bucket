@@ -1,0 +1,24 @@
+{
+    "version": "1.2.4",
+    "description": "(Scoop bucket by arch3rpro) SpringBoot-Scan-GUI - SpringBoot-Scan 的GUI图形化版本",
+    "homepage": "https://github.com/13exp/SpringBoot-Scan-GUI",
+    "license": "Unknown",
+    "suggest": "Python3",
+    "url": "https://github.com/13exp/SpringBoot-Scan-GUI/archive/refs/tags/v1.2.4.zip",
+    "hash": "65f7026aea3fc2a8a45d4311469818d6f9eaf66f640229c244f5f31785da2a2f",
+    "pre_install": [
+        "Set-Content \"$dir\\SpringBoot-Scan-GUI.bat\" '@pushd %~dp0",
+        "@python3 \"main.py\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "post_install": [
+        "Move-Item -Path \"$dir\\SpringBoot-Scan-GUI-$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\SpringBoot-Scan-GUI-$version\" -Force -Recurse",
+        "pip3 install -r \"$dir\\requirements.txt\""
+    ],
+    "bin": "SpringBoot-Scan-GUI.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/13exp/SpringBoot-Scan-GUI/archive/refs/tags/v$version.zip"
+    }
+}
