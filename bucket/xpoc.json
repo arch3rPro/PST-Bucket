@@ -1,0 +1,29 @@
+{
+    "version": "0.1.0",
+    "description": "(Scoop bucket by arch3rpro) xpoc - 为供应链漏洞扫描设计的快速应急响应工具 [快速应急] [漏洞扫描] [端口扫描]",
+    "homepage": "https://github.com/chaitin/xpoc",
+    "license": "https://github.com/chaitin/xapp/blob/main/Disclaimer.md",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/chaitin/xpoc/releases/download/0.1.0/xpoc_windows_amd64.zip",
+            "hash": "06d06ffc1e46fbeff5f4053a04b1b16468d5808b81ecfcd98c15f7e767b32da6"
+        }
+    },
+    "pre_install": "Rename-Item \"$dir\\xpoc_windows_amd64.exe\" 'xpoc.exe'",
+    "bin": "xpoc.exe",
+    "checkver": {
+        "url": "https://github.com/chaitin/xpoc/releases",
+        "regex": "releases/tag/([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/chaitin/xpoc/releases/download/$version/xpoc_windows_amd64.zip",
+                "hash": {
+                    "url": "https://github.com/chaitin/xpoc/releases/download/$version/sha256sum.txt",
+                    "regex": "$basename ([a-fA-F0-9]{64})"
+                }
+            }
+        }
+    }
+}
