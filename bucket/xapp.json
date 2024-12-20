@@ -1,0 +1,33 @@
+{
+    "version": "0.0.2",
+    "description": "(Scoop bucket by arch3rpro) xapp 专注于web指纹识别的工具",
+    "homepage": "https://github.com/chaitin/xapp",
+    "license": "https://github.com/chaitin/xapp/blob/main/Disclaimer.md",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/chaitin/xapp/releases/download/xapp-0.0.2/xapp_windows_amd64.exe#/xapp.exe",
+            "hash": "867f00b3bb3cfeff50e307d716e60399c4b060dd6c267080456d25045130ee44"
+        }
+    },
+    "bin": "xapp.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/chaitin/xapp/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "xapp-([\\d.]+)"
+    },
+    "checkver": {
+        "url": "https://github.com/chaitin/xpoc/releases",
+        "regex": "releases/tag/([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/chaitin/xapp/releases/download/xapp-$version/xapp_windows_amd64.exe",
+                "hash": {
+                    "url": "$baseurl/sha256.txt",
+                    "regex": "$base64\\s+\\./$basename"
+                }
+            }
+        }
+    }
+}
