@@ -1,0 +1,24 @@
+{
+    "version": "4.7.0",
+    "description": "(Scoop bucket by arch3rpro) ShiroAttack2 - shiro反序列化漏洞综合利用,包含（回显执行命令/注入内存马）修复原版中NoCC的问题",
+    "homepage": "https://github.com/SummerSec/ShiroAttack2",
+    "license": "MIT",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/SummerSec/ShiroAttack2/releases/download/4.7.0/shiro_attack-4.7.0-SNAPSHOT-all.zip",
+    "hash": "6f00ea54d8c7f387810361abc42bdf8c9f0fcd1cb02ec8f0e873efb585178058",
+    "pre_install": [
+        "Rename-Item \"$dir\\shiro_attack-$version-SNAPSHOT-all.jar\" 'shiro_attack.jar'",
+        "Set-Content \"$dir\\ShiroAttack2.bat\" '@pushd %~dp0\n java.exe -jar \"shiro_attack.jar\" %*\n@popd' -Encoding Ascii"
+    ],
+    "bin": "ShiroAttack2.bat",
+    "persist": "data",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/SummerSec/ShiroAttack2/releases/download/$version/shiro_attack-$version-SNAPSHOT-all.zip"
+    }
+}
