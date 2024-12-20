@@ -1,0 +1,21 @@
+{
+    "version": "1.1",
+    "description": "(Scoop bucket by arch3rpro) FastjsonScan - Fastjson扫描器，可识别版本、依赖库、autoType状态等。A tool to distinguish fastjson ,version and dependency.",
+    "homepage": "https://github.com/a1phaboy/FastjsonScan",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/a1phaboy/FastjsonScan/releases/download/v1.1/FastjsonScan_windows_amd64.exe#/FastjsonScan.exe",
+            "hash": "cb93b5347515d6eabf5dfc599d1eb68091f42efb37420c3d0b06e0af2b4eabe0"
+        }
+    },
+    "bin": "FastjsonScan.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/a1phaboy/FastjsonScan/releases/download/v$version/FastjsonScan_windows_amd64.exe#/FastjsonScan.exe"
+            }
+        }
+    }
+}
