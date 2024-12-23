@@ -1,6 +1,6 @@
 {
     "version": "1.4",
-    "description": "(Scoop bucket by arch3rpro) Hyacinth - Struts2、Fastjson、Weblogic（xml）、Shiro、Log4j、Jboss、SpringCloud、等漏洞检测利用",
+    "description": "(Scoop bucket by arch3rpro) Hyacinth - 一款java漏洞集合工具",
     "homepage": "https://github.com/pureqh/Hyacinth",
     "license": "Unkown",
     "suggest": {
