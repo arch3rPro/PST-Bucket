@@ -1,0 +1,23 @@
+{
+    "version": "4.9.1",
+    "description": "(Scoop bucket by arch3rpro) - Cobalt Strike简称CS，是一款GUI框架式的渗透测试工具.",
+    "homepage": "https://www.cobaltstrike.com/",
+    "license": "Proprietary",
+    "notes": [
+        "此版本不包含WSL和Server端的启动，仅作为客户端使用",
+        "自行安装时注意修改实际启动的目录"
+    ],
+    "url": "https://sourceforge.net/projects/pst-files/files/CobaltSrike_4.9.1.zip",
+    "hash": "1f0a57ab1d2992b8743ce82e6921269e3172e89e8e5fe7822e404757f0455f9b",
+    "pre_install": [
+        "Move-Item -Path \"$dir\\Client\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\Client\" -Force -Recurse",
+        "Set-Content \"$dir\\cobaltstrike-client.cmd\" '@echo off\r\n::\r\ncd /d %~dp0\r\necho   [+] Starting cobaltstrike client\r\njava -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -javaagent:uHook.jar -jar cobaltstrike-client.jar %*\r\n' -Encoding Ascii"    
+    ],
+    "bin": [
+        [
+            "cobaltstrike-client.cmd",
+            "cobaltstrike"
+        ]
+    ]
+}
