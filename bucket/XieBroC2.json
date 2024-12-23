@@ -1,0 +1,26 @@
+{
+    "version": "3.1.6",
+    "description": "(Scoop bucket by arch3rpro) XiebroC2 - 渗透测试C2、支持Lua插件扩展、域前置/CDN上线、自定义profile、前置sRDI、文件管理、进程管理、内存加载、截图、反向代理、分组管理",
+    "homepage": "https://github.com/INotGreen/XiebroC2",
+    "license": "Unkown",
+    "url": "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v3.1.6/XiebroC2-v3.1.6.7z",
+    "hash": "9d9c94d62efe69641a5f2efa2c91b99eee076ab52388f9ea61c3429663961b19",
+    "bin": [
+        [
+            "XieBroC2.exe",
+            "XieBroC2"
+        ],
+        [
+            "TeamServer_amd64.exe",
+            "XieBroC2_TeamServer"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/INotGreen/XiebroC2/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "XiebroC2-v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v$version/XiebroC2-v$version.7z"
+    }
+}
