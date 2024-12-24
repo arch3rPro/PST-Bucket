@@ -1,0 +1,28 @@
+{
+    "version": "2024-08-27T01.23.23",
+    "description": "(Scoop bucket by arch3rpro) HackerPermKeeper - Linux权限维持.",
+    "homepage": "https://github.com/RuoJi6/HackerPermKeeper",
+    "license": "MIT",
+    "suggest": "python3.X",
+    "url": "https://github.com/RuoJi6/HackerPermKeeper/archive/refs/heads/main.zip",
+    "hash": "25df81ff97b54677cf610fc10569a46e33789b0ebd832e0d8f9ae09440b8e192",
+    "pre_install": [
+        "Set-Content \"$dir\\HackerPermKeeper.bat\" '@pushd %~dp0",
+        "python3 \"main.py\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "post_install": [
+        "Move-Item -Path \"$dir\\HackerPermKeeper-main\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\HackerPermKeeper-main\" -Force -Recurse",
+        "pip3 install -r \"$dir\\requirements.txt\""
+    ],
+    "bin": "HackerPermKeeper.bat",
+    "checkver": {
+        "url": "https://api.github.com/repos/RuoJi6/HackerPermKeeper/commits",
+        "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
+        "replace": "$1$2.$3.$4"
+    },
+    "autoupdate": {
+        "url": "https://github.com/commixproject/commix/archive/refs/tags/v$version.zip"
+    }
+}
