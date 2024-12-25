@@ -1,13 +1,13 @@
 {
-    "version": "v0.5.7B",
-    "description": "Open-Source Remote Administration Tool For Windows C# (RAT).(Scoop bucket by arch3rpro)",
+    "version": "0.5.8",
+    "description": "(Scoop bucket by arch3rpro) AsyncRAT - Open-Source Remote Administration Tool For Windows C# (RAT).",
     "homepage": "https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/releases/download/v0.5.7B/COMPILED.zip",
-            "hash": "AEA1E7906F7C4C8736EFD398CCB819A6739058EE2E0EE87CAC29AC72D764EC29",
-            "extract_dir": "AsyncRAT v0.5.7B"
+            "url": "https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/releases/download/v0.5.8/COMPILED.zip",
+            "hash": "0b29711ec115c27f4cd6963b9ea1e4febf15624f1c17d1c018611ee3df8c333c",
+            "extract_dir": "AsyncRAT"
         }
     },
     "bin": "AsyncRAT.exe",
@@ -15,7 +15,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/releases/download/$version/COMPILED.zip"
+                "url": "https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp/releases/download/v$version/COMPILED.zip",
+                "extract_dir": "AsyncRAT" 
             }
         }
     }
