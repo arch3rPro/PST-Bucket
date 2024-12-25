@@ -1,0 +1,27 @@
+{
+    "version": "7.0.514.10",
+    "description": "(Scoop bucket by arch3rpro) AlanFramework - A C2 post-exploitation framework.",
+    "homepage": "https://github.com/enkomio/AlanFramework",
+    "license": "https://github.com/enkomio/AlanFramework?tab=License-1-ov-file#readme",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/enkomio/AlanFramework/releases/download/7.0.514.10/Alan.v7.0.514.10.zip",
+            "hash": "48ffcb09594d991765cad6e27e86c87dcf54dd0bc80e98e09a195445dfc43d9c"
+        }
+    },
+    "bin": [
+        [
+            "Server.exe",
+            "AlanFramework"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/enkomio/AlanFramework/releases/download/$version/Alan.v$version.zip",
+                "extract_dir": "AsyncRAT" 
+            }
+        }
+    }
+}
