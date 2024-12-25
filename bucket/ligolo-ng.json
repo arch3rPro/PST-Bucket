@@ -1,0 +1,55 @@
+{
+    "version": "0.7.3",
+    "description": "(Scoop bucket by arch3rpro) ligolo-ng - 简单方便的TUN接口的隧道 An advanced, yet simple, tunneling/pivoting tool that uses a TUN interface.",
+    "homepage": "https://github.com/nicocha30/ligolo-ng",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.3/ligolo-ng_agent_0.7.3_windows_amd64.zip",
+                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.3/ligolo-ng_proxy_0.7.3_windows_amd64.zip"
+            ],
+            "hash": [
+                "a2b1ba24a4871c55a16fdaae515f0a5606b27d37a7e3d34c7e87766416ab200d",
+                "ddc8dfe7af9f3f8c20e431db03561578334e6cf1a0e666e487d7ba6c36397d79"
+            ]
+        },
+        "arm64": {
+            "url": [
+                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.3/ligolo-ng_agent_0.7.3_windows_arm64.zip",
+                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.3/ligolo-ng_proxy_0.7.3_windows_arm64.zip"
+            ],
+            "hash": [
+                "fd27933b3ae0adc87424a825f7461f6bff7d157c94edc36e5fe414fd3d4c1b28",
+                "86c27e4502d46d7aafee377eddeeabef60025eb70cad999ecc98e3443da4828a"
+            ]
+        }
+    },
+    "bin": [
+        [
+            "proxy.exe",
+            "ligolo-ng_proxy"
+        ],
+        [
+            "agent.exe",
+            "ligolo-ng_agent"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": [
+                    "https://github.com/nicocha30/ligolo-ng/releases/download/v$version/ligolo-ng_agent_$version_windows_amd64.zip",
+                    "https://github.com/nicocha30/ligolo-ng/releases/download/v$version/ligolo-ng_proxy_$version_windows_amd64.zip"
+                ]
+            },
+            "arm64": {
+                "url": [
+                    "https://github.com/nicocha30/ligolo-ng/releases/download/v$version/ligolo-ng_agent_$version_windows_arm64.zip",
+                    "https://github.com/nicocha30/ligolo-ng/releases/download/v$version/ligolo-ng_proxy_$version_windows_arm64.zip"
+                ]
+            }
+        }
+    }
+}
