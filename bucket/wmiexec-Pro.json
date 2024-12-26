@@ -1,0 +1,20 @@
+{
+    "version": "0.2.7",
+    "description": "(Scoop bucket by arch3rpro) wmiexec-Pro - New generation of wmiexec.py",
+    "homepage": "https://github.com/XiaoliChan/wmiexec-Pro",
+    "license": "Unkown",
+    "suggest": "Python3",
+    "url": "https://github.com/XiaoliChan/wmiexec-Pro/archive/refs/tags/v0.2.7.zip",
+    "hash": "d587b8d7884f3b52c2e1213bba0f845fe523b9e20206052372770747435830df",
+    "pre_install": "Set-Content \"$dir\\wmiexec-pro.bat\" '@pushd %~dp0\n@python3 \"wmiexec-pro.py\" %*\n@popd' -Encoding Ascii",
+    "post_install": [
+        "Move-Item -Path \"$dir\\wmiexec-pro-$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\wmiexec-pro-$version\" -Force -Recurse",
+        "pip3 install impacket numpy"
+    ],
+    "bin": "wmiexec-pro.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/XiaoliChan/wmiexec-Pro/archive/refs/tags/v$version.zip"
+    }
+}
