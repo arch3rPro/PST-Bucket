@@ -1,0 +1,28 @@
+{
+    "version": "2024-10-08T19.04.01",
+    "description": "(Scoop bucket by arch3rpro) Argus - The Ultimate Information Gathering Toolkit.",
+    "homepage": "https://github.com/jasonxtn/argus",
+    "license": "Unkown",
+    "suggest": "python3.X",
+    "url": "https://github.com/jasonxtn/Argus/archive/refs/heads/main.zip",
+    "hash": "e12e30859d81d7fab56db79305e290f5f776cc1c26c77faca48e0b4a8de18ce2",
+    "pre_install": [
+        "Set-Content \"$dir\\Argus.bat\" '@pushd %~dp0",
+        "@python3 \"argus.py\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "post_install": [
+        "Move-Item -Path \"$dir\\argus-main\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\argus-main\" -Force -Recurse",
+        "pip3 install -r \"$dir\\requirements.txt\""
+    ],
+    "bin": "Argus.bat",
+    "checkver": {
+        "url": "https://api.github.com/repos/jasonxtn/argus/commits",
+        "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
+        "replace": "$1$2.$3.$4"
+    },
+    "autoupdate": {
+        "url": "https://github.com/jasonxtn/Argus/archive/refs/heads/main.zip"
+    }
+}
