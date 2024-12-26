@@ -1,0 +1,28 @@
+{
+    "version": "0.0.4",
+    "description": "(Scoop bucket by arch3rpro) P1soda - 一款常规内网渗透场景下的全方位漏洞扫描工具",
+    "homepage": "https://github.com/P001water/P1soda",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/P001water/P1soda/releases/download/v0.0.4/P1soda64.exe#/P1soda.exe",
+            "hash": "ff632e5366c158d4adc415b89cdd9ead3c13edbb0f95bc332120ac8b3554da2b"
+        },
+        "32bit": {
+            "url": "https://github.com/P001water/P1soda/releases/download/v0.0.4/P1soda86.exe#/P1soda.exe",
+            "hash": "c911226aa5b07a05fc6df5885030b6973e65267a988e53d30f7b035a9a533e10"
+        }
+    },
+    "bin": "P1soda.exe",
+    "checkver":"github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/P001water/P1soda/releases/download/v$version/P1soda64.exe#/P1soda.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/P001water/P1soda/releases/download/v$version/P1soda86.exe#/P1soda.exe"
+            }
+        }
+    }
+}
