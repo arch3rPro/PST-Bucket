@@ -1,0 +1,25 @@
+{
+    "version": "3.7",
+    "description": "(Scoop bucket by arch3rpro) evil-winrm - The ultimate WinRM shell for hacking/pentesting",
+    "homepage": "https://github.com/Hackplayers/evil-winrm",
+    "notes": "evil-winrm使用ruby编写，安装前请先安装ruby，并设置环境变量",
+    "license": "LGPL-3.0 license",
+    "suggest": "ruby",
+    "url": "https://github.com/Hackplayers/evil-winrm/archive/refs/tags/v3.7.zip",
+    "hash": "a1aef932a148aaf683b0b7cb6a3683df77b1f2b21772bf6ac0af44f56f51495a",
+    "pre_install": [
+        "Set-Content \"$dir\\evil-winrm.bat\" '@pushd %~dp0",
+        "ruby -W0 \"evil-winrm.rb\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "post_install": [
+        "Move-Item -Path \"$dir\\evil-winrm-$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\evil-winrm-$version\" -Force -Recurse",
+        "gem install evil-winrm"
+    ],
+    "bin": "evil-winrm.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/digininja/CeWL/archive/refs/tags/$version.zip"
+    }
+}
