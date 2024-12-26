@@ -1,0 +1,20 @@
+{
+    "version": "1.11",
+    "description": "(Scoop bucket by arch3rpro) Web-SurvivalScan - Web资产存活检测小工具。",
+    "homepage": "https://github.com/AabyssZG/Web-SurvivalScan",
+    "license": "MIT",
+    "suggest": "Python3",
+    "url": "https://github.com/AabyssZG/Web-SurvivalScan/archive/refs/tags/V1.11.zip",
+    "hash": "b70c7c1e331b432b68ef7b3e7d4a252aea06f2efd7bb9cefab332ed448c39a34",
+    "pre_install": "Set-Content \"$dir\\Web-SurvivalScan.bat\" '@pushd %~dp0\npython3 \"Web-SurvivalScan.py\" %*\n@popd' -Encoding Ascii",
+    "post_install": [
+        "Move-Item -Path \"$dir\\Web-SurvivalScan-$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\Web-SurvivalScan-$version\" -Force -Recurse",
+        "pip3 install -r \"$dir\\requirements.txt\""
+    ],
+    "bin": "Web-SurvivalScan.bat",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/AabyssZG/Web-SurvivalScan/archive/refs/tags/V$version.zip"
+    }
+}
