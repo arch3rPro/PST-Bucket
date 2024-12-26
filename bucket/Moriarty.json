@@ -1,0 +1,21 @@
+{
+    "version": "1.2",
+    "description": "(Scoop bucket by arch3rpro) Moriarty - Designed to enumerate missing KBs, detect various vulnerabilities, and suggest potential exploits for Privilege Escalation in Windows environments.",
+    "homepage": "https://github.com/BC-SECURITY/Moriarty",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/BC-SECURITY/Moriarty/releases/download/1.2/Moriarty.exe",
+            "hash": "ea5f032c532c30628da6fc76f5a4ad6ca4057ac2322f625b12fc907beadfc545"
+        }
+    },
+    "bin": "Moriarty.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/BC-SECURITY/Moriarty/releases/download/$version/Moriarty.exe"
+            }
+        }
+    }
+}
