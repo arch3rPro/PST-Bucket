@@ -1,13 +1,13 @@
 {
     "version": "0.2.3",
-    "description": "基于go编写的跨平台、稳定、隐秘的多级代理内网穿透工具(Scoop bucket by arch3rpro)",
+    "description": "(Scoop bucket by arch3rpro) rakshasa - 基于go编写的跨平台、稳定、隐秘的多级代理内网穿透工具",
     "homepage": "https://github.com/Mob2003/rakshasa",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/Mob2003/rakshasa/releases/download/v0.2.3/rakshasa_fullnode_amd64_win.exe",
-                "https://github.com/Mob2003/rakshasa/releases/download/v0.2.2/rakshasa_node_amd64_win.exe"
+                "https://github.com/Mob2003/rakshasa/releases/download/v0.2.3/rakshasa_fullnode_amd64_win.exe#/rakshasa_fullnode.exe",
+                "https://github.com/Mob2003/rakshasa/releases/download/v0.2.2/rakshasa_node_amd64_win.exe#/rakshasa_node.exe"
             ],
             "hash": [
                 "ccfa30a40445d5237aaee1e015ecfcd9bdbe7665a6dc2736b28e5ebf07ec4597",
@@ -17,11 +17,11 @@
     },
     "bin": [
         [
-            "rakshasa_fullnode_amd64_win.exe",
+            "rakshasa_fullnode.exe",
             "rakshasa_fullnode"
         ],
         [
-            "rakshasa_node_amd64_win.exe",
+            "rakshasa_node.exe",
             "rakshasa_node"
         ]
     ],
@@ -29,7 +29,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Mob2003/rakshasa/releases/download/v$version/rakshasa_fullnode_amd64_win.exe"
+                "url": [ 
+                "https://github.com/Mob2003/rakshasa/releases/download/v$version/rakshasa_fullnode_amd64_win.exe#/rakshasa_fullnode.exe",
+                "https://github.com/Mob2003/rakshasa/releases/download/v$version/rakshasa_node_amd64_win.exe#/rakshasa_node.exe"
+            ]
             }
         }
     }
