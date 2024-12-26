@@ -1,0 +1,21 @@
+{
+    "version": "1.0",
+    "description": "(Scoop bucket by arch3rpro) SchTask - 创建隐藏计划任务，权限维持，Bypass AV",
+    "homepage": "https://github.com/0x727/SchTask_0x727",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/0x727/SchTask_0x727/releases/download/v1.0/SchTask.zip",
+            "hash": "24aae23bcf8b0a513988d69b1526eebd791007136a1faf08ea1df5a8d3884e50"
+        }
+    },
+    "bin": "SchTask.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/0x727/SchTask_0x727/releases/download/v$version/SchTask.zip"
+            }
+        }
+    }
+}
