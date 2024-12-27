@@ -1,0 +1,27 @@
+{
+    "version": "1.2",
+    "description": "(Scoop bucket by arch3rpro) AVEvasionCraftOnline - An online AV evasion platform written in Springboot (Golang, Nim, C) supports embedded, local and remote loading of Shellocde methods.",
+    "homepage": "https://github.com/yutianqaq/AVEvasionCraftOnline",
+    "license": "MIT",
+    "url": "https://github.com/yutianqaq/AVEvasionCraftOnline/releases/download/v1.2/AVEvasionCraftOnline-v1.2.zip",
+    "hash": "604bffa385991bc7a567c037755804ab64eef61767027025c320b978576f6c0a",
+    "extract_dir": "AVEvasionCraftOnline",
+    "pre_install": [
+        "Set-Content \"$dir\\start.bat\" '@echo off",
+        "java -jar -Dspring.config.location=application.yaml AVEvasionCraftOnline.jar --server.port=80' -Encoding Ascii"
+    ],
+    "shortcuts": [
+        [
+            "start.bat",
+            "AVEvasionCraftOnline"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/yutianqaq/AVEvasionCraftOnline/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v?([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/yutianqaq/AVEvasionCraftOnline/releases/download/v$version/AVEvasionCraftOnline-v$version.zip"
+    }
+}
