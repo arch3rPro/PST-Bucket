@@ -1,0 +1,16 @@
+{
+    "version": "3.3",
+    "description": "(Scoop bucket by arch3rpro) ZeroEye - 自动化找白文件，用于扫描 EXE 文件的导入表，列出导入的 DLL 文件，并筛选出非系统 DLL，符合条件的文件将被复制到特定的 X64 或 X86 文件夹。",
+    "homepage": "https://github.com/ImCoriander/ZeroEye",
+    "license": "Unknown",
+    "url": "https://github.com/ImCoriander/ZeroEye/releases/download/ZeroEye/ZeroEye3.3.rar",
+    "hash": "7f5b902740192a577d5313fc9322eca326db9ab3a684d4e85183a853a6a93b37",
+    "bin": "ZeroEye.exe",
+    "checkver": {
+        "url": "https://github.com/ImCoriander/ZeroEye/releases",
+        "regex": "ZeroEye([\\d.]+)\\.rar"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ImCoriander/ZeroEye/releases/download/ZeroEye/ZeroEye$version.rar"
+    }
+}
