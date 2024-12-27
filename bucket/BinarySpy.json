@@ -1,0 +1,23 @@
+{
+    "version": "1.3",
+    "description": "(Scoop bucket by arch3rpro) BinarySpy - 一个手动或自动patch shellcode到二进制文件的免杀工具/A tool for manual or automatic patch shellcode into binary file oder to bypass AV.",
+    "homepage": "https://github.com/yj94/BinarySpy",
+    "license": "MIT",
+    "url": "https://github.com/yj94/BinarySpy/releases/download/v1.3/windows_amd64.zip",
+    "hash": "163837d08900ccf83947f1120a683020e6babc509e236905e3aac31d303f4e75",
+    "bin": "BinarySpy.exe",
+    "shortcuts": [
+        [
+            "BinarySpy.exe",
+            "BinarySpy"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/yj94/BinarySpy/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/yj94/BinarySpy/releases/download/v$version/windows_amd64.zip"
+    }
+}
