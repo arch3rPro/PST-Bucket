@@ -1,5 +1,5 @@
 {
-    "version": "v1.1.6",
+    "version": "1.1.6",
     "description": "(Scoop bucket by arch3rpro) proxypin - 开源免费抓包工具，支持Windows、Mac、Android、IOS、Linux 全平台系统 Open source free capture HTTP(S) traffic software ProxyPin, supporting full platform systems",
     "homepage": "https://github.com/wanghongenpin/proxypin",
     "license": "Apache-2.0",
