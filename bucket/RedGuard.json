@@ -1,0 +1,32 @@
+{
+    "version": "24.06.18",
+    "description": "(Scoop bucket by arch3rpro) RedGuard - RedGuard is a C2 front flow control tool,Can avoid Blue Teams,AVs,EDRs check.",
+    "homepage": "https://github.com/wikiZ/RedGuard",
+    "license": "GPL-2.0",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/wikiZ/RedGuard/releases/download/24.06.18/RedGuard_x32.exe#/RedGuard.exe",
+            "hash": "c77d55b884c0ebb08d1bab5e2427cb6dc6b6bc323bd43f2f01c23c96c74dd515"
+        },
+        "64bit": {
+            "url": "https://github.com/wikiZ/RedGuard/releases/download/24.06.18/RedGuard_x64.exe#/RedGuard.exe",
+            "hash": "12b565805eda1582b9df4b7d6e1e0a824e6db50ba7fbbb345b6251a37849d746"
+        }
+    },
+    "bin": "RedGuard.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/wikiZ/RedGuard/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/wikiZ/RedGuard/releases/download/$version/RedGuard_x32.exe#/RedGuard.exe"
+            },
+            "64bit": {
+                "url": "https://github.com/wikiZ/RedGuard/releases/download/$version/RedGuard_x64.exe#/RedGuard.exe"
+            }
+        }
+    }
+}
