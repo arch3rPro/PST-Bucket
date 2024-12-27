@@ -1,0 +1,22 @@
+{
+    "version": "1.0",
+    "description": "(Scoop bucket by arch3rpro) SharpHunter - Automated Hosting Information Hunting Tool - Windows 主机信息自动化狩猎工具",
+    "homepage": "https://github.com/lintstar/SharpHunter",
+    "license": "Unkown",
+    "suggest": ".net3.5",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/lintstar/SharpHunter/releases/download/v1.0/SharpHunter.exe",
+            "hash": "765fd23e75bd45989216202f11b3f78ac2d362ead6c4f662813a4730d3a35029"
+        }
+    },
+    "bin": "SharpHunter.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/lintstar/SharpHunter/releases/download/v$version/SharpHunter.exe"
+            }
+        }
+    }
+}
