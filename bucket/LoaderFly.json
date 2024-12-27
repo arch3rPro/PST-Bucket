@@ -1,0 +1,26 @@
+{
+    "version": "2.0",
+    "description": "(Scoop bucket by arch3rpro) LoaderFly - shellcodeloader二开魔改，快速生成免杀木马。",
+    "homepage": "https://github.com/wangfly-me/LoaderFly",
+    "notes": "免杀工具,自行判断后门，请在虚拟机内运行",
+    "license": "Unknown",
+    "url": "https://github.com/wangfly-me/LoaderFly/releases/download/v2.0/LoaderFly.v2.0.zip",
+    "hash": "2279272e748c084ef45325992c720b108e0133663f74e03a29a6cc5c311f61be",
+    "extract_dir": "LoaderFly v2.0",
+    "persist": "DATA",
+    "shortcuts": [
+        [
+            "LoaderFly.exe",
+            "LoaderFly"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/wangfly-me/LoaderFly/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/wangfly-me/LoaderFly/releases/download/v$version/LoaderFly.v$version.zip",
+        "extract_dir": "LoaderFly v$version"
+    }
+}
