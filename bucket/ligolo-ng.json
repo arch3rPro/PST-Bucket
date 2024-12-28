@@ -1,27 +1,27 @@
 {
-    "version": "0.7.3",
+    "version": "0.7.4",
     "description": "(Scoop bucket by arch3rpro) ligolo-ng - 简单方便的TUN接口的隧道 An advanced, yet simple, tunneling/pivoting tool that uses a TUN interface.",
     "homepage": "https://github.com/nicocha30/ligolo-ng",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.3/ligolo-ng_agent_0.7.3_windows_amd64.zip",
-                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.3/ligolo-ng_proxy_0.7.3_windows_amd64.zip"
+                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.4/ligolo-ng_agent_0.7.4_windows_amd64.zip",
+                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.4/ligolo-ng_proxy_0.7.4_windows_amd64.zip"
             ],
             "hash": [
-                "a2b1ba24a4871c55a16fdaae515f0a5606b27d37a7e3d34c7e87766416ab200d",
-                "ddc8dfe7af9f3f8c20e431db03561578334e6cf1a0e666e487d7ba6c36397d79"
+                "0b249220a46dd935c18150e753a35853ac368bb6a2207df86115dd15ec820b50",
+                "23dafee0869c07d1c27047d07e4bad2c6ab28202b959996a0cef3cff89ffaa5a"
             ]
         },
         "arm64": {
             "url": [
-                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.3/ligolo-ng_agent_0.7.3_windows_arm64.zip",
-                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.3/ligolo-ng_proxy_0.7.3_windows_arm64.zip"
+                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.4/ligolo-ng_agent_0.7.4_windows_arm64.zip",
+                "https://github.com/nicocha30/ligolo-ng/releases/download/v0.7.4/ligolo-ng_proxy_0.7.4_windows_arm64.zip"
             ],
             "hash": [
-                "fd27933b3ae0adc87424a825f7461f6bff7d157c94edc36e5fe414fd3d4c1b28",
-                "86c27e4502d46d7aafee377eddeeabef60025eb70cad999ecc98e3443da4828a"
+                "297ec45f085f25cd624c5d409ee0604c397e59a4146f027cfaa295f8a0b1adc7",
+                "2443c25e057e5788efd3615b1d7487588f087fd5b84cc8b4434abecb009a7953"
             ]
         }
     },
