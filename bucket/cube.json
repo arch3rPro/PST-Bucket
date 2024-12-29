@@ -1,0 +1,30 @@
+{
+    "version": "1.2.9",
+    "description": "(Scoop bucket by arch3rpro) Cube - 内网渗透测试工具，弱密码爆破、信息收集和漏洞扫描.",
+    "homepage": "https://github.com/JKme/cube",
+    "license": "Unknown",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/JKme/cube/releases/download/v1.2.9/cube_windows_386.exe#/cube.exe",
+            "hash": "590349c8ac2951ab23aa986eebe7b7535a108fc12535d659c0d31323471ced90"
+        },
+        "64bit": {
+            "url": "https://github.com/JKme/cube/releases/download/v1.2.9/cube_windows_amd64.exe#/cube.exe",
+            "hash": "bcab12e09896bc416341f2dc860f4a715f803feb1d283ef507a63c8e197590e1"
+        }
+    },
+    "bin": "cube.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/JKme/cube/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "32bit": {
+            "url": "https://github.com/JKme/cube/releases/download/v$version/cube_windows_386.exe"
+        },
+        "64bit": {
+            "url": "https://github.com/JKme/cube/releases/download/v$version/cube_windows_amd64.exe"
+        }
+    }
+}
