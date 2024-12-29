@@ -1,0 +1,36 @@
+{
+    "version": "0.3.3",
+    "description": "(Scoop bucket by arch3rpro) Boom - 一款基于无头浏览器的智能 Web 弱口令（后台密码）爆破检测工具.",
+    "homepage": "https://github.com/Fly-Playgroud/Boom",
+    "license": "https://github.com/Fly-Playgroud/Boom?tab=License-1-ov-file",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/Fly-Playgroud/Boom/releases/download/v0.3.3/Boom_0.3.3_windows_386.zip",
+            "hash": "e28a54c046ac6f5f0f4e5a6b5eed1963d89dc8b73b920b793d742d37f8b2f815",
+            "pre_install": [
+                "Rename-Item \"$dir\\Boom_windows_386.exe\" \"$dir\\Boom.exe\""
+            ]
+        },
+        "64bit": {
+            "url": "https://github.com/Fly-Playgroud/Boom/releases/download/v0.3.3/Boom_0.3.3_windows_amd64.zip",
+            "hash": "c89f9757c8b7be0bc587c2a132cf65649d82bc2c237fe9f7548f718db949e4fb",
+            "pre_install": [
+                "Rename-Item \"$dir\\Boom_windows_amd64.exe\" \"$dir\\Boom.exe\""
+            ]
+        }
+    },
+    "bin": [
+        "Boom.exe"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/Fly-Playgroud/Boom/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": {
+            "32bit": "https://github.com/Fly-Playgroud/Boom/releases/download/v$version/Boom_0.3.3_windows_386.zip",
+            "64bit": "https://github.com/Fly-Playgroud/Boom/releases/download/v$version/Boom_0.3.3_windows_amd64.zip"
+        }
+    }
+}
