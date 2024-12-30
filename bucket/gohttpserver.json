@@ -1,0 +1,39 @@
+{
+    "version": "1.3.0",
+    "description": "(Scoop bucket by arch3rpro) gohttpserver - The best HTTP Static File Server, write with golang+vue",
+    "homepage": "https://github.com/codeskyblue/gohttpserver",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/codeskyblue/gohttpserver/releases/download/1.3.0/gohttpserver_1.3.0_windows_amd64.zip",
+            "hash": "4d17f337d2d60b6942288bb3968550277b682b2a6f2f68f077dc6dd42466a0d3"
+        },
+        "32bit": {
+            "url": "https://github.com/codeskyblue/gohttpserver/releases/download/1.3.0/gohttpserver_1.3.0_windows_386.zip",
+            "hash": "5324dd36fbd5c59338f7b578fe4cd7242d61b38346ce44d8e21f6fac90d2cd4b"
+        },
+        "arm64": {
+            "url": "https://github.com/codeskyblue/gohttpserver/releases/download/1.3.0/gohttpserver_1.3.0_windows_arm64.zip",
+            "hash": "08cbf0a23d79f699d58ab299d2b629d3d82fa5a439ff17cb087059a8edc669d0"
+        }
+    },
+    "bin": "gohttpserver.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/codeskyblue/gohttpserver/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/codeskyblue/gohttpserver/releases/download/$version/gohttpserver_$version_windows_amd64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/codeskyblue/gohttpserver/releases/download/$version/gohttpserver_$version_windows_386.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/codeskyblue/gohttpserver/releases/download/$version/gohttpserver_$version_windows_arm64.zip"
+            }
+        }
+    }
+}
