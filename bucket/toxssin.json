@@ -1,12 +1,16 @@
 {
-    "version": "2024-07-22T11.46.23",
+    "version": "2024-12-30T13.42.37",
     "description": "(Scoop bucket by arch3rpro) toxssin - An XSS exploitation command-line interface and payload generator.",
     "homepage": "https://github.com/t3l3machus/toxssin",
     "license": "MIT",
     "suggest": "Python3",
     "url": "https://github.com/t3l3machus/toxssin/archive/refs/heads/main.zip",
-    "hash":"ac1508b511544c70cf382b0040595088dfa6334630429cac7a5df0a0af911ab9",
-    "pre_install": "Set-Content \"$dir\\toxssin.bat\" '@pushd %~dp0\npython3 toxssin.py %*\n@popd' -Encoding Ascii",
+    "hash": "ad9dcdf1fcd07d31992fbc8ee47a8ecb84f4a139565625d9250f74d86b4a514d",
+    "pre_install": [
+        "Set-Content \"$dir\\toxssin.bat\" '@pushd %~dp0",
+        "python3 toxssin.py %*",
+        "@popd' -Encoding Ascii"
+    ],
     "post_install": [
         "Move-Item -Path \"$dir\\toxssin-main\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\toxssin-main\" -Force -Recurse",
