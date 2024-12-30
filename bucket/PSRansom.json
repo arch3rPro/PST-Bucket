@@ -1,0 +1,32 @@
+{
+    "version": "2024-01-19T09.50.26",
+    "description": "(Scoop bucket by arch3rpro) PSRansom - A Windows Ransomware simulator created with PowerShell for educational purposes.",
+    "homepage": "https://github.com/JoelGMSec/PSRansom",
+    "license": "MIT",
+    "url": "https://github.com/JoelGMSec/PSRansom/archive/refs/heads/main.zip",
+    "hash": "52ca04805c0c660edc7af889402d193546298b313949d51d01db8c193565b486",
+    "pre_install": [
+        "Set-Content \"$dir\\PSRansom.bat\" '@pushd %~dp0",
+        "@powershell -ExecutionPolicy Bypass -File \"PSRansom.ps1\" %*",
+        "@popd' -Encoding Ascii",
+        "Set-Content \"$dir\\PSRansom-C2Server.bat\" '@pushd %~dp0",
+        "@powershell -ExecutionPolicy Bypass -File \"C2Server.ps1\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "post_install": [
+        "Move-Item -Path \"$dir\\PSRansom-main\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\PSRansom-main\" -Force -Recurse"
+    ],
+    "bin": [
+        "PSRansom.bat",
+        "PSRansom-C2Server.bat"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/JoelGMSec/PSRansom/commits",
+        "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
+        "replace": "$1$2.$3.$4"
+    },
+    "autoupdate": {
+        "url": "https://github.com/JoelGMSec/PSRansom/archive/refs/heads/main.zip"
+    }
+}
