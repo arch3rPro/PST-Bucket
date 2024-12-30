@@ -1,0 +1,27 @@
+{
+    "version": "2024-05-05T02.46.12",
+    "description": "(Scoop bucket by arch3rpro) X-Recon - A utility for detecting webpage inputs and conducting XSS scans.",
+    "homepage": "https://github.com/joshkar/X-Recon",
+    "license": "Unknown",
+    "suggest": "Python3",
+    "url": "https://github.com/joshkar/X-Recon/archive/refs/heads/main.zip",
+    "hash": "7f981b199ba258e7f2987e94e6025ece184e31776a2b8e9acbdfb1d757d82fc6",
+    "extract_dir": "X-Recon-main",
+    "pre_install": [
+        "Set-Content \"$dir\\X-Recon.bat\" '@pushd %~dp0",
+        "@python3 \"xr.py\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "post_install": [
+        "pip3 install -r \"$dir\\requirements.txt\""
+    ],
+    "bin": "X-Recon.bat",
+    "checkver": {
+        "url": "https://api.github.com/repos/joshkar/X-Recon/commits",
+        "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
+        "replace": "$1$2.$3.$4"
+    },
+    "autoupdate": {
+        "url": "https://github.com/joshkar/X-Recon/archive/refs/heads/main.zip"
+    }
+}
