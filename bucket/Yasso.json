@@ -1,0 +1,25 @@
+{
+    "version": "0.06-main",
+    "description": "(Scoop bucket by arch3rpro) Yasso - 强大的内网渗透辅助工具集-让Yasso像风一样支持rdp，ssh，redis，postgres，mongodb，mssql，mysql，winrm等服务爆破，快速的端口扫描，强大的web指纹识别，各种内置服务的一键利用",
+    "homepage": "https://github.com/sairson/Yasso",
+    "license": "Unkown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sairson/Yasso/releases/download/v0.06-main/Yasso_win_x64.exe#/Yasso.exe",
+            "hash": "6b37aec6253c336188d9c8035e90818a139e3425c6e590734f309bd45021f980"
+        }
+    },
+    "bin": "Yasso.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/sairson/Yasso/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sairson/Yasso/releases/download/v$version/Yasso_win_x64.exe#/Yasso.exe"
+            }
+        }
+    }
+}
