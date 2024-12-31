@@ -1,0 +1,25 @@
+{
+    "version": "1.2.5",
+    "description": "(Scoop bucket by arch3rpro) Template - Next generation RedTeam heuristic intranet scanning | 下一代RedTeam启发式内网扫描.",
+    "homepage": "https://github.com/1n7erface/Template",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/1n7erface/Template/releases/download/v1.2.5/App-amd64-noupx.exe#/Template.exe",
+            "hash": ""
+        }
+    },
+    "bin": "Template.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/1n7erface/Template/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/1n7erface/Template/releases/download/v$version/App-amd64-noupx.exe#/Template.exe"
+            }
+        }
+    }
+}
