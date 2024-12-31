@@ -1,0 +1,18 @@
+{
+    "version": "2022-05-28T03.01.10",
+    "description": "(Scoop bucket by arch3rpro) ByPassBehinder - ByPassBehinder / 冰蝎WebShell免杀生成 / Code By:Tas9er.",
+    "homepage": "https://github.com/Tas9er/ByPassBehinder",
+    "license": "Unkown",
+    "url": "https://github.com/Tas9er/ByPassBehinder/archive/refs/heads/master.zip",
+    "hash": "0213bd4aabddd22d0643c5c5505ef4e7dec150d176771e27f560ea7cdb06028b",
+    "extract_dir": "ByPassBehinder-master",
+    "bin": "ByPassBehinder.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/Tas9er/ByPassBehinder/commits",
+        "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
+        "replace": "$1$2.$3.$4"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Tas9er/ByPassBehinder/archive/refs/heads/master.zip"
+    }
+}
