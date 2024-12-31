@@ -1,0 +1,19 @@
+{
+    "version": "1.1",
+    "description": "(Scoop bucket by arch3rpro) Donut - Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters",
+    "homepage": "https://github.com/TheWover/donut",
+    "license": "BSD-3-Clause",
+    "url": "https://github.com/TheWover/donut/releases/download/v1.1/donut_v1.1.zip",
+    "hash": "6bb3a6fab8c37f5009c6e32310730650ec422f4386d296772c7780dc6f1609e9",
+    "bin": [
+        "donut.exe"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/TheWover/donut/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/TheWover/donut/releases/download/v$version/donut_v$version.zip"
+    }
+}
