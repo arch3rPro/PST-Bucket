@@ -1,0 +1,18 @@
+{
+    "version": "2022-11-01T15.21.03",
+    "description": "(Scoop bucket by arch3rpro) ByPassGodzilla - 哥斯拉WebShell免杀生成 / Code By:Tas9er.",
+    "homepage": "https://github.com/Tas9er/ByPassGodzilla",
+    "license": "Unknown",
+    "url": "https://github.com/Tas9er/ByPassGodzilla/archive/refs/heads/main.zip",
+    "hash": "fdf1555e526de0c16235f3e91293d9cbcc92300bbcd247e511351cf7d4ee671f",
+    "extract_dir": "ByPassGodzilla-main",
+    "bin": "ByPassGodzilla.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/Tas9er/ByPassGodzilla/commits",
+        "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
+        "replace": "$1$2.$3.$4"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Tas9er/ByPassGodzilla/archive/refs/heads/main.zip"
+    }
+}
