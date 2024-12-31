@@ -1,11 +1,11 @@
 {
-    "version": "2024-12-26T18.09.23",
+    "version": "2024-12-31T00.13.47",
     "description": "(Scoop bucket by arch3rpro) LFImap - Local File Inclusion discovery and exploitation tool.",
     "homepage": "https://github.com/hansmach1ne/lfimap",
     "license": "Apache-2.0",
     "suggest": "python3.X",
     "url": "https://github.com/hansmach1ne/lfimap/archive/refs/heads/master.zip",
-    "hash": "66a007255bf515ba51259196e0e626ee6fa4847898e2ff0004acf349a5c8e29c",
+    "hash": "fc1a93f0c3da139c7366919b173db8c398dcd25089af084e7525d708d21e9daf",
     "pre_install": [
         "Set-Content \"$dir\\LFImap.bat\" '@pushd %~dp0",
         "@python3 \"lfimap\\lfimap.py\" %*",
