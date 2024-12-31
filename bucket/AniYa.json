@@ -1,0 +1,17 @@
+{
+    "version": "1.2.0",
+    "description": "(Scoop bucket by arch3rpro) AniYa - 免杀框架.",
+    "homepage": "https://github.com/piiperxyz/AniYa",
+    "license": "MIT",
+    "url": "https://github.com/piiperxyz/AniYa/releases/download/v1.2.0/release.zip",
+    "hash": "90df7e2d156cd9066887f8aee5f019262cfa2b5cefb5a9343bbb54e559c2b8a7",
+    "bin": "AniYa.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/piiperxyz/AniYa/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/piiperxyz/AniYa/releases/download/v$version/release.zip"
+    }
+}
