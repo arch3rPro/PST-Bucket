@@ -1,0 +1,42 @@
+{
+    "version": "4.3.1",
+    "description": "(Scoop bucket by arch3rpro) BloodHound - Six Degrees of Domain Admin.",
+    "homepage": "https://github.com/SpecterOps/BloodHound-Legacy",
+    "license": "GPL-3.0",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v4.3.1/BloodHound-win32-ia32.zip",
+            "hash": "8d2a5cc827299d47424631882399067acf41d040c5b2aacf95092aec22d90c97",
+            "extract_dir": "BloodHound-win32-ia32"
+        },
+        "64bit": {
+            "url": "https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v4.3.1/BloodHound-win32-x64.zip",
+            "hash": "5c560a9be9b74ebc5a006a808c82813eeb5c7d7dcff5d1c34be4fb1fba562535",
+            "extract_dir": "BloodHound-win32-x64"
+        },
+        "arm64": {
+            "url": "https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v4.3.1/BloodHound-win32-arm64.zip",
+            "hash": "5ada70505b8a57566ca4cd20445cb38967d9884316537c26ef81e9ae125b29a6",
+            "extract_dir": "BloodHound-win32-arm64"
+        }
+    },
+    "bin": "BloodHound.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/SpecterOps/BloodHound-Legacy/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v$version/BloodHound-win32-ia32.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v$version/BloodHound-win32-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v$version/BloodHound-win32-arm64.zip"
+            }
+        }
+    }
+}
