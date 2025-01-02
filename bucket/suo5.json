@@ -1,26 +1,43 @@
 {
     "version": "1.3.1",
-    "description": "一款高性能 HTTP 代理隧道工具 ， A high-performance http proxy tunneling tool(Scoop bucket by arch3rpro)",
+    "description": "一款高性能 HTTP 代理隧道工具。A high-performance HTTP proxy tunneling tool (Scoop bucket for Cybersecurity by whoopscs).",
     "homepage": "https://github.com/zema1/suo5",
     "license": "MIT",
-    "notes": "https://github.com/ViCrack/scoop-bucket/blob/master/bucket/suo5.json",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zema1/suo5/releases/download/v1.3.1/suo5-gui-windows.exe",
-            "hash": "7d13fc667b3b8cf67281cb08c7d75af99eb29f857c71170c6bfad1318708560a"
+            "url": [
+                "https://github.com/zema1/suo5/releases/download/v1.3.1/suo5-gui-windows.exe#/suo5-gui.exe",
+                "https://github.com/zema1/suo5/releases/download/v1.3.1/suo5-windows-amd64.exe#/suo5.exe"
+            ],
+            "hash": [
+                "7d13fc667b3b8cf67281cb08c7d75af99eb29f857c71170c6bfad1318708560a",
+                "608e5c1936511ed51af2aa0eb6dc07f99b86d9ba4cad8ae206a783999ea3a815"
+            ]
         }
     },
     "shortcuts": [
         [
-            "suo5-gui-windows.exe",
-            "Suo5-gui"
+            "suo5-gui.exe",
+            "suo5-GUI"
         ]
     ],
-    "checkver": "github",
+    "bin": [
+        [
+            "suo5.exe",
+            "suo5"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/zema1/suo5/releases/latest",
+        "regex": "v([\\d.]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/zema1/suo5/releases/download/v$version/suo5-gui-windows.exe"
+                "url": [
+                    "https://github.com/zema1/suo5/releases/download/v$version/suo5-gui-windows.exe#/suo5-gui.exe",
+                    "https://github.com/zema1/suo5/releases/download/v$version/suo5-windows-amd64.exe#/suo5.exe"
+                ]
             }
         }
     }
