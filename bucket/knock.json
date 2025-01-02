@@ -21,6 +21,7 @@
         "replace": "$1"
     },
     "autoupdate": {
-        "url": "https://github.com/guelfoweb/knock/archive/refs/tags/$version.zip"
+        "url": "https://github.com/guelfoweb/knock/archive/refs/tags/$version.zip",
+        "extract_dir": "knock-$version",
     }
 }
