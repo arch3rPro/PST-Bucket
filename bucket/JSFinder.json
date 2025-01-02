@@ -1,0 +1,20 @@
+{
+    "version": "2020-12-10T18.25.03",
+    "description": "(Scoop bucket by arch3rpro) JSFinder - 一款用作快速在网站的js文件中提取URL，子域名的工具 a tool for quickly extracting URLs and subdomains from JS files on a website.",
+    "homepage": "https://github.com/Threezh1/JSFinder",
+    "license": "Unkown",
+    "suggest": "Python3",
+    "url": "https://github.com/Threezh1/JSFinder/archive/refs/heads/master.zip",
+    "hash": "",
+    "extract_dir": "JSFinder-master",
+    "pre_install": "Set-Content \"$dir\\JSFinder.bat\" '@pushd %~dp0\npython3 \"JSFinder.py\" %*\n@popd' -Encoding Ascii",
+    "bin": "JSFinder.bat",
+    "checkver": {
+        "url": "https://api.github.com/repos/Threezh1/JSFinder/commits",
+        "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
+        "replace": "$1$2.$3.$4"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Threezh1/JSFinder/archive/refs/heads/master.zip"
+    }
+}
