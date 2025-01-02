@@ -1,6 +1,6 @@
 {
     "version": "1.3.1",
-    "description": "一款高性能 HTTP 代理隧道工具。A high-performance HTTP proxy tunneling tool (Scoop bucket for Cybersecurity by whoopscs).",
+    "description": "(Scoop bucket by arch3rpro) suo5 - 一款高性能 HTTP 代理隧道工具。A high-performance HTTP proxy tunneling tool .",
     "homepage": "https://github.com/zema1/suo5",
     "license": "MIT",
     "architecture": {
