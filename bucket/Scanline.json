@@ -1,0 +1,10 @@
+{
+    "version": "1.0.1",
+    "description": "(Scoop bucket by arch3rpro) Scanline - McAfee 出品的一款经典的端口扫描工具.",
+    "homepage": "https://www.mcafee.com/us/downloads/free-tools/termsofuse.aspx",
+    "notes": "工具官网地址已失效，本文件从网上获取，请自行辨别后门。",
+    "license": "Unknown",
+    "url": "https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/sl.exe",
+    "hash": "eaef901b31b5835035b75302f94fee27288ce46971c6db6221ecbea9ba7ff9d0",
+    "bin": "sl.exe"
+}
