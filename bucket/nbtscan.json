@@ -1,0 +1,16 @@
+{
+    "version": "1.0.35",
+    "description": "(Scoop bucket by arch3rpro) nbtscan - This is a command-line tool that scans for open NETBIOS nameservers on a local or remote TCP/IP network, and this is a first step in finding of open shares.",
+    "homepage": "http://www.unixwiz.net/tools/",
+    "license": "Unkown",
+    "url": "http://www.unixwiz.net/tools/nbtscan-1.0.35.exe#/nbtscan.exe",
+    "hash": "c9d5dc956841e000bfd8762e2f0b48b66c79b79500e894b4efa7fb9ba17e4e9e",
+    "bin": "nbtscan.exe",
+    "checkver": {
+        "url": "http://www.unixwiz.net/tools/",
+        "regex": "nbtscan-([\\d.]+)\\.exe"
+    },
+    "autoupdate": {
+        "url": "http://www.unixwiz.net/tools/nbtscan-$version.exe"
+    }
+}
