@@ -1,0 +1,26 @@
+{
+    "version": "7.0.2",
+    "description": "(Scoop bucket by arch3rpro) Knock - Knock Subdomain Scan.",
+    "homepage": "https://github.com/guelfoweb/knock",
+    "license": "GPL-3.0",
+    "url": "https://github.com/guelfoweb/knock/archive/refs/tags/7.0.2.zip",
+    "hash": "6f16a795423bff3f62491e7f0413198fa2be2471650ffce3a9b58ece00c02b76",
+    "extract_dir": "knock-7.0.2",
+    "pre_install": [
+        "Set-Content \"$dir\\knock.bat\" '@pushd %~dp0",
+        "@python3 \"knockpy.py\" %*",
+        "@popd' -Encoding Ascii"
+    ],
+    "post_install": [
+        "pip install -r \"$dir\\requirements.txt\""
+    ],
+    "bin": "knock.bat",
+    "checkver": {
+        "url": "https://api.github.com/repos/guelfoweb/knock/tags",
+        "regex": "([\\d.]+)",
+        "replace": "$1"
+    },
+    "autoupdate": {
+        "url": "https://github.com/guelfoweb/knock/archive/refs/tags/$version.zip"
+    }
+}
