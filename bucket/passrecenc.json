@@ -1,0 +1,43 @@
+{
+    "version": "1.0",
+    "description": "(Scoop bucket by arch3rpro) PassRecEnc - NirSoft 网站为各种 Windows 程序提供免费的密码恢复工具，包括 Chrome Web 浏览器、Firefox Web 浏览器、Microsoft Edge、Internet Explorer、Microsoft Outlook、Windows 网络密码、无线网络密钥、Windows拨号条目等.",
+    "homepage": "https://www.nirsoft.net",
+    "license": "Freeware",
+    "notes": "部分工具可能在 Windows 11 或 ARM64 环境下不兼容。",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/packages/passrecenc.zip#/passrecenc1",
+            "hash": "6914838c1b568aff98f4374dd26f4532df11e7a0e70f8729f0a3803182ce3b1f" 
+        }
+    },
+    "bin": [
+        "BulletsPassView.exe",
+        "ChromePass.exe",
+        "CredentialsFileView.exe",
+        "DataProtectionDecryptor.exe",
+        "Dialupass.exe",
+        "EncryptedRegView.exe",
+        "iepv.exe",
+        "mailpv.exe",
+        "mspass.exe",
+        "netpass.exe",
+        "PasswordFox.exe",
+        "PstPassword.exe",
+        "RouterPassView.exe",
+        "SniffPass.exe",
+        "VaultPasswordView.exe",
+        "WebBrowserPassView.exe",
+        "WirelessKeyView.exe"
+    ],
+    "pre_install": [
+        "& \"7z.exe\" x \"$dir\\passrecenc1\" -p\"nirsoft123!\" -o\"$dir\"",
+        "Remove-Item \"$dir\\passrecenc1\" -Force"
+    ],
+    "checkver": {
+        "url": "https://www.nirsoft.net",
+        "regex": "passrecenc.zip"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/packages/passrecenc.zip#/passrecenc1"
+    }
+}
