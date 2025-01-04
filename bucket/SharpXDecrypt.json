@@ -1,0 +1,16 @@
+{
+  "version": "0.1.4",
+  "description": "(Scoop bucket by arch3rpro) SharpXDecrypt - Xshell全版本密码恢复工具.",
+  "homepage": "https://github.com/JDArmy/SharpXDecrypt",
+  "license": "MIT",
+  "url": "https://github.com/JDArmy/SharpXDecrypt/releases/download/v0.1.4/SharpXDecrypt.exe",
+  "hash": "2aea0b4e3612b01d4550d3014d4324db74406a66e0ab14802b7033564a5771eb",
+  "bin": "SharpXDecrypt.exe",
+  "checkver": {
+    "url": "https://github.com/JDArmy/SharpXDecrypt/releases",
+    "regex": "releases/tag/v([\\d.]+)"
+  },
+  "autoupdate": {
+    "url": "https://github.com/JDArmy/SharpXDecrypt/releases/download/v$version/SharpXDecrypt.exe"
+  }
+}
