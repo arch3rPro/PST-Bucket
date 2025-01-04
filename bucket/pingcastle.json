@@ -1,0 +1,16 @@
+{
+  "version": "3.3.0.1",
+  "description": "(Scoop bucket by arch3rpro) PingCastle - Get Active Directory Security at 80% in 20% of the time",
+  "homepage": "https://www.pingcastle.com/",
+  "license": "Freeware",
+  "url": "https://github.com/netwrix/pingcastle/releases/download/3.3.0.1/PingCastle_3.3.0.1.zip",
+  "hash": "",
+  "bin": "PingCastle.exe",
+  "checkver": {
+    "url": "https://github.com/netwrix/pingcastle/releases",
+    "regex": "PingCastle_([\\d.]+)\\.zip"
+  },
+  "autoupdate": {
+    "url": "https://github.com/netwrix/pingcastle/releases/download/$version/PingCastle_$version.zip"
+  }
+}
