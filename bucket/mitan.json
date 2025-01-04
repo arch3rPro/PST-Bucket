@@ -1,5 +1,5 @@
 {
-    "version": "1.17",
+    "version": "1.18",
     "description": "(Scoop bucket by arch3rpro) mitam - 密探渗透测试工具包含域名查询，搜索语法，资产测绘（FOFA，Hunter，quake），指纹识别，敏感信息采集，文件扫描、密码字典等功能。",
     "homepage": "https://github.com/kkbo8005/mitan",
     "license": "Unknown",
@@ -9,11 +9,13 @@
             "java/openjdk"
         ]
     },
-    "url": "https://github.com/kkbo8005/mitan/releases/download/1.17/mitan1.17.zip",
-    "hash": "2c8a36b7f58dba7a8ebb8e6dbbb42249f2abf6e26b225a387bd5d015d599e7dc",
+    "url": "https://github.com/kkbo8005/mitan/releases/download/1.18/mitan1.18.zip",
+    "hash": "285841dd447e4f5ec7d3ff7bfcce5eb7d9861f9090c0161c9eb4298c6d0e67cb",
     "pre_install": [
         "Rename-Item \"$dir\\mitan-jar-with-dependencies.jar\" -NewName \"mitan.jar\"",
-        "Set-Content \"$dir\\mitan.bat\" '@pushd %~dp0\njava.exe -jar \"mitan.jar\" %*\n@popd' -Encoding Ascii",
+        "Set-Content \"$dir\\mitan.bat\" '@pushd %~dp0
+java.exe -jar \"mitan.jar\" %*
+@popd' -Encoding Ascii",
         "if (!(Test-Path \"$persist_dir\\config.yaml\")) { Copy-Item \"$dir\\config-example.yaml\" \"$dir\\config.yaml\" }"
     ],
     "bin": "mitan.bat",
