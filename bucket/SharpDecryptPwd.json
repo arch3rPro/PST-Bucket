@@ -1,0 +1,19 @@
+{
+  "version": "2022-03-16T05.47.14",
+  "description": "(Scoop bucket by arch3rpro) SharpDecryptPwd - 对密码已保存在 Windwos 系统上的部分程序进行解析,包括：Navicat,TeamViewer,FileZilla,WinSCP,Xmangager系列产品（Xshell,Xftp).",
+  "homepage": "https://github.com/uknowsec/SharpDecryptPwd",
+  "license": "MIT",
+  "notes":"工具依赖.net3.5框架，启动后windows功能自动搜索安装",
+  "url": "https://github.com/uknowsec/SharpDecryptPwd/archive/refs/heads/master.zip",
+  "hash": "409fd1ad64cbc221ed7dbf43656d934753669a4b85d791e78255d3fd759bcbe6",
+  "extract_dir": "SharpDecryptPwd-master",
+  "bin": "SharpDecryptPwd.exe",
+  "checkver": {
+    "url": "https://api.github.com/repos/uknowsec/SharpDecryptPwd/commits",
+    "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
+    "replace": "$1$2.$3.$4"
+  },
+  "autoupdate": {
+    "url": "https://github.com/uknowsec/SharpDecryptPwd/archive/refs/heads/master.zip"
+  }
+}
