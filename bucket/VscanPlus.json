@@ -1,0 +1,17 @@
+{
+  "version": "1.0.5.1",
+  "description": "(Scoop bucket by arch3rpro) VscanPlus - 内外网漏洞扫描工具,vscan二次开发的版本，端口扫描、指纹检测、目录fuzz、漏洞扫描功能工具，批量快速检测网站安全隐患.",
+  "homepage": "https://github.com/youki992/VscanPlus",
+  "license": "BSD-3-Clause",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/youki992/VscanPlus/releases/download/v1.0.5.1/VscanPlus-windows-amd64.zip",
+      "hash": "c400811ade31c0d7056c502a692ba181f34b175a7c4eeef5276858e416f7d055"
+    }
+  },
+  "bin": "VscanPlus.exe",
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/youki992/VscanPlus/releases/download/v$version/VscanPlus-windows-amd64.zip"
+    }
+}
