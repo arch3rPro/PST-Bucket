@@ -1,0 +1,50 @@
+{
+  "version": "2.0.2",
+  "description": "(Scoop bucket by arch3rpro) Neutrino-Proxy - 中微子代理（内网穿透）。",
+  "homepage": "https://github.com/dromara/neutrino-proxy",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": [
+        "https://github.com/dromara/neutrino-proxy/releases/download/2.0.2/neutrino-proxy-client-windows-2.0.2-native.zip",
+        "https://github.com/dromara/neutrino-proxy/releases/download/2.0.2/neutrino-proxy-server-windows-2.0.2-native.zip"
+      ],
+      "hash": [
+        "6ab915a75b8d5c812fb7d4abd1b9a87855592c10d6ff7dd5a49666babb2d16c2",
+        "a09a76f28678899f8d40d12d2f55d33f4ac78f7caac3f87e7f629d89ce3078ef"
+      ]
+    }
+  },
+  "pre_install": [
+    "if (Test-Path \"$dir\\neutrino-proxy-client-windows-$version-native\") {",
+    "    Rename-Item \"$dir\\neutrino-proxy-client-windows-$version-native\" \"$dir\\client\"",
+    "}",
+    "if (Test-Path \"$dir\\neutrino-proxy-server-windows-$version-native\") {",
+    "    Rename-Item \"$dir\\neutrino-proxy-server-windows-$version-native\" \"$dir\\server\"",
+    "}"
+  ],
+  "bin": [
+    [
+      "client\\neutrino-proxy-client.exe",
+      "neutrino-client"
+    ],
+    [
+      "server\\neutrino-proxy-server.exe",
+      "neutrino-server"
+    ]
+  ],
+  "checkver": {
+    "url": "https://github.com/dromara/neutrino-proxy/releases",
+    "regex": "releases/download/([\\d.]+)/neutrino-proxy-client-windows-([\\d.]+)-native.zip"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": [
+          "https://github.com/dromara/neutrino-proxy/releases/download/$version/neutrino-proxy-client-windows-$version-native.zip",
+          "https://github.com/dromara/neutrino-proxy/releases/download/$version/neutrino-proxy-server-windows-$version-native.zip"
+        ]
+      }
+    }
+  }
+}
