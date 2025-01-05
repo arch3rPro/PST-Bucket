@@ -1,0 +1,16 @@
+{
+  "version": "v2.2.0",
+  "description": "(Scoop bucket by arch3rpro) Rubeus - A C# toolset for raw Kerberos interaction and abuse.",
+  "homepage": "https://github.com/GhostPack/Rubeus",
+  "license": "BSD-3-clause",
+  "url": "https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/raw/master/Rubeus.exe",
+  "hash": "",
+  "bin": "Rubeus.exe",
+  "checkver": {
+    "url": "https://github.com/r3motecontrol/Ghostpack-CompiledBinaries",
+    "regex": "Rubeus\\.exe"
+  },
+  "autoupdate": {
+    "url": "https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/raw/master/Rubeus.exe"
+  }
+}
