@@ -5,7 +5,7 @@
   "notes":"域渗透工具，请上传到域环境内使用",
   "license": "Freeware",
   "url": "https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/AdFind.zip#/AdFind.zip1",
-  "hash": "",
+  "hash": "9d0ebfb453ff93cbd5478eed0a80da20ac4bb1c087f391cefabbcfc077267a04",
   "pre_install": [
     "& \"7z.exe\" x \"$dir\\AdFind.zip1\" -pNotMalware -o\"$dir\"",
     "Remove-Item \"$dir\\AdFind.zip1\" -Force"
