@@ -2,3 +2,4 @@
 /.cache/
 /.vagrant/
 .history/
+.DS_Store
