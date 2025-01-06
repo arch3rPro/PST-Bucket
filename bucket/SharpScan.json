@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "description": "(Scoop bucket by arch3rpro) SharpScan - 内网资产收集、探测主机存活、端口扫描、域控定位、文件搜索、各种服务爆破（SSH、SMB、MsSQL等）、Socks代理，一键自动化+无文件落地扫描.",
+  "homepage": "https://github.com/INotGreen/SharpScan",
+  "license": "Unkown",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/INotGreen/SharpScan/releases/download/SharpScan-v1.0.0/SharpScan.exe",
+      "hash": "d8f87473de6b40981044ca0e6674b463100b0f5461bfd2e866f935034ca4dc7c"
+    }
+  },
+  "bin": "SharpScan.exe",
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/INotGreen/SharpScan/releases/download/SharpScan-v$version/SharpScan.exe"
+  }
+}
