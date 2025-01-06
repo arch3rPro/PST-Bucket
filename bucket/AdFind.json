@@ -1,0 +1,21 @@
+{
+  "version": "1.62.00",
+  "description": "(Scoop bucket by arch3rpro) AdFind - A query tool for Active Directory, allowing the user to easily search for various information.",
+  "homepage": "https://www.joeware.net/freetools/tools/adfind/",
+  "notes":"域渗透工具，请上传到域环境内使用",
+  "license": "Freeware",
+  "url": "https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/AdFind.zip#/AdFind.zip1",
+  "hash": "",
+  "pre_install": [
+    "& \"7z.exe\" x \"$dir\\AdFind.zip1\" -pNotMalware -o\"$dir\"",
+    "Remove-Item \"$dir\\AdFind.zip1\" -Force"
+  ],
+  "bin": "AdFind.exe",
+  "checkver": {
+    "url": "https://github.com/arch3rPro/PST-Files",
+    "regex": "AdFind.zip"
+  },
+  "autoupdate": {
+    "url": "https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/AdFind.zip"
+  }
+}
