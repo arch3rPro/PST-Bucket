@@ -5,7 +5,7 @@
     "license": "MIT",
     "url": "https://github.com/leokhoa/laragon/archive/refs/tags/7.0.0.zip",
     "hash": "de48ddc298b884851a09b566e2006edfbd9b0f2a4dcb344ac4e0c9bfe52ec556",
-    "extract_dir": "laragon-6.0.0",
+    "extract_dir": "laragon-7.0.0",
     "bin": [
         "laragon.exe",
         "bin/composer/composer.bat",
@@ -36,6 +36,7 @@
         "github": "https://github.com/leokhoa/laragon"
     },
     "autoupdate": {
-        "url": "https://github.com/leokhoa/laragon/archive/refs/tags/$version.zip"
+        "url": "https://github.com/leokhoa/laragon/archive/refs/tags/$version.zip",
+        "extract_dir": "laragon-$version"
     }
 }
