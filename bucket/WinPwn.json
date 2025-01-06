@@ -1,0 +1,22 @@
+{
+  "version": "1.6",
+  "description": "(Scoop bucket by arch3rpro) WinPwn - Automation for internal Windows Penetrationtest AD-Security.",
+  "homepage": "https://github.com/S3cur3Th1tSh1t/WinPwn",
+  "license": "BSD-3-Clause",
+  "url": "https://github.com/S3cur3Th1sSh1t/WinPwn/releases/download/1.6/WinPwn.exe",
+  "hash": "108c57d9ee48a24bb6c69f7860c1aa697107136c0cc2c4482db0b667ed20e9ac",
+  "pre_install": [
+    "Invoke-WebRequest -Uri https://raw.githubusercontent.com/S3cur3Th1sSh1t/WinPwn/refs/heads/master/WinPwn.ps1 -OutFile \"$dir\\WinPwn.ps1\""
+  ],
+  "bin": [
+    "WinPwn.exe",
+    "WinPwn.ps1"
+  ],
+  "checkver": {
+    "url": "https://github.com/S3cur3Th1tSh1t/WinPwn/releases",
+    "regex": "releases/tag/([\\d.]+)"
+  },
+  "autoupdate": {
+    "url": "https://github.com/S3cur3Th1tSh1t/WinPwn/releases/download/$version/WinPwn.exe"
+  }
+}
