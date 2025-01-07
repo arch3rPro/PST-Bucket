@@ -4,7 +4,7 @@
   "homepage": "https://www.pingcastle.com/",
   "license": "Freeware",
   "url": "https://github.com/netwrix/pingcastle/releases/download/3.3.0.1/PingCastle_3.3.0.1.zip",
-  "hash": "",
+  "hash": "ce39d23d0849e765e6c47ce0542e0d70c21bda3fd2264369c8779e2d25c3b13d",
   "bin": "PingCastle.exe",
   "checkver": {
     "url": "https://github.com/netwrix/pingcastle/releases",
