@@ -10,12 +10,10 @@
         ]
     },
     "url": "https://github.com/kkbo8005/mitan/releases/download/1.18/mitan1.18.zip",
-    "hash": "285841dd447e4f5ec7d3ff7bfcce5eb7d9861f9090c0161c9eb4298c6d0e67cb",
+    "hash": "59dab2984856f41c6f1f511283c7545265391b10f0bd7e830d2b54409aba7a82",
     "pre_install": [
         "Rename-Item \"$dir\\mitan-jar-with-dependencies.jar\" -NewName \"mitan.jar\"",
-        "Set-Content \"$dir\\mitan.bat\" '@pushd %~dp0
-java.exe -jar \"mitan.jar\" %*
-@popd' -Encoding Ascii",
+        "Set-Content \"$dir\\mitan.bat\" '@pushd %~dp0\njava.exe -jar \"mitan.jar\" %*\n@popd' -Encoding Ascii",
         "if (!(Test-Path \"$persist_dir\\config.yaml\")) { Copy-Item \"$dir\\config-example.yaml\" \"$dir\\config.yaml\" }"
     ],
     "bin": "mitan.bat",
@@ -29,3 +27,4 @@ java.exe -jar \"mitan.jar\" %*
         "url": "https://github.com/kkbo8005/mitan/releases/download/$version/mitan$version.zip"
     }
 }
+
