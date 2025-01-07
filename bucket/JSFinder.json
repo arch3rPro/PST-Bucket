@@ -5,7 +5,7 @@
     "license": "Unkown",
     "suggest": "Python3",
     "url": "https://github.com/Threezh1/JSFinder/archive/refs/heads/master.zip",
-    "hash": "",
+    "hash": "e53be9cd8c805d445387a50ff8a6af2d4ce72baf98af914d754d4f81245cff6a",
     "extract_dir": "JSFinder-master",
     "pre_install": "Set-Content \"$dir\\JSFinder.bat\" '@pushd %~dp0\npython3 \"JSFinder.py\" %*\n@popd' -Encoding Ascii",
     "bin": "JSFinder.bat",
