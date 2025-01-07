@@ -1,29 +1,41 @@
 {
-    "version": "1.5.2",
+    "version": "2.0.1",
     "description": "(Scoop bucket by arch3rpro) Wavely - 一个好用的nuclei GUI POC管理工具.",
     "homepage": "https://github.com/perlh/Wavely",
     "notes": "此配置由arch3rPro独家编写，安装时集成了NucleiTP项目，自动整合Nuclei的漏洞POC ",
-    "license": "Unkown",
+    "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/perlh/Wavely/releases/download/1.5.2/Wavely_windows_amd64_1.5.2.exe#/wavely.exe",
-            "hash": "a8c9cca2812b630a7dbbc787253338d4ef0c73959ddb9240b0fbdaa5b2f4daef",
-            "pre_install": [
-                "New-Item -ItemType Directory -Force -Path \"$dir\\.wavely\\templates\"",
-                "git clone https://github.com/ExpLangcn/NucleiTP.git \"$dir\\.wavely\\templates\\NucleiTP\"",
-                "git clone https://github.com/projectdiscovery/nuclei-templates \"$dir\\.wavely\\templates\\nuclei-templates\""
-            ]
+            "url": "https://github.com/perlh/Wavely/releases/download/v2.0.1/Wavely-2.0.1-Windows-amd64-installer.zip",
+            "hash": ""
+        },
+        "arm64": {
+            "url": "https://github.com/perlh/Wavely/releases/download/v2.0.1/Wavely-2.0.1-Windows-arm64-installer.zip",
+            "hash": ""
         }
     },
+    "pre_install": [
+        "Get-ChildItem \"$dir\\Wavely-*.exe\" | Rename-Item -NewName 'WavelySetup.exe'",
+        "& \"7z.exe\" x \"$dir\\WavelySetup.exe\" -o\"$dir\"",
+        "New-Item -ItemType Directory -Force -Path \"$dir\\.wavely\\templates\"",
+        "git clone https://github.com/ExpLangcn/NucleiTP.git \"$dir\\.wavely\\templates\\NucleiTP\"",
+        "git clone https://github.com/projectdiscovery/nuclei-templates \"$dir\\.wavely\\templates\\nuclei-templates\""
+    ],
+    "post_install": [
+        "Remove-Item \"$dir\\WavelySetup.exe\" -Force"
+    ],
     "bin": "wavely.exe",
     "checkver": {
         "url": "https://github.com/perlh/Wavely/releases",
-        "regex": "releases/download/([\\d.]+)/Wavely_windows_amd64_[\\d.]+\\.exe"
+        "regex": "tag/v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/perlh/Wavely/releases/download/$version/Wavely_windows_amd64_$version.exe#/wavely.exe"
+                "url": "https://github.com/perlh/Wavely/releases/download/v$version/Wavely-$version-Windows-amd64-installer.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/perlh/Wavely/releases/download/v$version/Wavely-$version-Windows-arm64-installer.zip"
             }
         }
     }
