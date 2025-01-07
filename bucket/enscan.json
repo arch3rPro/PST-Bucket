@@ -8,7 +8,7 @@
             "url": "https://github.com/wgpsec/ENScan_GO/releases/download/v1.1.1/enscan-v1.1.1-windows-amd64.zip",
             "hash": "54924f70cac9e475391c9c99be626d03b352f90f34d9a4e624339a2568dbf4fe",
             "pre_install": [
-                "Rename-Item  \"$dir\\enscan-v1.0.2-windows-amd64.exe\" \"$dir\\enscan.exe\"",
+                "Rename-Item  \"$dir\\enscan-v$version-windows-amd64.exe\" \"$dir\\enscan.exe\"",
                 "& \"$dir\\enscan.exe\" -v"
             ]
         }
