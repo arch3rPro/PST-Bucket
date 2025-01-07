@@ -1,15 +1,25 @@
 {
-    "version": "v3.0.0",
-    "description": "(Scoop bucket by arch3rpro)-利用大量高威胁poc/exp快速获取目标权限，用于渗透和红队快速打点",
-    "homepage": "https://github.com/tr0uble-mAker/POC-bomber",
-    "license": "GPL-3.0",
-    "suggest": "python3",
+  "version": "2023-06-09T13.20.09",
+  "description": "(Scoop bucket by arch3rpro) POC-bomber - 利用大量高威胁 POC/EXP 快速获取目标权限，用于渗透和红队快速打点",
+  "homepage": "https://github.com/tr0uble-mAker/POC-bomber",
+  "license": "GPL-3.0",
+  "suggest": "python3",
+  "url": "https://github.com/tr0uble-mAker/POC-bomber/archive/refs/heads/main.zip",
+  "hash": "2876b8f98ebb661bb86f1df7c4c3c34b3f15df074ae8f7bcbc288e6301d24d98",
+  "pre_install": "Set-Content \"$dir\\POC-bomber.bat\" '@pushd %~dp0\npython3 \"pocbomber.py\" %*\n@popd' -Encoding Ascii",
+  "post_install": [
+    "Move-Item -Path \"$dir\\POC-bomber-main\\*\" -Destination \"$dir\\\"",
+    "Remove-Item \"$dir\\POC-bomber-main\" -Force -Recurse",
+    "pip3 install -r \"$dir\\requirements.txt\""
+  ],
+  "bin": "POC-bomber.bat",
+  "checkver": {
+    "url": "https://api.github.com/repos/tr0uble-mAker/POC-bomber/commits",
+    "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
+    "replace": "$1$2.$3.$4"
+  },
+  "autoupdate": {
     "url": "https://github.com/tr0uble-mAker/POC-bomber/archive/refs/heads/main.zip",
-    "pre_install": "Set-Content \"$dir\\POC-bomber.bat\" '@pushd %~dp0\npython3 \"pocbomber.py\" %*\n@popd' -Encoding Ascii",
-    "post_install": [
-        "Move-Item -Path \"$dir\\POC-bomber-main\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\POC-bomber-main\" -Force -Recurse",
-        "pip3 install -r \"$dir\\requirements.txt\""
-    ],
-    "bin": "POC-bomber.bat"
+    "hash": "auto"
+  }
 }
