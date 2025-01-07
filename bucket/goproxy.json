@@ -1,16 +1,19 @@
 {
-    "homepage": "https://github.com/snail007/goproxy",
     "version": "14.8",
+    "description": "(Scoop bucket by arch3rpro) GoProxy - golang实现的高性能http,https,websocket,tcp,socks5代理服务器,支持内网穿透,链式代理,通讯加密,智能HTTP,SOCKS5代理,黑白名单,限速,限流量,限连接数,跨平台,KCP支持,认证API",
+    "homepage": "https://github.com/snail007/goproxy",
+    "license": "GPL-3.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/snail007/goproxy/releases/download/v14.8/proxy-windows-amd64.tar.gz",
-            "hash": "a9201b3e386a2020a949200cd25093a74ee12f23e5123a797bb70dd6dbce977c"
+            "hash": "325beeeade6a9976cd73b9820eb48ad7dd73fc83f8b7e2215fe4e2faa4a7e5a2"
         },
         "32bit": {
             "url": "https://github.com/snail007/goproxy/releases/download/v14.8/proxy-windows-386.tar.gz",
-            "hash": "7de697d282fa9aaf18a1287ccd37996997aae785efa706f1e99b9f5428141f91"
+            "hash": "1db968085742df51a70adb12a66fd6c336b30b2c8ad917076e5a4df8593536e4"
         }
     },
+    "bin": "proxy.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
@@ -21,6 +24,5 @@
                 "url": "https://github.com/snail007/goproxy/releases/download/v$version/proxy-windows-386.tar.gz"
             }
         }
-    },
-    "bin": "proxy.exe"
+    }
 }
