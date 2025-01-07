@@ -3,8 +3,8 @@
   "description": "(Scoop bucket by arch3rpro) Windows Update Blocker- 彻底关闭Windows自动更新工具 ",
   "homepage": "https://www.sordum.org/downloads/?st-windows-update-blocker",
   "license": "Freeware",
-  "url": "https://www.sordum.org/files/download/windows-update-blocker/Wub.zip",
-  "hash": "b9bae3d2cd5163313fa42d99b367f63e6d5ab5393bd645e7f71fe8cd5a2f74e4",
+  "url": "https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/Wub.zip",
+  "hash": "ba2563e06801d3c7360c5ba2459cc24456f301e546489393d86b97ab82d7c0c2",
   "extract_dir": "Wub",
   "architecture": {
     "32bit": {
