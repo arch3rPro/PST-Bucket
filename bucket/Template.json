@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/1n7erface/Template/releases/download/v1.2.5/App-amd64-noupx.exe#/Template.exe",
-            "hash": ""
+            "hash": "ac86673b9bc91a7fefa4e6196511ba7d2c9ccacb5a2cbd32a22ebcce91690023"
         }
     },
     "bin": "Template.exe",
