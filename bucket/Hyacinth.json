@@ -1,5 +1,5 @@
 {
-    "version": "1.4",
+    "version": "2.0",
     "description": "(Scoop bucket by arch3rpro) Hyacinth - 一款java漏洞集合工具",
     "homepage": "https://github.com/pureqh/Hyacinth",
     "license": "Unkown",
@@ -9,16 +9,14 @@
             "java/openjdk"
         ]
     },
-    "url": "https://github.com/pureqh/Hyacinth/releases/download/hyacinth-v1.4/hyacinth-v1.4.jar#/hyacinth.jar",
-    "hash": "37cd35b74bc25fe185827b5c39dbb2b6656b3012c78a3705f8984a15a5e33bec",
+    "url": "https://github.com/pureqh/Hyacinth/releases/download/hyacinth-v2.0/hyacinth-v2.0.jar#/hyacinth.jar",
+    "hash": "14ca41ada2428b60b8ae033f7d35c6e3c3074f75c422b67374301605e4dfb19d",
     "pre_install": [
-        "Set-Content \"$dir\\hyacinth.bat\" '@pushd %~dp0\n java.exe -jar \"hyacinth.jar\" %*\n@popd' -Encoding Ascii",
+        "Invoke-WebRequest -Uri \"https://github.com/pureqh/Hyacinth/releases/download/hyacinth-v2.0/config.txt\" -OutFile \"$dir\\config.txt\" -UseBasicParsing",
         "Invoke-WebRequest -Uri \"https://github.com/pureqh/Hyacinth/releases/download/hyacinth-v1.4/config.txt\" -OutFile \"$dir\\config.txt\" -UseBasicParsing"
     ],
     "bin": "hyacinth.bat",
-    "persist": [
-        "config.txt"
-    ],
+    "persist": "config.txt",
     "checkver": {
         "url": "https://api.github.com/repos/pureqh/Hyacinth/releases/latest",
         "jsonpath": "$.tag_name",
@@ -26,8 +24,6 @@
     },
     "autoupdate": {
         "url": "https://github.com/pureqh/Hyacinth/releases/download/hyacinth-v$version/hyacinth-v$version.jar#/hyacinth.jar",
-        "pre_install": [
-            "Invoke-WebRequest -Uri \"https://github.com/pureqh/Hyacinth/releases/download/hyacinth-v$version/config.txt\" -OutFile \"$dir\\config.txt\" -UseBasicParsing"
-        ]
+        "pre_install": "Invoke-WebRequest -Uri \"https://github.com/pureqh/Hyacinth/releases/download/hyacinth-v$version/config.txt\" -OutFile \"$dir\\config.txt\" -UseBasicParsing"
     }
 }
