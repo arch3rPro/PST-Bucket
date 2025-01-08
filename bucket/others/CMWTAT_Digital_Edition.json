@@ -1,0 +1,26 @@
+{
+    "version": "2.7.2.0",
+    "description": "(Scoop bucket by arch3rpro) CMWTAT Digital Edition - CloudMoe Windows 10/11 Activation Toolkit get digital license, the best open source Win 10/11 activator in GitHub. GitHub 上最棒的开源 Win10/Win11 数字权利（数字许可证）激活工具！",
+    "homepage": "https://github.com/TGSAN/CMWTAT_Digital_Edition",
+    "license": "https://github.com/TGSAN/CMWTAT_Digital_Edition?tab=License-1-ov-file#readme",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/TGSAN/CMWTAT_Digital_Edition/releases/download/2.7.2.0/CMWTAT_Digital_Release_2_7_2_0.exe#/CMWTAT.exe",
+            "hash": "84dcd73bacd3becba86255a021b936052b929cfdb852c3e5cc240bedf2b48217"
+        }
+    },
+    "bin": "CMWTAT.exe",
+    "shortcuts": [
+        [
+            "CMWTAT.exe",
+            "CMWTAT Digital Edition"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/TGSAN/CMWTAT_Digital_Edition/releases",
+        "regex": "tag/([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/TGSAN/CMWTAT_Digital_Edition/releases/download/$version/CMWTAT_Digital_Release_$underscoreVersion.exe#/CMWTAT.exe"
+    }
+}
