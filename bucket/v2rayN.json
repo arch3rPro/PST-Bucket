@@ -1,0 +1,20 @@
+{
+  "version": "7.4.2",
+  "description": "(Scoop bucket by arch3rpro) v2rayN - A GUI client for Windows, Linux and macOS, support Xray core and sing-box-core and others",
+  "homepage": "https://github.com/2dust/v2rayN",
+  "license": "GPL-3.0",
+  "url": "https://github.com/2dust/v2rayN/releases/download/7.4.2/v2rayN-windows-64-SelfContained-With-Core.7z",
+  "hash": "753675f5257d256d95d67f6412b8cfc0fdff76cae927eeaccdd7f5f4017d9faa",
+  "extract_dir": "v2rayN-windows-64-SelfContained-With-Core",
+  "shortcuts": [
+    [
+      "v2rayN.exe",
+      "v2rayN"
+    ]
+  ],
+  "persist": "guiConfigs",
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN-windows-64-SelfContained-With-Core.7z"
+  }
+}
