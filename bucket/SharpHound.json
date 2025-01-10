@@ -1,18 +1,16 @@
 {
-  "version": "2.5.9",
-  "description": "(Scoop bucket by arch3rpro) SharpHound - C# Data Collector for BloodHound.",
-  "homepage": "https://github.com/SpecterOps/SharpHound",
-  "license": "GPL-3.0",
-  "url": "https://github.com/SpecterOps/SharpHound/releases/download/v2.5.9/SharpHound-v2.5.9.zip",
-  "hash": "98860d5110dbc81f0e83681a6977bbefe0b987f98346847a35b254ec5c0994aa",
-  "bin": [
-    "SharpHound.exe"
-  ],
-  "checkver": {
-    "url": "https://github.com/SpecterOps/SharpHound/releases",
-    "regex": "releases/tag/v([\\d.]+)"
-  },
-  "autoupdate": {
-    "url": "https://github.com/SpecterOps/SharpHound/releases/download/v$version/SharpHound-v$version.zip"
-  }
+    "version": "2.5.13",
+    "description": "(Scoop bucket by arch3rpro) SharpHound - C# Data Collector for BloodHound.",
+    "homepage": "https://github.com/SpecterOps/SharpHound",
+    "license": "GPL-3.0",
+    "url": "https://github.com/SpecterOps/SharpHound/releases/download/v2.5.13/SharpHound-v2.5.13.zip",
+    "hash": "9df25d2a8a999c9871639c8e53bedf3bcdfc5c1c6250f77e8d416c38c167121f",
+    "bin": "SharpHound.exe",
+    "checkver": {
+        "url": "https://github.com/SpecterOps/SharpHound/releases",
+        "regex": "releases/tag/v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/SpecterOps/SharpHound/releases/download/v$version/SharpHound-v$version.zip"
+    }
 }
