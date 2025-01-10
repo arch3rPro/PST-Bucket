@@ -1,13 +1,10 @@
 {
-    "version": "23.0",
+    "version": "24.3",
     "description": "MobaXterm 简体中文汉化版",
     "homepage": "https://github.com/RipplePiam/MobaXterm-Chinese-Simplified",
-    "license": {
-        "identifier": "Freeware",
-        "url": "https://mobaxterm.mobatek.net/license.html"
-    },
-    "url": "https://github.com/RipplePiam/MobaXterm-Chinese-Simplified/releases/download/v0.23.109/MobaXterm_Portable_v23.0_cn.zip",
-    "hash": "e98f0356d607a2aecd6f0f256e1ffe060a76a34b0101fd02b3eb5b32764f5132",
+    "license":  "Unkown",
+    "url": "https://github.com/RipplePiam/MobaXterm-Chinese-Simplified/releases/download/v0.24.3.10/MobaXterm_Portable_v24.3_chs.zip",
+    "hash": "b48b341edeab54903ea8b7431bb132fe5b6f34d8975522170fb330f063417d0f",
     "pre_install": [
         "    # Rename executable",
         "Get-ChildItem \"$dir\" 'Mobaxterm*.exe' | Select-Object -First 1 | Rename-Item -NewName 'MobaXterm.exe'",
@@ -18,7 +15,7 @@
         "    }",
         "}",
         "    # Crack ",
-        "Invoke-WebRequest -Uri 'http://192.99.11.204:5000/gen?name=MobaXterm&ver=23.0' -OutFile \"$dir\\Custom.mxtpro\"",                
+        "Invoke-WebRequest -Uri 'https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/MobaXterm/Custom.mxtpro' -OutFile \"$dir\\Custom.mxtpro\"",                
         "@('MobaXterm backup.zip', 'MobaXterm.ini') | ForEach-Object { PersistsFile $_ }"
     ],
     "bin": "MobaXterm.exe",
@@ -26,8 +23,11 @@
         "MobaXterm.ini",
         "MobaXterm backup.zip"
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/RipplePiam/MobaXterm-Chinese-Simplified/releases",
+        "regex": "/download/(v[\\d.]+)/MobaXterm_Portable_v([\\d.]+)_chs.zip"
+    },
     "autoupdate": {
-        "url": "https://github.com/RipplePiam/MobaXterm-Chinese-Simplified/releases/download/$matchRandom/MobaXterm_Portable_v$version_cn.zip"
+        "url": "https://github.com/RipplePiam/MobaXterm-Chinese-Simplified/releases/download/$match1/MobaXterm_Portable_v$version_chs.zip"
     }
 }
