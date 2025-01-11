@@ -1,13 +1,13 @@
 {
-    "version": "1.4",
+    "version": "1.5",
     "description": "(Scoop bucket by arch3rpro) BypassAV - Bypass Antivirus tools and techniques.",
     "homepage": "https://github.com/yinsel/BypassAV",
     "license": "Unknown",
-    "url": "https://github.com/yinsel/BypassAV/archive/refs/tags/1.4.zip",
-    "hash": "485bca676990837b79e33e7e8694f9e93704fcab1745062aa6738aa30cd9e5ff",
-    "extract_dir": "BypassAV-1.4",
+    "url": "https://github.com/yinsel/BypassAV/archive/refs/tags/1.5.zip",
+    "hash": "5a1a22f04e4fd9d536e74251707cef004a329852906d1ab5b5b2b36e632fe65b",
+    "extract_dir": "BypassAV-1.5",
     "pre_install": [
-        "Invoke-RestMethod -Uri \"https://api.github.com/repos/yinsel/BypassAV/releases/tags/$version\" | ForEach-Object {",
+        "Invoke-RestMethod -Uri \"https://api.github.com/repos/yinsel/BypassAV/releases/tags/1.5\" | ForEach-Object {",
         "    $_.assets | ForEach-Object {",
         "        if ($_.name -match '\\.exe$') {",
         "            Invoke-WebRequest -Uri $_.browser_download_url -OutFile \"$dir\\$($_.name)\"",
