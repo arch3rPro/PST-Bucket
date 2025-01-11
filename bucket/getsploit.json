@@ -3,27 +3,12 @@
     "description": "(Scoop bucket by arch3rpro) getsploit - Command line utility for searching and downloading exploits.",
     "homepage": "https://github.com/vulnersCom/getsploit",
     "license": "LGPL-3.0",
-    "suggest": "Python3",
+    "suggest": "Python3 Pipx",
     "url": "https://github.com/vulnersCom/getsploit/archive/refs/tags/1.0.0.zip",
     "hash": "21b416e963ece95f8e47686481c0b3cc77f312b1cd57d00b397e16040fbd1737",
     "extract_dir": "getsploit-1.0.0",
-    "pre_install": [
-        "if (Test-Path \"$dir\\venv\\Scripts\\deactivate.bat\") {",
-        "    Write-Host 'Deactivating existing virtual environment...';",
-        "    & \"$dir\\venv\\Scripts\\deactivate.bat\"",
-        "}",
-        "if (Test-Path \"$dir\\venv\") {",
-        "    Write-Host 'Removing existing virtual environment...';",
-        "    Remove-Item -Recurse -Force \"$dir\\venv\"",
-        "}",
-        "Set-Content \"$dir\\getsploit.bat\" '@echo off\npushd %~dp0\ncall \"%~dp0\\venv\\Scripts\\activate.bat\"\ngetsploit %*\npopd' -Encoding Ascii"
-    ],
-    "post_install": [
-        "python3 -m venv \"$dir\\venv\"",
-        "& \"$dir\\venv\\Scripts\\activate\"",
-        "pip3 install getsploit"
-    ],
-    "bin": "getsploit.bat",
+    "post_install": "pipx install getsploit",
+    "bin": "getsploit.exe",
     "checkver": {
         "url": "https://api.github.com/repos/vulnersCom/getsploit/releases",
         "regex": "tag_name\":\\s*\"v?(\\d+\\.\\d+\\.\\d+)\""
