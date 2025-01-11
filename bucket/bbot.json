@@ -8,7 +8,6 @@
     "hash": "77b5ceb6d4bbcb5972a7a374a046b73fed8c0530977077212d3a79f5a37861e2",
     "extract_dir": "bbot-stable",
     "post_install": "pipx install bbot",
-    "bin": "bbot.exe",
     "checkver": {
         "url": "https://api.github.com/repos/blacklanternsecurity/bbot/commits",
         "regex": "([\\d-]+T)(\\d+):(\\d+):(\\d+)",
