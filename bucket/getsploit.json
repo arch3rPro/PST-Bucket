@@ -8,7 +8,6 @@
     "hash": "21b416e963ece95f8e47686481c0b3cc77f312b1cd57d00b397e16040fbd1737",
     "extract_dir": "getsploit-1.0.0",
     "post_install": "pipx install getsploit",
-    "bin": "getsploit.exe",
     "checkver": {
         "url": "https://api.github.com/repos/vulnersCom/getsploit/releases",
         "regex": "tag_name\":\\s*\"v?(\\d+\\.\\d+\\.\\d+)\""
