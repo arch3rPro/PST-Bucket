@@ -14,4 +14,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/r00t-3xp10it/meterpeter/archiv
+                "url": "https://github.com/r00t-3xp10it/meterpeter/archive/refs/tags/v$version.zip"
+            }
+        }
+    }
+}
