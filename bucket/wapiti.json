@@ -7,7 +7,7 @@
     "url": "https://github.com/wapiti-scanner/wapiti/releases/download/3.2.2/wapiti3-3.2.2.tar.gz",
     "hash": "216a6fbe7050588192e01471dbd5eabf9aae5645dba9567acc52537446249312",
     "pre_install": "if (!(Test-Path \"$dir\\wapiti3-$version\")) { Rename-Item -Path (Get-ChildItem \"$dir\" -Directory | Select-Object -First 1) -NewName \"wapiti3-$version\" }",
-    "post_install": "pip3 install Wapiti3",
+    "post_install": "pipx install Wapiti3",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/wapiti-scanner/wapiti/releases/download/$version/wapiti3-$version.tar.gz"
