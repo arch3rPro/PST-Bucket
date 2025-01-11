@@ -1,16 +1,27 @@
 {
-    "version": "mian",
-    "description": "Multiplatform Python WebShell.(Scoop bucket by arch3rpro)",
+    "version": "2024-09-27T11.11.55",
+    "description": "(Scoop bucket by arch3rpro) PyShell - Multiplatform Python WebShell.",
     "homepage": "https://github.com/JoelGMSec/PyShell",
     "license": "GPL-3.0",
-    "suggest": "python3",
+    "suggest": {
+        "Python": "python3"
+    },
     "url": "https://github.com/JoelGMSec/PyShell/archive/refs/heads/main.zip",
+    "hash": "f36e8ff6f512eed3036a96a1b64d7260e4117aca74a8ea712d84d11e237cdb14",
+    "extract_dir": "PyShell-main",
     "pre_install": "Set-Content \"$dir\\pyshell.bat\" '@pushd %~dp0\npython3 \"pyshell.py\" %*\n@popd' -Encoding Ascii",
     "post_install": [
-        "Move-Item -Path \"$dir\\pyshell-main\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\pyshell-main\" -Force -Recurse",
         "pip3 install -r \"$dir\\requirements.txt\"",
         "pip3 install pyreadline3"
     ],
-    "bin": "pyshell.bat"
+    "bin": "pyshell.bat",
+    "checkver": {
+        "url": "https://api.github.com/repos/JoelGMSec/PyShell/commits",
+        "jsonpath": "$[0].commit.author.date",
+        "regex": "([\\d-]+)T([\\d:]+)",
+        "replace": "$1T$2"
+    },
+    "autoupdate": {
+        "url": "https://github.com/JoelGMSec/PyShell/archive/refs/heads/main.zip"
+    }
 }
