@@ -10,7 +10,7 @@
         ]
     },
     "url": "https://github.com/KimJun1010/WeblogicTool/releases/download/v1.3/WeblogicTool_1.3.jar#/WeblogicTool.jar",
-    "hash": "",
+    "hash": "3cd34c46a7417c4e6d90da8f2668435b7796f44e7868e2fb9a19b1490dc2de6d",
     "pre_install": [
         "Set-Content \"$dir\\WeblogicTool.bat\" '@pushd %~dp0",
         "java.exe -jar \"WeblogicTool.jar\" %*",
