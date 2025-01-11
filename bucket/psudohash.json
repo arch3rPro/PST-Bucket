@@ -1,14 +1,23 @@
 {
-    "version": "master",
-    "description": "Generates millions of keyword-based password mutations in seconds.(Scoop bucket by arch3rpro)",
+    "version": "2021-06-23T17.43.53",
+    "description": "(Scoop bucket by arch3rpro) psudohash - Generates millions of keyword-based password mutations in seconds.",
     "homepage": "https://github.com/t3l3machus/psudohash",
     "license": "MIT",
-    "suggest": "python3",
+    "suggest": {
+        "Python": "python3"
+    },
     "url": "https://github.com/t3l3machus/psudohash/archive/refs/heads/main.zip",
+    "hash": "d550871bbf6eea8d4bbd111936b0c81644194c3f584b14f9d5db59109f57172d",
+    "extract_dir": "psudohash-main",
     "pre_install": "Set-Content \"$dir\\psudohash.bat\" '@pushd %~dp0\npython3 \"psudohash.py\" %*\n@popd' -Encoding Ascii",
-    "post_install": [
-        "Move-Item -Path \"$dir\\psudohash-main\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\psudohash-main\" -Force -Recurse"
-    ],
-    "bin": "psudohash.bat"
+    "bin": "psudohash.bat",
+    "checkver": {
+        "url": "https://api.github.com/repos/t3l3machus/psudohash/commits",
+        "jsonpath": "$[0].commit.author.date",
+        "regex": "([\\d-]+)T([\\d:]+)",
+        "replace": "$1T$2"
+    },
+    "autoupdate": {
+        "url": "https://github.com/t3l3machus/psudohash/archive/refs/heads/main.zip"
+    }
 }
