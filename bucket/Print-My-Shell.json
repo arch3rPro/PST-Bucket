@@ -1,5 +1,5 @@
 {
-    "version": "2020-09-27T12.23.31",
+    "version": "0b215a5",
     "description": "(Scoop bucket by arch3rpro) Print-My-Shell - 自动生成各种反向 shell 的 Python 脚本",
     "homepage": "https://github.com/sameera-madushan/Print-My-Shell",
     "license": "MIT",
@@ -11,9 +11,10 @@
         }
     },
     "extract_dir": "Print-My-Shell-master",
-    "pre_install": [
-        "Set-Content \"$dir\\PrintMyShell.bat\" '@echo off\ncd /d %~dp0\npython3 \"shell.py\" %*\n' -Encoding Ascii"
-    ],
+    "pre_install": "Set-Content \"$dir\\PrintMyShell.bat\" '@echo off
+cd /d %~dp0
+python3 \"shell.py\" %*
+' -Encoding Ascii",
     "bin": "PrintMyShell.bat",
     "checkver": {
         "url": "https://api.github.com/repos/sameera-madushan/Print-My-Shell/commits",
