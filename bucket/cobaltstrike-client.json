@@ -8,7 +8,7 @@
         "自行安装时注意修改实际启动的目录"
     ],
     "url": "http://pan.seclions.top/d/UC/Public_Storage/scoop-bucket/CobaltSrike_4.9.1.zip?sign=ibX6OX0tvaKPXyfy0aZ4VuowI1GWhh8h_muzGm9hK24=:0",
-    "hash": "",
+    "hash": "1f0a57ab1d2992b8743ce82e6921269e3172e89e8e5fe7822e404757f0455f9b",
     "pre_install": [
         "Move-Item -Path \"$dir\\Client\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\Client\" -Force -Recurse",
