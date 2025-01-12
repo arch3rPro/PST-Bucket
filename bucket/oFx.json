@@ -10,16 +10,16 @@
             "hash": "11ceccbcf22adfd353db0186bb6bba7bf8b542a0bc77e4fd17ad18ce6c1c667e"
         }
     },
+    "extract_dir": "oFx-2.26.5",
     "pre_install": [
-        "Set-Content \"$dir\\oFx.bat\" '@pushd %~dp0\npython3 \"ofx.py\" %*\n@popd' -Encoding Ascii"
+        "Set-Content \"$dir\\oFx.bat\" '@echo off\nsetlocal\ncd /d %~dp0\n\"venv\\Scripts\\python.exe\" \"ofx.py\" %*\nendlocal' -Encoding Ascii"
     ],
     "post_install": [
-        "if (Test-Path \"$dir\\ofx-$version\") {",
-        "    Move-Item -Path \"$dir\\ofx-$version\\*\" -Destination \"$dir\\\" -Force",
-        "    Remove-Item \"$dir\\ofx-$version\" -Force -Recurse",
+        "if (-not (Test-Path \"$dir\\venv\")) {",
+        "    python3 -m venv \"$dir\\venv\"",
         "}",
         "if (Test-Path \"$dir\\requirements.txt\") {",
-        "    pip3 install -r \"$dir\\requirements.txt\"",
+        "    & \"$dir\\venv\\Scripts\\pip.exe\" install -r \"$dir\\requirements.txt\"",
         "}"
     ],
     "bin": "oFx.bat",
@@ -28,6 +28,7 @@
         "regex": "tags/([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/bigblackhat/oFx/archive/refs/tags/$version.zip"
+        "url": "https://github.com/bigblackhat/oFx/archive/refs/tags/$version.zip",
+        "extract_dir": "oFx-$version"
     }
 }
