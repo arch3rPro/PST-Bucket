@@ -1,17 +1,37 @@
 {
     "version": "3.1.7",
-    "description": "(Scoop bucket by arch3rpro) XiebroC2 - 渗透测试C2、支持Lua插件扩展、域前置/CDN上线、自定义profile、前置sRDI、文件管理、进程管理、内存加载、截图、反向代理、分组管理",
+    "description": "(Scoop bucket by arch3rpro) XiebroC2 - 渗透测试C2，支持Lua插件扩展、域前置/CDN上线、自定义profile、前置sRDI、文件管理、进程管理、内存加载、截图、反向代理、分组管理",
     "homepage": "https://github.com/INotGreen/XiebroC2",
-    "license": "Unkown",
-    "url": "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v3.1.7/XiebroC2-v3.1.7.7z",
-    "hash": "c82e5216a030d3f8113430f33f0666d1596e6f998950b0b0fa361bfb72a5e8d8",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v3.1.7/XiebroC2-v3.1.7.7z",
+                "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v3.1.7/TeamServer_x64.exe#/XieBroC2_TeamServer.exe"
+            ],
+            "hash": [
+                "c82e5216a030d3f8113430f33f0666d1596e6f998950b0b0fa361bfb72a5e8d8",
+                "350e5b17a2651022b57213d0cdd12e5aec5d8ef43e6143a5f5df4a5518fc47d1"
+            ]
+        },
+        "arm64": {
+            "url": [
+                "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v3.1.7/XiebroC2-v3.1.7.7z",
+                "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v3.1.7/TeamServer_arm64.exe#/XieBroC2_TeamServer.exe"
+            ],
+            "hash": [
+                "c82e5216a030d3f8113430f33f0666d1596e6f998950b0b0fa361bfb72a5e8d8",
+                "6f1e514a2eca537c74fee1555280d140bcf539c4c9604c30025f2eccc849ce47"
+            ]
+        }
+    },
     "bin": [
         [
             "XieBroC2.exe",
             "XieBroC2"
         ],
         [
-            "TeamServer_amd64.exe",
+            "XieBroC2_TeamServer.exe",
             "XieBroC2_TeamServer"
         ]
     ],
@@ -21,6 +41,19 @@
         "regex": "XiebroC2-v([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v$version/XiebroC2-v$version.7z"
+        "architecture": {
+            "64bit": {
+                "url": [
+                    "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v$version/XiebroC2-v$version.7z",
+                    "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v$version/TeamServer_x64.exe#/XieBroC2_TeamServer.exe"
+                ]
+            },
+            "arm64": {
+                "url": [
+                    "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v$version/XiebroC2-v$version.7z",
+                    "https://github.com/INotGreen/XiebroC2/releases/download/XiebroC2-v$version/TeamServer_arm64.exe#/XieBroC2_TeamServer.exe"
+                ]
+            }
+        }
     }
 }
