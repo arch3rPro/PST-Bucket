@@ -5,6 +5,7 @@
     "license": "GPL-3.0",
     "suggest": "python3",
     "url": "https://github.com/hisxo/gitGraber/archive/refs/heads/master.zip",
+    "hash": "26575b91347dd62df9d7a439a42cc3c78beea1cc57f3e58cc3b3dc8c4dc0381f",
     "pre_install": "Set-Content \"$dir\\gitGraber.bat\" '@pushd %~dp0\npython3 \"gitGraber.py\" %*\n@popd' -Encoding Ascii",
     "post_install": [
         "Move-Item -Path \"$dir\\gitGraber-master\\*\" -Destination \"$dir\\\"",
