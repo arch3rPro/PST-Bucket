@@ -1,14 +1,26 @@
 {
-    "version": "master",
-    "description": "Python script wrote to automate the process of generating various reverse shells.(Scoop bucket by arch3rpro)",
+    "version": "2020-09-27T12.23.31",
+    "description": "(Scoop bucket by arch3rpro) Print-My-Shell - 自动生成各种反向 shell 的 Python 脚本",
     "homepage": "https://github.com/sameera-madushan/Print-My-Shell",
     "license": "MIT",
     "suggest": "python3",
-    "url": "https://github.com/sameera-madushan/Print-My-Shell/archive/refs/heads/master.zip",
-    "pre_install": "Set-Content \"$dir\\PrintMyShell.bat\" '@pushd %~dp0\npython3 \"shell.py\" %*\n@popd' -Encoding Ascii",
-    "post_install": [
-        "Move-Item -Path \"$dir\\Print-My-Shell-master\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\Print-My-Shell-master\" -Force -Recurse"
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sameera-madushan/Print-My-Shell/archive/refs/heads/master.zip",
+            "hash": "5a14bd7a25584a12d07b0d8fe16312164b4ffe772104c613f9a0297a1e1b15f7"
+        }
+    },
+    "extract_dir": "Print-My-Shell-master",
+    "pre_install": [
+        "Set-Content \"$dir\\PrintMyShell.bat\" '@echo off\ncd /d %~dp0\npython3 \"shell.py\" %*\n' -Encoding Ascii"
     ],
-    "bin": "PrintMyShell.bat"
+    "bin": "PrintMyShell.bat",
+    "checkver": {
+        "url": "https://api.github.com/repos/sameera-madushan/Print-My-Shell/commits",
+        "jsonpath": "$[0].sha",
+        "regex": "^(?<version>[a-f0-9]{7})"
+    },
+    "autoupdate": {
+        "url": "https://github.com/sameera-madushan/Print-My-Shell/archive/refs/heads/master.zip"
+    }
 }
