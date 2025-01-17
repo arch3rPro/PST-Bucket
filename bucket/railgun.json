@@ -1,22 +1,22 @@
 {
-  "version": "2.0.3-sp1",
-  "description": "(Scoop bucket by arch3rpro) Railgun - 一款GUI界面的渗透工具，将部分人工经验转换为自动化，集成了渗透过程中常用到的一些功能，目前集成了端口扫描、端口爆破、web指纹扫描、漏洞扫描、漏洞利用以及编码转换功能.",
-  "homepage": "https://github.com/lz520520/railgun",
-  "license": "MIT",
-  "url": "https://github.com/lz520520/railgun/releases/download/v2.0.3-sp1/Railgun-windows-v2.0.3-sp1.zip#/Railgun.zip1",
-  "hash": "c44ecce1b658e0f4d65f138b8c690582504ccb27389837cbdca2f6d058ae3928",
-  "pre_install": [
-    "& \"7z.exe\" x \"$dir\\Railgun.zip1\" -prailgun -o\"$dir\"",
-    "Move-Item -Path \"$dir\\railgun\\*\" -Destination \"$dir\" -Force",
-    "Remove-Item \"$dir\\railgun\" -Force -Recurse",
-    "Remove-Item \"$dir\\Railgun.zip1\" -Force"
-  ],
-  "bin": "Railgun.exe",
-  "checkver": {
-    "url": "https://github.com/lz520520/railgun/releases",
-    "regex": "releases/tag/v([\\d.]+-sp\\d+)"
-  },
-  "autoupdate": {
-    "url": "https://github.com/lz520520/railgun/releases/download/v$version/Railgun-windows-v$version.zip#/Railgun.zip1"
-  }
+    "version": "2.0.3-sp2",
+    "description": "(Scoop bucket by arch3rpro) Railgun - 一款GUI界面的渗透工具，将部分人工经验转换为自动化，集成了渗透过程中常用到的一些功能，目前集成了端口扫描、端口爆破、web指纹扫描、漏洞扫描、漏洞利用以及编码转换功能.",
+    "homepage": "https://github.com/lz520520/railgun",
+    "license": "MIT",
+    "url": "https://github.com/lz520520/railgun/releases/download/v2.0.3-sp2/Railgun-windows-v2.0.3-sp2.zip#/Railgun.zip1",
+    "hash": "68f98bb4a5ad11fe152f3467029bb541b273714efdf8501175fb853cd4c24138",
+    "pre_install": [
+        "& \"7z.exe\" x \"$dir\\Railgun.zip1\" -prailgun -o\"$dir\"",
+        "Move-Item -Path \"$dir\\railgun\\*\" -Destination \"$dir\" -Force",
+        "Remove-Item \"$dir\\railgun\" -Force -Recurse",
+        "Remove-Item \"$dir\\Railgun.zip1\" -Force"
+    ],
+    "bin": "Railgun.exe",
+    "checkver": {
+        "url": "https://github.com/lz520520/railgun/releases",
+        "regex": "releases/tag/v([\\d.]+-sp\\d+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/lz520520/railgun/releases/download/v$version/Railgun-windows-v$version.zip#/Railgun.zip1"
+    }
 }
