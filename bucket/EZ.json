@@ -1,24 +1,21 @@
 {
-    "version": "1.9.1",
+    "version": "1.9.2",
     "description": "(Scoop bucket by arch3rpro) EZ是一款集信息收集、端口扫描、服务暴破、URL爬虫、指纹识别、被动扫描为一体的跨平台漏洞扫描器",
     "homepage": "https://github.com/m-sec-org/EZ",
     "license": "Unkown",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/m-sec-org/EZ/releases/download/1.9.1/ez_windows_386.zip",
-            "hash": "bdb2ad3e17c4cca01bf38b28a3540d38c71c62024614e955d8bc7670f23a878f",
+            "url": "https://github.com/m-sec-org/EZ/releases/download/1.9.2/ez_windows_386.zip",
+            "hash": "4e39e35cc549e8e5d06051490bda54cd73822450e823f6461b4d1e1cf95fc668",
             "pre_install": "Rename-Item \"$dir\\ez_windows_386.exe\" 'ez.exe'"
         },
         "64bit": {
-            "url": "https://github.com/m-sec-org/EZ/releases/download/1.9.1/ez_windows_amd64.zip",
-            "hash": "15d90b08e9a2835600fdc468ae224fee11a957816c9685014c2678e45a9619f9",
+            "url": "https://github.com/m-sec-org/EZ/releases/download/1.9.2/ez_windows_amd64.zip",
+            "hash": "ea6dfc822cebcf78adcea7fa9cdee9e280b2d9e5e2554703d99b94c416699b14",
             "pre_install": "Rename-Item \"$dir\\ez_windows_amd64.exe\" 'ez.exe'"
-
         }
     },
-    "post_install": [
-        "Invoke-WebRequest -Uri \"https://docs.ezreal.cool/public/ezhelper/v0.1/ez-helper.zip\" -OutFile \"$dir\\ez-helper.zip\" -UseBasicParsing"
-    ],
+    "post_install": "Invoke-WebRequest -Uri \"https://docs.ezreal.cool/public/ezhelper/v0.1/ez-helper.zip\" -OutFile \"$dir\\ez-helper.zip\" -UseBasicParsing",
     "bin": [
         [
             "ez.exe",
