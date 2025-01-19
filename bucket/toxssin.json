@@ -1,11 +1,11 @@
 {
-    "version": "2024-12-30T13.42.37",
+    "version": "2025-01-19T16.24.50",
     "description": "(Scoop bucket by arch3rpro) toxssin - An XSS exploitation command-line interface and payload generator.",
     "homepage": "https://github.com/t3l3machus/toxssin",
     "license": "MIT",
     "suggest": "Python3",
     "url": "https://github.com/t3l3machus/toxssin/archive/refs/heads/main.zip",
-    "hash": "ad9dcdf1fcd07d31992fbc8ee47a8ecb84f4a139565625d9250f74d86b4a514d",
+    "hash": "6b383e5662922bb8607cd7ef73f5a7c1e8a976b40ec9899889a666a77c5f1f62",
     "pre_install": [
         "Set-Content \"$dir\\toxssin.bat\" '@pushd %~dp0",
         "python3 toxssin.py %*",
