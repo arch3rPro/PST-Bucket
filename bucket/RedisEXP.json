@@ -1,16 +1,16 @@
 {
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "(Scoop bucket by arch3rpro) Redis 漏洞利用工具。",
     "homepage": "https://github.com/yuyan-sec/RedisEXP",
     "license": "Unkown",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/yuyan-sec/RedisEXP/releases/download/0.1.1/RedisEXP_windows_386.exe#/RedisEXP.exe",
-            "hash": "129aba89a7abf5bb093f21d1b9f36984ad2ed628e1717c39ec36c45671187724"
+            "url": "https://github.com/yuyan-sec/RedisEXP/releases/download/0.1.2/RedisEXP_windows_386.exe#/RedisEXP.exe",
+            "hash": "836bf98603d1f6d8ad3985b6f7b639eb0db04f5276c358cdafb63f93f0361bdd"
         },
         "64bit": {
-            "url": "https://github.com/yuyan-sec/RedisEXP/releases/download/0.1.1/RedisEXP_windows_amd64.exe#/RedisEXP.exe",
-            "hash": "bcb6ac6eff2087923bc490f493aa83ec30c00a0439f32cec2c9c60e713dc9bb0"
+            "url": "https://github.com/yuyan-sec/RedisEXP/releases/download/0.1.2/RedisEXP_windows_amd64.exe#/RedisEXP.exe",
+            "hash": "fa19a1e72a642b3cac882cf33e6ae9f91a4695dbee43ab201b9ca93053b7c9a6"
         },
         "arm64": {
             "url": "https://github.com/yuyan-sec/RedisEXP/releases/download/0.1.1/RedisEXP_windows_arm64.exe#/RedisEXP.exe",
