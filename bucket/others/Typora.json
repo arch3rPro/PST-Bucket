@@ -8,11 +8,11 @@
     },
     "url": [
         "https://download2.typoraio.cn/windows/typora-setup-x64-1.9.5.exe",
-        "https://raw.githubusercontent.com/arch3rPro/PST-Files/refs/heads/main/typora/winmm.dll"
+        "https://github.moeyy.xyz/https://raw.githubusercontent.com/arch3rPro/PST-Files/refs/heads/main/typora/winmm.dll"
     ],
     "hash": [
         "047deab87662bcb6222f7900164cddb08e0247feac179039067db9eeb9d79447",
-        "364d4e21ab46ab0ad21a02e5cf709177428a5e29b044522eacec9ba987861adf"
+        ""
     ],
     "pre_install": [
         "$setupfile = (Get-ChildItem \"$dir\" 'typora-setup-*.exe' | Select-Object -First 1).FullName",
