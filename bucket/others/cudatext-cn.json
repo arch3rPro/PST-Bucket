@@ -1,16 +1,16 @@
 {
-    "version": "1.220.7.0",
+    "version": "1.221.0.0",
     "description": "Cross-platform text and code editor",
     "homepage": "https://sourceforge.net/projects/cudatext",
     "license": "Mozilla Public License 2.0 (MPL 2.0)",
     "architecture": {
         "64bit": {
             "url": [
-                "https://udomain.dl.sourceforge.net/project/cudatext/release/1.220.7.0/cudatext-windows-amd64-1.220.7.0.zip",
+                "https://udomain.dl.sourceforge.net/project/cudatext/release/1.221.0.0/cudatext-windows-amd64-1.221.0.0.zip",
                 "https://downloads.sourceforge.net/project/cudatext/addons/translations/translation.zh_CN.zip"
             ],
             "hash": [
-                "sha1:754410747855cc72823c13726f61a0d9624c7756",
+                "sha1:e6d141decf2d8438262c002a99703b627ea70a7d",
                 "39bc8ee31e53b990032938d898e91b63590c0ef831b9cd3b863ddd7d7ccdb0ba"
             ]
         }
