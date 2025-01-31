@@ -1,5 +1,5 @@
 {
-    "version": "2.6.8",
+    "version": "2.6.9",
     "description": "(Scoop bucket by arch3rpro) SSH based reverse shell",
     "homepage": "https://github.com/NHAS/reverse_ssh",
     "license": "BSD-3-Clause",
@@ -8,7 +8,7 @@
         "https://github.com/NHAS/reverse_ssh/releases/download/v2.6.8/client.exe"
     ],
     "hash": [
-        "039d7acba56eb819233af20cd38753eb716a4ba3f1a32a2d8b20610e999b4ea6",
+        "",
         "22c8a9f7c93be4ebc8025ce17812641fb2290b935913747ef5e5d3180b79ce56"
     ],
     "bin": [
@@ -25,7 +25,6 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/NHAS/reverse_ssh/releases/download/v$version/server.exe",                
                 "url": "https://github.com/NHAS/reverse_ssh/releases/download/v$version/client.exe"
             }
         }
