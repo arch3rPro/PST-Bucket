@@ -1,11 +1,11 @@
 {
-    "version": "7.0.5",
+    "version": "7.0.6",
     "description": "Laragon 是一个可移植、隔离、快速且强大的通用开发环境，本仓库新增各种环境变量并在安装时进行初始化.(Scoop bucket by arch3rpro)",
     "homepage": "https://laragon.org/",
     "license": "MIT",
-    "url": "https://github.com/leokhoa/laragon/archive/refs/tags/7.0.5.zip",
-    "hash": "51db15f137ea582a9d180080fafea25838dfb6719865be38c337bef4aed3102c",
-    "extract_dir": "laragon-7.0.5",
+    "url": "https://github.com/leokhoa/laragon/archive/refs/tags/7.0.6.zip",
+    "hash": "96dc01d0e4e36fe6593399165c9ab1d039873472bc29838417eb88ef76a92b1e",
+    "extract_dir": "laragon-7.0.6",
     "bin": [
         "laragon.exe",
         "bin/composer/composer.bat",
