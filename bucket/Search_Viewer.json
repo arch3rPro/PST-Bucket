@@ -1,12 +1,12 @@
 {
-    "version": "4.1",
+    "version": "4.2",
     "description": "(Scoop bucket by arch3rpro) - 集Fofa、Hunter鹰图、Shodan、360 quake、Zoomeye 钟馗之眼、censys 为一体的空间测绘gui图形界面化工具，支持一键采集爬取和导出fofa、shodan等数据，方便快捷查看",
     "homepage": "https://github.com/G3et/Search_Viewe",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/G3et/Search_Viewer/releases/download/v4.1/Search_Viewer_v4.1.exe#/Search_Viewer.exe",
-            "hash": "44d8b754e1dd236b33c032877119863329da218ae232215b1314735ac472d3a7"
+            "url": "https://github.com/G3et/Search_Viewer/releases/download/v4.2/Search_Viewer_v4.2.exe#/Search_Viewer.exe",
+            "hash": "4d8fcce02e49a493041a84507bb4278a66ac1c73fe73a68cf998bcadd0ef44cb"
         }
     },
     "bin": "Search_Viewer.exe",
