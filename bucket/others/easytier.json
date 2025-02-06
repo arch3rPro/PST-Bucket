@@ -1,10 +1,10 @@
 {
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "A simple, decentralized mesh VPN with WireGuard support.Console Version（scoop bucket by arch3rpro)",
     "homepage": "https://easytier.top/",
     "license": "Apache-2.0",
-    "url": "https://github.com/EasyTier/EasyTier/releases/download/v2.2.0/easytier-windows-x86_64-v2.2.0.zip",
-    "hash": "fce6b28aad56b574884fbe13b2e99a10ef7151eeb7be54beda1ac354f857e576",
+    "url": "https://github.com/EasyTier/EasyTier/releases/download/v2.2.1/easytier-windows-x86_64-v2.2.1.zip",
+    "hash": "5b9358503993ba29be4d1ab6e2190ea9baa9274577613a061e093b7b1ad1238c",
     "extract_dir": "easytier-windows-x86_64",
     "bin": [
         "easytier-cli.exe",
