@@ -1,27 +1,27 @@
 {
-    "version": "2.1",
+    "version": "2.2",
     "description": "(Scoop bucket by arch3rpro) S-inject - 支持x86/x64的DLL和Shellcode 的Windows注入的免杀工具，支持图形化界面",
     "homepage": "https://github.com/Joe1sn/S-inject",
     "license": "MIT",
     "architecture": {
         "32bit": {
             "url": [
-                "https://github.com/Joe1sn/S-inject/releases/download/v2.1/S-inject_x86.exe#/S-inject.exe",
-                "https://github.com/Joe1sn/S-inject/releases/download/v2.1/S-Inject_x86_gui.exe#/S-inject_gui.exe"
+                "https://github.com/Joe1sn/S-inject/releases/download/v2.2/S-inject_x86.exe#/S-inject.exe",
+                "https://github.com/Joe1sn/S-inject/releases/download/v2.2/S-Inject_x86_gui.exe#/S-inject_gui.exe"
             ],
             "hash": [
                 "7d39ca2e4435aad073ea6307cfcd62792f9d8365cf1e9a8ea63d8d479bc165bb",
-                "fa0f1ab046386d7e737cdf1b66ebd70c325ec3bfc84ad89e5db288e4975716f1"
+                "44e338eaa235516e9eaa4b4cded674e996df22fd2bb993c9731dd14dfd18425b"
             ]
         },
         "64bit": {
             "url": [
-                "https://github.com/Joe1sn/S-inject/releases/download/v2.1/S-inject_x64.exe#/S-inject.exe",
-                "https://github.com/Joe1sn/S-inject/releases/download/v2.1/S-inject_x64_gui.exe#/S-inject_gui.exe"
+                "https://github.com/Joe1sn/S-inject/releases/download/v2.2/S-inject_x64.exe#/S-inject.exe",
+                "https://github.com/Joe1sn/S-inject/releases/download/v2.2/S-inject_x64_gui.exe#/S-inject_gui.exe"
             ],
             "hash": [
                 "5630f8d5a7ccf7af14b7efb4e340e29ea50b107f64d3e720d50f71b724e228c5",
-                "0a92b8110bd6d204e7d48207aeee5d5ead84cea6fdf30879c06e262d9b92b93c"
+                "34176baca8ec9a29d52cc2170b6f46ad3640ce140d82c410091ed17be9e3f6a2"
             ]
         }
     },
@@ -29,9 +29,7 @@
         "S-inject.exe",
         "S-inject_gui.exe"
     ],
-    "pre_install": [
-        "Invoke-WebRequest -Uri 'https://github.com/Joe1sn/S-inject/releases/download/v2.1/imgui.ini' -OutFile \"$dir\\imgui.ini\""
-    ],
+    "pre_install": "Invoke-WebRequest -Uri 'https://github.com/Joe1sn/S-inject/releases/download/v2.2/imgui.ini' -OutFile \"$dir\\imgui.ini\"",
     "persist": "imgui.ini",
     "shortcuts": [
         [
