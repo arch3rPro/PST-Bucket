@@ -1,10 +1,10 @@
 {
-    "version": "2024-09-01T06.25.58",
+    "version": "2025-02-19T05.25.51",
     "description": "(Scoop bucket by arch3rpro) RingQ - 一款后渗透免杀工具，助力每一位像我这样的脚本小子快速实现免杀，支持bypass AV/EDR 360 火绒 Windows Defender Shellcode Loader.",
     "homepage": "https://github.com/T4y1oR/RingQ",
     "license": "Unknown",
     "url": "https://github.com/T4y1oR/RingQ/archive/refs/heads/main.zip",
-    "hash": "8dccab9b740e42ef9c4428c3de2b820ebf97ca68af8f53657066a147089f20c4",
+    "hash": "71960eb2b240349151a321129a68aca3082037fb1a80dcab22884507be8f72e8",
     "pre_install": [
         "Move-Item -Path \"$dir\\RingQ-main\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\RingQ-main\" -Force -Recurse",
