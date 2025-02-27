@@ -1,5 +1,5 @@
 {
-    "version": "1.10.6",
+    "version": "1.10.8",
     "description": "(Scoop bucket by arch3rpro) Typora - Simple yet powerful Markdown reader.",
     "homepage": "https://www.typoraio.cn",
     "license": {
@@ -7,11 +7,11 @@
         "url": "https://support.typora.io/License-Agreement/"
     },
     "url": [
-        "https://download2.typoraio.cn/windows/typora-setup-x64-1.10.6.exe",
+        "https://download2.typoraio.cn/windows/typora-setup-x64-1.10.8.exe",
         "https://github.moeyy.xyz/https://raw.githubusercontent.com/arch3rPro/PST-Files/refs/heads/main/typora/winmm.dll"
     ],
     "hash": [
-        "b74c0a832aac563fc9535e641a97a267eba486869b5c8e4a4e0c21c6a8cf898d",
+        "58fb7a2c98fdd2b044ed2b8cceba0770c0dc11156c89f961714a79d92b8b98ab",
         "cec665d4b7983a1b38e1abb9cf9a8e364a51bbd8970d363f2be9c847e402a8db"
     ],
     "pre_install": [
