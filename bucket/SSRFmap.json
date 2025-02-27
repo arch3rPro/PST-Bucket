@@ -1,12 +1,16 @@
 {
-    "version": "2024-06-10T12.57.57",
+    "version": "2025-02-26T19.38.36",
     "description": "(Scoop bucket by arch3rpro) SSRFmap - Automatic SSRF fuzzer and exploitation tool",
     "homepage": "https://github.com/swisskyrepo/SSRFmap",
     "license": "MIT",
     "suggest": "Python3",
     "url": "https://github.com/swisskyrepo/SSRFmap/archive/refs/heads/master.zip",
-    "hash":"24975d023397d93dd7458cae825c0a434259a9a0a67277b0b33d819d3ea18c47",
-    "pre_install": "Set-Content \"$dir\\SSRFmap.bat\" '@pushd %~dp0\npython3 ssrfmap.py %*\n@popd' -Encoding Ascii",
+    "hash": "d126d9994aaa393c28308adb1d985795715edd04b78b4172560d6ec3d44d66c8",
+    "pre_install": [
+        "Set-Content \"$dir\\SSRFmap.bat\" '@pushd %~dp0",
+        "python3 ssrfmap.py %*",
+        "@popd' -Encoding Ascii"
+    ],
     "post_install": [
         "Move-Item -Path \"$dir\\SSRFmap-master\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\SSRFmap-master\" -Force -Recurse",
