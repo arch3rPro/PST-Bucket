@@ -1,5 +1,5 @@
 {
-    "version": "2.6.1",
+    "version": "2.7.0",
     "description": "SSH/Sftp/Shell/Telnet/Serial client",
     "homepage": "https://kingtoolbox.github.io/",
     "license": "Apache-2.0",
@@ -8,11 +8,11 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kingToolbox/WindTerm/releases/download/2.6.0/WindTerm_2.6.1_Windows_Portable_x86_64.zip",
-            "hash": "680f16a2d63bbe17982b89fd46d26d3df11e43b4e71343ee0058f3b2aa0ac67a"
+            "url": "https://github.com/kingToolbox/WindTerm/releases/download/2.7.0/WindTerm_2.7.0_Windows_Portable_x86_64.zip",
+            "hash": "b05c3c7371340ff1302967247ffcd3a3ba27b237f72010e9157086143c453e50"
         }
     },
-    "extract_dir": "WindTerm_2.6.1",
+    "extract_dir": "WindTerm_2.7.0",
     "shortcuts": [
         [
             "WindTerm.exe",
