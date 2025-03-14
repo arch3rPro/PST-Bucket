@@ -1,10 +1,10 @@
 {
-    "version": "2.6.0",
+    "version": "2.6.1",
     "description": "(Scoop bucket by arch3rpro) SharpHound - C# Data Collector for BloodHound.",
     "homepage": "https://github.com/SpecterOps/SharpHound",
     "license": "GPL-3.0",
-    "url": "https://github.com/SpecterOps/SharpHound/releases/download/v2.6.0/SharpHound-v2.6.0.zip",
-    "hash": "2c48703455ce3a217b7c1b768ac729c696cb6811bc3eb20fd60927b2ffc66b0e",
+    "url": "https://github.com/SpecterOps/SharpHound/releases/download/v2.6.1/SharpHound-v2.6.1.zip",
+    "hash": "ddcba197a006ee522c4251ec2f39fdd06fa9167a614a959485aa60032fa0fc98",
     "bin": "SharpHound.exe",
     "checkver": {
         "url": "https://github.com/SpecterOps/SharpHound/releases",
