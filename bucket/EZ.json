@@ -11,7 +11,7 @@
         },
         "64bit": {
             "url": "https://github.com/m-sec-org/EZ/releases/download/1.9.2/ez_windows_amd64.zip",
-            "hash": "ea6dfc822cebcf78adcea7fa9cdee9e280b2d9e5e2554703d99b94c416699b14",
+            "hash": "7c8a21e81b866a3934568672dd0c5d573cdf621ea3924c8d6ce58a98bf5124e0",
             "pre_install": "Rename-Item \"$dir\\ez_windows_amd64.exe\" 'ez.exe'"
         }
     },
