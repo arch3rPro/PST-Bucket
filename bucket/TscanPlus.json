@@ -17,7 +17,7 @@
         },
         "arm64": {
             "url": "https://github.com/TideSec/TscanPlus/releases/download/v2.7.3/TscanPlus_Win_Arm64_v2.7.3.zip",
-            "hash": "b0581bd2ed4ec4d4efc783316a490f390daee98cff103f0c5d8b6c72fa382647",
+            "hash": "0a82289a081d68ea27fcd84a280ab1cb2c7fc341408a1db2cffe2f210fa79adb",
             "pre_install": "Rename-Item \"$dir\\TscanPlus_Win_Arm64.exe\" 'TscanPlus.exe'",
             "bin": [
                 [
