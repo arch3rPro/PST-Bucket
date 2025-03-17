@@ -1,12 +1,16 @@
 {
-    "version": "3.1.5",
+    "version": "3.1.6",
     "description": "Most advanced XSS scanner.(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/s0md3v/XSStrike",
     "license": "GPL-3.0",
     "suggest": "python3",
-    "url": "https://github.com/s0md3v/XSStrike/archive/refs/tags/3.1.5.zip",
-    "hash": "b9459ec09a5bc7aa29b970c986b85b2876ae5df3365a914588a7f88f95390118",
-    "pre_install": "Set-Content \"$dir\\xsstrike.bat\" '@pushd %~dp0\npython3 \"xsstrike.py\" %*\n@popd' -Encoding Ascii",
+    "url": "https://github.com/s0md3v/XSStrike/archive/refs/tags/3.1.6.zip",
+    "hash": "ddf0cd276c8767448bfd828639ee21c28d6742bad9c0b4d627272b58397f38f7",
+    "pre_install": [
+        "Set-Content \"$dir\\xsstrike.bat\" '@pushd %~dp0",
+        "python3 \"xsstrike.py\" %*",
+        "@popd' -Encoding Ascii"
+    ],
     "post_install": [
         "Move-Item -Path \"$dir\\XSStrike-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\XSStrike-$version\" -Force -Recurse",
