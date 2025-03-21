@@ -1,12 +1,12 @@
 {
-    "version": "2.7.3",
+    "version": "2.7.4",
     "description": "(Scoop bucket by arch3rpro) - 无影 (TscanPlus)，一款综合性网络安全检测和运维工具，旨在快速资产发现、识别、检测，构建基础资产信息库。",
     "homepage": "https://github.com/TideSec/TscanPlus",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TideSec/TscanPlus/releases/download/v2.7.3/TscanPlus_Win_Amd64_v2.7.3.zip",
-            "hash": "f2a47f83b5ba91222b6162f743bb45fe683ac1797e98df4e89be35af6590a12d",
+            "url": "https://github.com/TideSec/TscanPlus/releases/download/v2.7.4/TscanPlus_Win_Amd64_v2.7.4.zip",
+            "hash": "600c425f62c81798c24708de7a78cfb2dd3aa49f238e054c9240d99a41f310dd",
             "pre_install": "Rename-Item \"$dir\\TscanPlus_Win_Amd64.exe\" 'TscanPlus.exe'",
             "bin": [
                 [
@@ -16,8 +16,8 @@
             ]
         },
         "arm64": {
-            "url": "https://github.com/TideSec/TscanPlus/releases/download/v2.7.3/TscanPlus_Win_Arm64_v2.7.3.zip",
-            "hash": "0a82289a081d68ea27fcd84a280ab1cb2c7fc341408a1db2cffe2f210fa79adb",
+            "url": "https://github.com/TideSec/TscanPlus/releases/download/v2.7.4/TscanPlus_Win_Arm64_v2.7.4.zip",
+            "hash": "55ddaea68f42efb3d02261aeac71ac58276da2a43492b03e8922048484e17447",
             "pre_install": "Rename-Item \"$dir\\TscanPlus_Win_Arm64.exe\" 'TscanPlus.exe'",
             "bin": [
                 [
