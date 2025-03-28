@@ -1,10 +1,10 @@
 {
-    "version": "3.18.0",
+    "version": "3.19.0",
     "description": "夸克网盘",
     "homepage": "https://pan.quark.cn/",
     "license": "Proprietary",
-    "url": "https://pdds.quark.cn/download/stfile/oousvprxsopsoqwqn/QuarkCloudDrive_v3.18.0_release_(Build2059246-20250120164028).exe",
-    "hash": "23ac12a5ce2146fc7987d8ecb661c8c4466d382ab798e26947d1062b9b951ef6",
+    "url": "https://pdds.quark.cn/download/stfile/yy647988yyz4y282d/QuarkCloudDrive_v3.19.0_release_(Build2135883-20250328111434).exe",
+    "hash": "9aab6c9d22d5b555b5e2eb4c2516ba58c679a78c59d8b754e993605d7fd2f2eb",
     "depends": "ar/innounpacker",
     "shortcuts": [
         [
