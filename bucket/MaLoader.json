@@ -1,10 +1,10 @@
 {
-    "version": "1.0",
+    "version": "1.1",
     "description": "(Scoop bucket by arch3rpro) MaLoader - 一款基于Tauri+Rust的免杀马生成工具",
     "homepage": "https://github.com/lv183037/MaLoader",
     "license": "Unknown",
-    "url": "https://github.com/lv183037/MaLoader/releases/download/V1.0/MaLoader.zip",
-    "hash": "e0d5528e941475619acf2307f90e57a5565d04b15771c7b9917f1a7845729d5d",
+    "url": "https://github.com/lv183037/MaLoader/releases/download/V1.1/MaLoader.zip",
+    "hash": "6088b797cea656fc244a838b8d59972b38c32efbbb9358b3d8bf96fa02a82ae4",
     "pre_install": [
         "if (Test-Path \"$dir\\app.exe\") { Rename-Item \"$dir\\app.exe\" \"MaLoader.exe\" }",
         "if (Test-Path \"$dir\\app_upx.exe\") { Rename-Item \"$dir\\app_upx.exe\" \"MaLoader_upx.exe\" }"
