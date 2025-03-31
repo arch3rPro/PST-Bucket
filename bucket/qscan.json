@@ -1,12 +1,12 @@
 {
-    "version": "1.6.1",
+    "version": "1.7",
     "description": "(Scoop bucket by arch3rpro) 跨平台、轻量化全方位扫描器，一个比 Fscan 更快，且免杀的内网扫描器",
     "homepage": "https://github.com/qi4L/qscan",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/qi4L/qscan/releases/download/v1.6.1/qscan.exe",
-            "hash": "84c67d1e10069c32095b9ec02948542c2569d8fec86cfa24c7414fdd305df5de",
+            "url": "https://github.com/qi4L/qscan/releases/download/v1.7/qscan.exe",
+            "hash": "39622a979596e0050f8f8de7f44c8c4c4f6e0b6d90b306150991dd86d0b35f40",
             "bin": [
                 [
                     "qscan.exe",
@@ -15,8 +15,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/qi4L/qscan/releases/download/v1.6.1/qscan32.exe",
-            "hash": "5f0b5dbf0123ceb7abceb31e66f7182b1bb9d832c20d8899e4849bfe71a44f92",
+            "url": "https://github.com/qi4L/qscan/releases/download/v1.7/qscan32.exe",
+            "hash": "71f81526ab1d187b70c0c5b702dd5703fc667e7538487c58deba19f1ff0a7c2a",
             "bin": [
                 [
                     "qscan32.exe",
@@ -25,8 +25,8 @@
             ]
         },
         "arm64": {
-            "url": "https://github.com/qi4L/qscan/releases/download/v1.6.1/qscan_arm64.exe",
-            "hash": "5b1bd457044b6e5384197860603d94d6a7939f74a94ee7b790edadeea7433383",
+            "url": "https://github.com/qi4L/qscan/releases/download/v1.7/qscan_arm64.exe",
+            "hash": "42bf9dd24c0678c3c268390241f549802b80a983bcea44d64e71f6f6bc0fa2ad",
             "bin": [
                 [
                     "qscan_arm64.exe",
