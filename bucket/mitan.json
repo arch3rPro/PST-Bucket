@@ -1,55 +1,26 @@
 {
     "version": "1.2.2",
-    "description": "(Scoop bucket by arch3rpro) mitan - 密探渗透测试工具包含域名查询，搜索语法，资产测绘（FOFA，Hunter，quake），指纹识别，敏感信息采集，文件扫描、密码字典等功能。",
+    "description": "(Scoop bucket by arch3rpro) mitan - 密探渗透测试工具包含域名查询，搜索语法，资产测绘（FOFA，Hunter，quake），指纹识别，敏感信息采集，文件扫描、密码字典等功能",
     "homepage": "https://github.com/kkbo8005/mitan",
     "license": "Unknown",
     "suggest": {
-        "JDK": [
-            "java/oraclejdk",
-            "java/openjdk"
-        ]
+        "JDK": "java/oraclejre8"
     },
     "url": "https://github.com/kkbo8005/mitan/releases/download/1.2.2/mitan1.2.2.zip",
-    "hash": "6d603abc777963b902b90addd676fda54b8d4b9ab220ecf3ed0109eaa1f0c95a",
+    "hash": "ec53fe222d92cfe64390325d912aec4311d7abb556649d407f5b782580645224",
     "pre_install": [
         "Rename-Item \"$dir\\mitan-jar-with-dependencies.jar\" -NewName \"mitan.jar\"",
-        "Set-Content \"$dir\\mitan.bat\" '@echo off
-setlocal
-",
-        "set \"jdk_path=\"
-",
-        "if defined JDK_19_HOME (",
-        "    set \"jdk_path=%JDK_19_HOME%\\bin\\\"",
-        ") else if defined JDK_17_HOME (",
-        "    set \"jdk_path=%JDK_17_HOME%\\bin\\\"",
-        ") else if defined JDK_11_HOME (",
-        "    set \"jdk_path=%JDK_11_HOME%\\bin\\\"",
-        ") else if defined JAVA_HOME (",
-        "    set \"jdk_path=%JAVA_HOME%\\bin\\\"",
-        ")",
-        "if not exist \"%jdk_path%javaw.exe\" (",
-        "    echo ERROR: Java executable not found in %jdk_path%.",
-        "    exit /b 1",
-        ")",
-        "set \"javafx_args=\"",
-        "if defined JAVAFX_HOME (",
-        "    if exist \"%JAVAFX_HOME%\\lib\" (",
-        "        set \"javafx_args=--module-path %JAVAFX_HOME%\\lib --add-modules javafx.controls,javafx.fxml\"",
-        "    ) else (",
-        "        echo WARNING: JAVAFX_HOME is defined but the lib directory is missing.",
-        "    )",
-        ")",
-        "@pushd %~dp0",
-        "@start \"\" \"%jdk_path%javaw.exe\" %javafx_args% -jar \"mitan.jar\" %*",
-        "@popd",
-        "endlocal' -Encoding Ascii",
-        "if (!(Test-Path \"$persist_dir\\config.yaml\")) { Copy-Item \"$dir\\config-example.yaml\" \"$dir\\config.yaml\" }"
+        "$batContent = @'",
+        "@echo off",
+        "pushd \"%~dp0\"",
+        "for /f \"tokens=*\" %%i in ('scoop prefix oraclejre8') do set JDK8_PATH=%%i",
+        "start \"\" \"%JDK8_PATH%\\bin\\javaw.exe\" -jar \"mitan.jar\" %*",
+        "popd",
+        "'@",
+        "Set-Content \"$dir\\mitan.bat\" $batContent -Encoding Ascii"
     ],
     "bin": "mitan.bat",
-    "persist": [
-        "config.yaml",
-        "logs"
-    ],
+    "persist": [ "config.yaml", "logs" ],
     "checkver": {
         "url": "https://api.github.com/repos/kkbo8005/mitan/releases/latest",
         "jsonpath": "$.tag_name",
