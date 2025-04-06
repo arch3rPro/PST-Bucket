@@ -3,10 +3,21 @@
     "description": "“冰蝎”动态二进制加密网站管理客户端.(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/rebeyond/Behinder",
     "license": "Freeware",
-    "suggest": "java/oraclejdk",
+    "suggest": {
+        "JDK": "java/oraclejre8"
+    },
     "url": "https://github.com/rebeyond/Behinder/releases/download/Behinder_v4.0.7/Behinder_v4.07.zip",
     "hash": "d17c676a9525e99917a694024212bfddeb038d278f9017a0aef43fbdd142070b",
-    "pre_install": "Set-Content \"$dir\\behinder.bat\" '@pushd %~dp0\n@start javaw.exe -jar \"Behinder.jar\" %*\n@popd' -Encoding Ascii",
+    "pre_install": [
+        "$batContent = @'",
+        "@echo off",
+        "pushd \"%~dp0\"",
+        "for /f \"tokens=*\" %%i in ('scoop prefix oraclejre8') do set JDK8_PATH=%%i",
+        "start \"\" \"%JDK8_PATH%\\bin\\javaw.exe\" -jar \"Behinder.jar\" %*",
+        "popd",
+        "'@",
+        "Set-Content \"$dir\\behinder.bat\" $batContent -Encoding Ascii"
+    ],
     "bin": "behinder.bat",
     "persist": "data.db",
     "checkver": {
