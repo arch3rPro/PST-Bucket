@@ -1,67 +1,45 @@
 {
+    "version": "7.0.0",
     "homepage": "https://u.tools/",
     "description": "新一代效率工具平台.(Scoop bucket by arch3rpro)",
     "license": "Unknown",
-    "version": "5.1.1",
     "architecture": {
         "64bit": {
-            "url": "https://open.u-tools.cn/download/uTools-5.1.1.exe#/dl.7z",
-            "hash": "281ebe07c89ee73920e3e936aa120a522d50954e53563817bcb186be609507f7",
+            "url": "https://open.u-tools.cn/download/uTools-7.0.0.exe#/uTools.7z",
+            "hash": "7868f26779e6a0aeb17a89a3f72df9e3fe0557732b24e90df6b1b6160c0fd6aa",
             "installer": {
-                "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+                "script": "7z x $original_dir/PLUGINSDIR/app-64.7z -o\"$original_dir\\utools\""
             }
         },
         "32bit": {
-            "url": "https://open.u-tools.cn/download/uTools-5.1.1-ia32.exe#/dl.7z",
-            "hash": "d43463b8fcb01d88bf543adf041e67e7e780d108ef787736e910c94d89c3ca71",
+            "url": "https://open.u-tools.cn/download/uTools-7.0.0-ia32.exe#/uTools.7z",
+            "hash": "94c068d064a74132c405b457b84a0f3849fd09ebfb5142642e9c622eb2b4ffb1",
             "installer": {
-                "script": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
+                "script": "7z x $original_dir/PLUGINSDIR/app-32.7z -o\"$original_dir\\utools\""
             }
         }
     },
-    "post_install": [
-        "Remove-Item -Recurse -Force \"$dir\\`$PLUGINSDIR\"",
-        "$runtimeCache = \"$env:APPDATA\\uTools\"",
-        "$runtimeCachePersist = \"$persist_dir\\data\"",
-        "if (Test-Path $runtimeCachePersist) {",
-        "    Remove-Item $runtimeCache -Force -Recurse -ErrorAction SilentlyContinue",
-        "    New-Item -Type Junction -Path $runtimeCache -Target $runtimeCachePersist | Out-Null",
-        "} else {",
-        "    if (Test-Path $runtimeCache) {",
-        "        Move-Item $runtimeCache $runtimeCachePersist -Force",
-        "        New-Item -Type Junction -Path $runtimeCache -Target $runtimeCachePersist | Out-Null",
-        "    }",
-        "}"
-    ],
-    "uninstaller": {
-        "script": [
-            "$runtimeCache = \"$env:APPDATA\\uTools\"",
-            "$runtimeCachePersist = \"$persist_dir\\data\"",
-            "if (!(Test-Path $runtimeCachePersist)) {",
-            "    Move-Item $runtimeCache $runtimeCachePersist -Force",
-            "} else {",
-            "    Remove-Item $runtimeCache -Force -Recurse -ErrorAction SilentlyContinue",
-            "}"
-        ]
-    },
+    "extract_dir": "$PLUGINSDIR",
+    "extract_to": "PLUGINSDIR",
+    "post_install": "Remove-Item -RECURSE $original_dir/PLUGINSDIR",
+    "bin": "utools\\uTools.exe",
     "shortcuts": [
         [
-            "uTools.exe",
+            "utools\\uTools.exe",
             "uTools"
         ]
     ],
-    "persist": "data",
     "checkver": {
-        "url": "https://u.tools/",
-        "regex": "uTools-([\\d.]+)\\.exe"
+        "url": "https://u.tools/download/",
+        "regex": "uTools-(\\d+[\\.\\d]+)\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://open.u-tools.cn/download/uTools-$version.exe#/dl.7z"
+                "url": "https://open.u-tools.cn/download/uTools-$version.exe#/uTools.7z"
             },
             "32bit": {
-                "url": "https://open.u-tools.cn/download/uTools-$version-ia32.exe#/dl.7z"
+                "url": "https://open.u-tools.cn/download/uTools-$version-ia32.exe#/uTools.7z"
             }
         }
     }
