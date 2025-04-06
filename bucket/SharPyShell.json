@@ -1,12 +1,13 @@
 {
     "version": "1.3.0",
-    "description": "(Scoop bucket by arch3rpro) SharPyShell - SharPyShell - tiny and obfuscated ASP.NET webshell for C# web applications.",
+    "description": "(Scoop bucket by arch3rpro) SharPyShell - tiny and obfuscated ASP.NET webshell for C# web applications.",
     "homepage": "https://github.com/antonioCoco/SharPyShell",
     "license": "GPL-3.0",
     "url": "https://github.com/antonioCoco/SharPyShell/archive/refs/tags/v1.3.0.zip",
     "hash": "ea6db1ebbc06207e790a1ede1d2c8d8b4b1ee9c372472da10a09afedac1d4a12",
     "extract_dir": "SharPyShell-1.3.0",
     "pre_install": [
+        "pip3 install -r \"$dir\\requirements.txt\"",
         "Set-Content \"$dir\\SharPyShell.bat\" '@pushd %~dp0",
         "@python3 \"SharPyShell.py\" %*",
         "@popd' -Encoding Ascii"
