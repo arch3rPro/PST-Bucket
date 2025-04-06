@@ -1,11 +1,11 @@
 {
-    "version": "2025-03-03T12.05.02",
+    "version": "2025-04-06T09.19.04",
     "description": "(Scoop bucket by arch3rpro) Loxs - best tool for finding SQLi,CRLF,XSS,LFi,OpenRedirect",
     "homepage": "https://github.com/coffinxp/loxs",
     "license": "Unknown",
     "suggest": "Python3",
     "url": "https://github.com/coffinxp/loxs/archive/refs/heads/main.zip",
-    "hash": "c34d7dd10196dbdcb87516e75dc69cbd5d2b5a7b3a499995aa1637d15c930b07",
+    "hash": "751c136caf5675a67a63fe0c4821fc407b88bbcdfb0b5108ba950088e5b7ad3d",
     "pre_install": [
         "Set-Content \"$dir\\loxs.bat\" '@pushd %~dp0",
         "@python3 \"loxs.py\" %*",
