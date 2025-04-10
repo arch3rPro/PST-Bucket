@@ -1,10 +1,10 @@
 {
-    "version": "2.4.6",
+    "version": "2.4.7",
     "description": "(Scoop bucket by arch3rpro) LaZagne - Credentials recovery project.",
     "homepage": "https://github.com/AlessandroZ/LaZagne",
     "license": "LGPL-3.0",
-    "url": "https://github.com/AlessandroZ/LaZagne/releases/download/v2.4.6/LaZagne.exe",
-    "hash": "467e49f1f795c1b08245ae621c59cdf06df630fc1631dc0059da9a032858a486",
+    "url": "https://github.com/AlessandroZ/LaZagne/releases/download/v2.4.7/LaZagne.exe",
+    "hash": "dc06d62ee95062e714f2566c95b8edaabfd387023b1bf98a09078b84007d5268",
     "bin": "LaZagne.exe",
     "checkver": {
         "url": "https://api.github.com/repos/AlessandroZ/LaZagne/releases/latest",
