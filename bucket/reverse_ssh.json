@@ -1,5 +1,5 @@
 {
-    "version": "2.6.16",
+    "version": "2.6.17",
     "description": "(Scoop bucket by arch3rpro) SSH based reverse shell",
     "homepage": "https://github.com/NHAS/reverse_ssh",
     "license": "BSD-3-Clause",
