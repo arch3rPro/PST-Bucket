@@ -1,5 +1,5 @@
 {
-    "version": "2.1.3",
+    "version": "2.1.4",
     "description": "(Scoop bucket by arch3rpro) Merlin - A cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang.",
     "homepage": "https://github.com/Ne0nd0g/merlin",
     "license": "GPL-3.0",
@@ -10,7 +10,7 @@
         "https://github.com/Ne0nd0g/merlin/releases/download/v1.5.1/merlinAgent-Darwin-x64.7z#dl.7z_"
     ],
     "hash": [
-        "e3c6ee205a46c9619dbe12bb4d487b7bcc802113658f29397b5f550295fc76fc",
+        "",
         "F0AAC2C6749D92ABBAFD105C38E585AFA7E5E116037AAFEDF1831283BAB8214D",
         "BEA2D43299ACF4DCDE7BAEC1C2E72BAAD785DEE6FE94489B6629AA7098A3197E",
         "3DC8B93BB3AFA57FB7E644EAB9CFDD0D83E1585F5C6EEEB2108D5796F624A1C2"
