@@ -1,5 +1,5 @@
 {
-    "version": "1.10.8",
+    "version": "1.9.5",
     "description": "(Scoop bucket by arch3rpro) Typora - Simple yet powerful Markdown reader.",
     "homepage": "https://www.typoraio.cn",
     "license": {
@@ -7,12 +7,12 @@
         "url": "https://support.typora.io/License-Agreement/"
     },
     "url": [
-        "https://download2.typoraio.cn/windows/typora-setup-x64-1.10.8.exe",
+        "https://download2.typoraio.cn/windows/typora-setup-x64-1.9.5.exe",
         "https://github.moeyy.xyz/https://raw.githubusercontent.com/arch3rPro/PST-Files/refs/heads/main/typora/winmm.dll"
     ],
     "hash": [
-        "58fb7a2c98fdd2b044ed2b8cceba0770c0dc11156c89f961714a79d92b8b98ab",
-        "cec665d4b7983a1b38e1abb9cf9a8e364a51bbd8970d363f2be9c847e402a8db"
+        "047deab87662bcb6222f7900164cddb08e0247feac179039067db9eeb9d79447",
+        "52b70942da953439cd107c1da16acd0d8a06aae192e03cec9acd6ef6e817b847"
     ],
     "pre_install": [
         "$setupfile = (Get-ChildItem \"$dir\" 'typora-setup-*.exe' | Select-Object -First 1).FullName",
@@ -24,12 +24,5 @@
             "Typora.exe",
             "Typora"
         ]
-    ],
-    "checkver": {
-        "url": "https://www.typoraio.cn/releases/stable?no-warning",
-        "regex": "typora-setup-x64-([\\d.]+).exe"
-    },
-    "autoupdate": {
-        "url": "https://download2.typoraio.cn/windows/typora-setup-x64-$version.exe"
-    }
+    ]
 }
