@@ -12,7 +12,6 @@
     "url": "https://github.com/Lotus6/ysoserial/releases/download/v1.2/ysoserial-gui-1.2-jar-with-dependencies.jar#/ysoserial-gui.jar",
     "hash": "304e4a0d6c5e286d2732373158348fd75e4ca9cc0a0e35dc4a88fe4ec3e5fccf",
     "pre_install": [
-        "Rename-Item \"$dir\\shiro_attack-$version-SNAPSHOT-all.jar\" 'ShiroAttack2.jar'",
         "$batContent = @'",
         "@echo off",
         "pushd \"%~dp0\"",
