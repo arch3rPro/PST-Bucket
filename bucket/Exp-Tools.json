@@ -12,9 +12,14 @@
     "url": "https://github.com/cseroad/Exp-Tools/releases/download/v1.3.1/Exp-Tools-1.3.1-encrypted.jar#/Exp-Tools.jar",
     "hash": "5069d62dca7cf964a9b1b69615cc306c308c7da8721ea5abb4ee6fbee536baf1",
     "pre_install": [
-        "Set-Content \"$dir\\Exp-Tools.bat\" '@pushd %~dp0",
-        "java.exe -javaagent:Exp-Tools.jar -jar Exp-Tools.jar %*",
-        "@popd' -Encoding Ascii"
+        "$batContent = @'",
+        "@echo off",
+        "pushd \"%~dp0\"",
+        "for /f \"tokens=*\" %%i in ('scoop prefix oraclejre8') do set JDK8_PATH=%%i",
+        "start \"\" \"%JDK8_PATH%\\bin\\java.exe\" -jar \"Exp-Tools.jar\" %*",
+        "popd",
+        "'@",
+        "Set-Content \"$dir\\Exp-Tools.bat\" $batContent -Encoding Ascii"
     ],
     "bin": "Exp-Tools.bat",
     "checkver": "github",
