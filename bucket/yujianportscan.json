@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://raw.githubusercontent.com/arch3rPro/PST-Files/refs/heads/main/yujianportscan2020.zip",
-            "hash": "9792ea6139d49942a2f078f939704f0e7d9fd1b34cdfbd0834a83df2cfcb3789"
+            "hash": "002b555beabd10e5532532d092e617876dd84637043ed077ab9e888e2b0af7e3"
         }
     },
     "pre_install": [
