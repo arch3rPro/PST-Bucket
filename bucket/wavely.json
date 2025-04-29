@@ -7,11 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/perlh/Wavely/releases/download/v2.0.1/Wavely-2.0.1-Windows-amd64-installer.zip",
-            "hash": "e697967859da2a8c3951da2c7da2ef9206c49752da42ba70cbc0ee3d5be65fbf"
+            "hash": ""
         },
         "arm64": {
-            "url": "https://github.com/perlh/Wavely/releases/download/v2.0.1/Wavely-2.0.1-Windows-arm64-installer.zip",
-            "hash": "240a8b17ee3ca320f6d9cb020c1d92b533649b931db3a3644b3222aa7a952529"
+            "url": "https://github.com/perlh/Wavely/releases/download/v2.1.6/Wavely-2.1.6-windows-arm64.zip",
+            "hash": ""
         }
     },
     "pre_install": [
@@ -32,10 +32,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/perlh/Wavely/releases/download/v$version/Wavely-$version-Windows-amd64-installer.zip"
+                "url": "https://github.com/perlh/Wavely/releases/download/v$version/Wavely-$version-Windows-amd64.zip"
             },
             "arm64": {
-                "url": "https://github.com/perlh/Wavely/releases/download/v$version/Wavely-$version-Windows-arm64-installer.zip"
+                "url": "https://github.com/perlh/Wavely/releases/download/v$version/Wavely-$version-windows-arm64.zip"
             }
         }
     }
