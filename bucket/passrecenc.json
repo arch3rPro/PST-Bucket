@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/packages/passrecenc.zip#/passrecenc1",
-            "hash": "6914838c1b568aff98f4374dd26f4532df11e7a0e70f8729f0a3803182ce3b1f" 
+            "hash": "bf6048ef31d2a89406d6753a77b21249b31fd8574e703cdb4b0a96a1c94467da" 
         }
     },
     "bin": [
