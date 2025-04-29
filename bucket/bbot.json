@@ -5,7 +5,7 @@
     "license": "GPL-3.0",
     "suggest": "Python3 pipx",
     "url": "https://github.com/blacklanternsecurity/bbot/archive/refs/heads/stable.zip",
-    "hash": "24c8cae67d2672aa3ee6c71ca2be123cd0a30e68f4c7456c8bd02857082e8740",
+    "hash": "c825dd2eafcd27a7ef8c4ec928de0662a29ddfd8f4cdf777b7e871d97097129f",
     "extract_dir": "bbot-stable",
     "post_install": "pipx install bbot",
     "checkver": {
