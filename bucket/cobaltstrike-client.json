@@ -7,7 +7,7 @@
         "此版本不包含WSL和Server端的启动，仅作为客户端使用",
         "自行安装时注意修改实际启动的目录"
     ],
-    "url": "https://pan.secnews.xyz/d/UC/Public_Storage/scoop-bucket/CobaltSrike_4.9.1.zip?sign=-ZzDo8sE0heOTSeAxVe5SxFFVWnMBKdM46FKLMBlVoM=:0",
+    "url": "https://pan.secnews.xyz/d/Alist/scoop/CobaltSrike_4.9.1.zip?sign=KfJhqnUyJiYDJl-kShKufHFz3lnsRdY-FruY8M7oup4=:0",
     "hash": "1f0a57ab1d2992b8743ce82e6921269e3172e89e8e5fe7822e404757f0455f9b",
     "pre_install": [
         "Move-Item -Path \"$dir\\Client\\*\" -Destination \"$dir\\\"",
