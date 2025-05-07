@@ -37,7 +37,7 @@
             "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/eb295810-08dc-4e76-b709-2dc2d52a4d37/MicrosoftEdgeWebView2RuntimeInstallerX64.exe"
         },
         "arm64": {
-            "hash": "",
+            "hash": "cdc6ebc0698abdd2558f122699d9707d29ce72fef2a3a9dfb19d2c5fbebc0024",
             "installer": {
                 "args": "/install"
             },
