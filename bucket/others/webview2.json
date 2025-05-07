@@ -1,56 +1,56 @@
 {
-    "version": "119.0.2151.58",
+    "version": "136.0.3240.50",
     "description": "(Scoop bucket by arch3rpro) Microsoft Edge WebView2.",
     "homepage": "https://developer.microsoft.com/en-us/microsoft-edge/webview2/",
     "license": "Copyright (c) Microsoft Corporation. All rights reserved.",
     "architecture": {
         "32bit": {
-            "hash": "a44601bf850dcbf6bed1d5104d5df4e39ee81d41e15a16ac3110ababd5fbee9a",
+            "hash": "",
             "installer": {
                 "args": "/install"
             },
             "post_install": [
                 "$outputFileName=\"$dir\\uninstall.ps1\"",
-                "'$command=\"C:\\''Program Files (x86)''\\Microsoft\\EdgeWebView\\Application\\95.0.1020.38\\Installer\\setup.exe\"' | Out-File -FilePath $outputFileName",
+                "'$command=\"C:\\''Program Files (x86)''\\Microsoft\\EdgeWebView\\Application\\$version\\Installer\\setup.exe\"' | Out-File -FilePath $outputFileName",
                 "'$args=\"--uninstall --msedgewebview --force-uninstall --system-level\"' | Out-File -FilePath $outputFileName -Append",
                 "'iex \"$command $args\"' | Out-File -FilePath $outputFileName -Append"
             ],
             "uninstaller": {
                 "file": "uninstall.ps1"
             },
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/3c9835b8-599f-42e7-bfe5-47a9c85057d5/MicrosoftEdgeWebView2RuntimeInstallerX86.exe"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/c7da8858-c691-4094-9636-4f3e0597fa7b/MicrosoftEdgeWebView2RuntimeInstallerX86.exe"
         },
         "64bit": {
-            "hash": "dd1889da0d4d4575deae720bee42133a8ac4e96d43e3f313df13b37e40b41dfa",
+            "hash": "",
             "installer": {
                 "args": "/install"
             },
             "post_install": [
                 "$outputFileName=\"$dir\\uninstall.ps1\"",
-                "'$command=\"C:\\''Program Files (x86)''\\Microsoft\\EdgeWebView\\Application\\95.0.1020.38\\Installer\\setup.exe\"' | Out-File -FilePath $outputFileName",
+                "'$command=\"C:\\''Program Files (x86)''\\Microsoft\\EdgeWebView\\Application\\$version\\Installer\\setup.exe\"' | Out-File -FilePath $outputFileName",
                 "'$args=\"--uninstall --msedgewebview --force-uninstall --system-level\"' | Out-File -FilePath $outputFileName -Append",
                 "'iex \"$command $args\"' | Out-File -FilePath $outputFileName -Append"
             ],
             "uninstaller": {
                 "file": "uninstall.ps1"
             },
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/a2086c19-20e5-4c57-86d3-43b9ec9316ec/MicrosoftEdgeWebView2RuntimeInstallerX64.exe"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/eb295810-08dc-4e76-b709-2dc2d52a4d37/MicrosoftEdgeWebView2RuntimeInstallerX64.exe"
         },
         "arm64": {
-            "hash": "fd945b09390256d41b26378b45b1590eead15ba437355d19556cf702fd92c424",
+            "hash": "",
             "installer": {
                 "args": "/install"
             },
             "post_install": [
                 "$outputFileName=\"$dir\\uninstall.ps1\"",
-                "'$command=\"C:\\''Program Files (x86)''\\Microsoft\\EdgeWebView\\Application\\95.0.1020.38\\Installer\\setup.exe\"' | Out-File -FilePath $outputFileName",
+                "'$command=\"C:\\''Program Files (x86)''\\Microsoft\\EdgeWebView\\Application\\$version\\Installer\\setup.exe\"' | Out-File -FilePath $outputFileName",
                 "'$args=\"--uninstall --msedgewebview --force-uninstall --system-level\"' | Out-File -FilePath $outputFileName -Append",
                 "'iex \"$command $args\"' | Out-File -FilePath $outputFileName -Append"
             ],
             "uninstaller": {
                 "file": "uninstall.ps1"
             },
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/04f738a9-1ff4-45c6-b6fb-144bdeabac82/MicrosoftEdgeWebView2RuntimeInstallerARM64.exe"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/9c5a54ef-ee23-4824-becb-28bf31c039e6/MicrosoftEdgeWebView2RuntimeInstallerARM64.exe"
         }
     },
     "autoupdate": {
