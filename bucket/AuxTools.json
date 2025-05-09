@@ -1,11 +1,11 @@
 {
-    "version": "5.4.0",
+    "version": "5.5.0",
     "description": "(Scoop bucket by arch3rpro) AuxTools - 图形化渗透测试辅助工具",
     "homepage": "https://github.com/doimet/AuxTools",
     "notes": "注意：图形化版本工具，命令行不生效",
     "license": "Unknown",
-    "url": "https://github.com/doimet/AuxTools/releases/download/5.4.0/AuxTools-Windows.zip",
-    "hash": "3d8e3d985cc1fe617ed62c1e94d857a6d86ca6d5627687fdaf7f4b333c5a098b",
+    "url": "https://github.com/doimet/AuxTools/releases/download/5.5.0/AuxTools-Windows.zip",
+    "hash": "8c5f86e090dbc3ffc09856a42ea4da8fc7bd0d234909536dc9fbc0f571f93112",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/doimet/AuxTools/releases/download/$version/AuxTools-Windows.zip"
