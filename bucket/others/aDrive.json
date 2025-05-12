@@ -1,10 +1,40 @@
 {
-    "version": "6.8.6.1736",
+    "version": "6.8.7",
     "description": "阿里云盘是一款速度快、不打扰、够安全、易于分享的网盘，由阿里巴巴集团出品",
     "homepage": "https://www.aliyundrive.com/",
     "license": "Unknown",
-    "url": "https://sw.pcmgr.qq.com/fa25b7373da5881050f11097e7106533/6802eccd/spcmgr/download/aDrive-6.8.6.exe#/dl.7z",
-    "hash": "83a4659120d00d043d723d11e4438f9a02cb10da5281e916087a4ffe5821eb90",
+    "url": "https://cdn.aliyundrive.net/downloads/apps/desktop/update/6.8.7/win32/x64/aDrive-6.8.7.exe#/dl.7z",
+    "hash": "6e920e9f6e9ef087cca41bd0339ca70ccc9c01473c7b2b72b2bd74e7706b524c",
+    "installer": {
+        "script": [
+            "# handle runtime cache",
+            "if (!(Test-Path $persist_dir)) {",
+            "    New-Item $persist_dir -Type Directory -Force | Out-Null",
+            "}",
+            "$runtimeCache = \"$env:APPDATA\\aDrive\"",
+            "$runtimeCachePersist = \"$persist_dir\\appdata\"",
+            "if (Test-Path $runtimeCachePersist) {",
+            "    Remove-Item $runtimeCache -Force -Recurse -ErrorAction SilentlyContinue",
+            "    New-Item -Type Junction -Path $runtimeCache -Target $runtimeCachePersist | Out-Null",
+            "} else {",
+            "    if (Test-Path $runtimeCache) {",
+            "        Move-Item $runtimeCache $runtimeCachePersist -Force",
+            "        New-Item -Type Junction -Path $runtimeCache -Target $runtimeCachePersist | Out-Null",
+            "    }",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$runtimeCache = \"$env:APPDATA\\aDrive\"",
+            "$runtimeCachePersist = \"$persist_dir\\appdata\"",
+            "if (!(Test-Path $runtimeCachePersist)) {",
+            "    Move-Item $runtimeCache $runtimeCachePersist -Force",
+            "} else {",
+            "    Remove-Item $runtimeCache -Force -Recurse -ErrorAction SilentlyContinue",
+            "}"
+        ]
+    },
     "shortcuts": [
         [
             "aDrive.exe",
@@ -16,13 +46,14 @@
         "Remove-Item -Force -Recurse \"$dir\\`$TEMP\""
     ],
     "checkver": {
-        "script": [
-            "$resp = Invoke-WebRequest -UseBasicParsing -Uri 'https://luban.m.qq.com/api/public/software-manager/softwareProxy' -Body 'cmdid=3318&jprxReq%5Breq%5D%5Bsoft_id_list%5D%5B%5D=28156' -Method 'POST'",
-            "Write-Output $resp.Content"
-        ],
-        "regex": "\"ver_name\":\"([\\d\\.]+)\".+\"download_https_url\":\"https://(?<url>.+exe)\""
+        "url": "https://api.github.com/repos/microsoft/winget-pkgs/commits?path=manifests/a/Alibaba/aDrive",
+        "regex": "New version.*? ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://$matchUrl#/dl.7z"
+        "url": "https://scoop-proxy.233366.xyz/https://cdn.aliyundrive.net/downloads/apps/desktop/update/$version/win32/x64/aDrive-$version.exe#/dl.7z",
+        "hash": {
+            "url": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Alibaba/aDrive/$version/Alibaba.aDrive.installer.yaml",
+            "regex": "$sha256"
+        }
     }
 }
