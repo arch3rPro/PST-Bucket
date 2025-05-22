@@ -13,6 +13,7 @@
     "hash": "62b7eff31d339fd04e6d39aba47b5f37b1b6feb27f85c3c71e4d2d600e8142c6",
     "pre_install": [
         "Set-Content \"$dir\\godzilla.bat\" '@pushd %~dp0\n@start javaw.exe -jar \"godzilla.jar\" %*\n@popd' -Encoding Ascii",
+        "Set-Content \"$dir\\godzilla.vbs\" 'CreateObject(\"WScript.Shell\").Run \"D:\\Base\\apps\\oraclejre8\\current\\bin\\javaw.exe -jar Godzilla.jar\",0' -Encoding Ascii",
         "if (!(Test-Path \"$persist_dir\\data.db\")) { New-Item \"$dir\\data.db\" | Out-Null }"
     ],
     "bin": "godzilla.bat",
