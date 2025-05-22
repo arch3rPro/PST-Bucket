@@ -16,7 +16,8 @@
         "start \"\" \"%JDK8_PATH%\\bin\\javaw.exe\" -jar \"Behinder.jar\" %*",
         "popd",
         "'@",
-        "Set-Content \"$dir\\behinder.bat\" $batContent -Encoding Ascii"
+        "Set-Content \"$dir\\behinder.bat\" $batContent -Encoding Ascii",
+        "Set-Content \"$dir\\godzilla.vbs\" 'CreateObject(\"WScript.Shell\").Run \"D:\\Base\\apps\\oraclejre8\\current\\bin\\javaw.exe -jar Godzilla.jar\",0' -Encoding Ascii"
     ],
     "bin": "behinder.bat",
     "persist": "data.db",
