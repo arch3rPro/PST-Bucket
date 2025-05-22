@@ -1,16 +1,16 @@
 {
-    "version": "1.12.6b",
+    "version": "1.12.7b",
     "description": "(Scoop bucket by arch3rpro) Zen-Browser - A open-source browser based on the Firefox engine",
     "homepage": "https://zen-browser.app/",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zen-browser/desktop/releases/download/1.12.6b/zen.installer.exe#/dl.7z",
-            "hash": "33237804539147ac76ce63e39ffa93920db6d92acc923630e9d82fd396957693"
+            "url": "https://github.com/zen-browser/desktop/releases/download/1.12.7b/zen.installer.exe#/dl.7z",
+            "hash": "17d03d2ce0d4c11fe7f3654c05705f4050926b53665f3157062a20fc08322b79"
         },
         "arm64": {
-            "url": "https://github.com/zen-browser/desktop/releases/download/1.12.6b/zen.installer-arm64.exe#/dl.7z",
-            "hash": "f8ed70288a65e3bbc534b9b80f5632a8ef1af137607cc8f7ce38e9f7fd3a05ef"
+            "url": "https://github.com/zen-browser/desktop/releases/download/1.12.7b/zen.installer-arm64.exe#/dl.7z",
+            "hash": "ef752ee78496e9af95d9221b409edeeabebd9f981df82bf73b9bb847a4d02caf"
         }
     },
     "extract_dir": "core",
