@@ -1,13 +1,13 @@
 {
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "(Scoop bucket by arch3rpro) mitan - 密探渗透测试工具包含域名查询，搜索语法，资产测绘（FOFA，Hunter，quake），指纹识别，敏感信息采集，文件扫描、密码字典等功能",
     "homepage": "https://github.com/kkbo8005/mitan",
     "license": "Unknown",
     "suggest": {
         "JDK": "java/oraclejre8"
     },
-    "url": "https://github.com/kkbo8005/mitan/releases/download/1.2.2/mitan1.2.2.zip",
-    "hash": "ec53fe222d92cfe64390325d912aec4311d7abb556649d407f5b782580645224",
+    "url": "https://github.com/kkbo8005/mitan/releases/download/1.2.3/mitan.zip",
+    "hash": "7d7837f8e029a574d6e7cb5dc4d01c6805a0c5a0dc15a1761caef62b19b74be0",
     "pre_install": [
         "Rename-Item \"$dir\\mitan-jar-with-dependencies.jar\" -NewName \"mitan.jar\"",
         "$batContent = @'",
@@ -28,6 +28,6 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/kkbo8005/mitan/releases/download/$version/mitan$version.zip"
+        "url": "https://github.com/kkbo8005/mitan/releases/download/$version/mitan.zip"
     }
 }
