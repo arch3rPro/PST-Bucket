@@ -19,7 +19,8 @@
         "start \"\" \"%JDK8_PATH%\\bin\\javaw.exe\" -jar \"Webshell_Generate-1.2.4.jar\" %*",
         "popd",
         "'@",
-        "Set-Content \"$dir\\webshell_generate.bat\" $batContent -Encoding Ascii"
+        "Set-Content \"$dir\\webshell_generate.bat\" $batContent -Encoding Ascii",
+        "Set-Content \"$dir\\webshell_generate.vbs\"'set ws=createobject(\"wscript.shell\") : ws.Run \"webshell_generate.bat\",0'  -Encoding Ascii"
     ],
     "bin": "webshell_generate.bat",
     "shortcuts": [
