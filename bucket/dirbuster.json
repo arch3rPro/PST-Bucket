@@ -20,6 +20,7 @@
         "Set-Content -Path $(Join-Path $dir 'DirBuster-1.0-RC1.bat') -Value $content",
         "$oldPath = Join-Path $dir 'DirBuster-1.0-RC1.bat'",
         "$newPath = Join-Path $dir 'DirBuster.bat'",
-        "Rename-Item -Path $oldPath -NewName $newPath"
+        "Rename-Item -Path $oldPath -NewName $newPath",
+        "Set-Content \"$dir\\DirBuster.vbs\" 'set ws=createobject(\"wscript.shell\") : ws.Run \"DirBuster.bat\",0'  -Encoding Ascii"
     ]
 }
