@@ -13,9 +13,8 @@
     "hash": "c59b53993375655e63677f0aa3f91cdc348e4d5dfa0f158ec7109c916e4bfc7a",
     "extract_dir":"flashsearch2.0",
     "pre_install": [
-        "Set-Content \"$dir\\FlashSearch.bat\" '@pushd %~dp0",
-        "@start java.exe -Dfile.encoding=UTF-8 -jar \"FlashSearch.jar\" %*",
-        "@popd' -Encoding Ascii"
+        "Set-Content \"$dir\\FlashSearch.bat\" '@pushd %~dp0\n@start javaw.exe -Dfile.encoding=UTF-8 -jar \"FlashSearch.jar\" %*\n@popd' -Encoding Ascii",
+        "Set-Content \"$dir\\FlashSearch.vbs\" 'set ws=createobject(\"wscript.shell\") : ws.Run \"FlashSearch.bat\",0'  -Encoding Ascii"
     ],
     "bin": "FlashSearch.bat",
     "checkver": "github",
