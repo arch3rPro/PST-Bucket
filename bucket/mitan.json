@@ -17,7 +17,8 @@
         "start \"\" \"%JDK8_PATH%\\bin\\javaw.exe\" -jar \"mitan.jar\" %*",
         "popd",
         "'@",
-        "Set-Content \"$dir\\mitan.bat\" $batContent -Encoding Ascii"
+        "Set-Content \"$dir\\mitan.bat\" $batContent -Encoding Ascii",
+        "Set-Content \"$dir\\mitan.vbs\"'set ws=createobject(\"wscript.shell\") : ws.Run \"mitan.bat\",0'  -Encoding Ascii"
     ],
     "bin": "mitan.bat",
     "persist": [ "config.yaml", "logs" ],
