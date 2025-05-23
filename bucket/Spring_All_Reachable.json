@@ -16,10 +16,11 @@
         "@echo off",
         "pushd \"%~dp0\"",
         "for /f \"tokens=*\" %%i in ('scoop prefix oraclejre8') do set JDK8_PATH=%%i",
-        "start \"\" \"%JDK8_PATH%\\bin\\java.exe\" -jar \"Spring_All_Reachable.jar\" %*",
+        "start \"\" \"%JDK8_PATH%\\bin\\javaw.exe\" -jar \"Spring_All_Reachable.jar\" %*",
         "popd",
         "'@",
-        "Set-Content \"$dir\\Spring_All_Reachable.bat\" $batContent -Encoding Ascii"
+        "Set-Content \"$dir\\Spring_All_Reachable.bat\" $batContent -Encoding Ascii",
+        "Set-Content \"$dir\\Spring_All_Reachable.vbs\"'set ws=createobject(\"wscript.shell\") : ws.Run \"Spring_All_Reachable.bat\",0'  -Encoding Ascii"
     ],
     "bin": "Spring_All_Reachable.bat",
     "checkver": "github",
