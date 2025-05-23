@@ -20,7 +20,8 @@
         "start \"\" \"%JDK8_PATH%\\bin\\java.exe\" -jar \"hyacinth.jar\" %*",
         "popd",
         "'@",
-        "Set-Content \"$dir\\hyacinth.bat\" $batContent -Encoding Ascii"
+        "Set-Content \"$dir\\hyacinth.bat\" $batContent -Encoding Ascii",
+        "Set-Content \"$dir\\hyacinth.vbs\" 'set ws=createobject(\"wscript.shell\") : ws.Run \"hyacinth.bat\",0'  -Encoding Ascii"
     ],
     "bin": "hyacinth.bat",
     "persist": "config.txt",
