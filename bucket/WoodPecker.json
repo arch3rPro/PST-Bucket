@@ -13,7 +13,8 @@
     "hash": "303c3844aa7d9af6ce96a86d0bcac12a8a5394bb5c9d321a6dedbc873e415fbd",
     "pre_install": [
         "Set-Content \"$dir\\woodpecker.bat\" '@pushd %~dp0\n java.exe -jar \"woodpecker.jar\" %*\n@popd' -Encoding Ascii",
-        "if (!(Test-Path \"$persist_dir\\config.db\")) { New-Item \"$dir\\config.db\" | Out-Null }"
+        "if (!(Test-Path \"$persist_dir\\config.db\")) { New-Item \"$dir\\config.db\" | Out-Null }",
+        "Set-Content \"$dir\\woodpecker.vbs\"'set ws=createobject(\"wscript.shell\") : ws.Run \"woodpecker.bat\",0'  -Encoding Ascii"
     ],
     "bin": "woodpecker.bat",
     "shortcuts": [
