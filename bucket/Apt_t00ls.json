@@ -20,7 +20,10 @@
         "popd",
         "'@",
         "Set-Content \"$dir\\apt.bat\" $batContent -Encoding Ascii",
-        "Set-Content \"$dir\\apt.vbs\" 'CreateObject(\"WScript.Shell\").Run apt.bat\",0' -Encoding Ascii"
+        "$vbsContent = @'",
+        "set ws=createobject(\"wscript.shell\") : ws.Run \"apt.bat\",0",
+        "'@",
+        "Set-Content \"$dir\\apt.vbs\" $vbsContent -Encoding Ascii"
     ],
     "bin": "apt.bat",
     "persist": "Apt_config",
