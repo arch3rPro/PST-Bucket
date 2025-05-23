@@ -1,6 +1,6 @@
 {
     "version": "1.0",
-    "description": "基于冰蝎加密流量进行WebShell通信管理客户端(Scoop bucket by arch3rpro)",
+    "description": "(Scoop bucket by arch3rpro) skyscorpion - 基于冰蝎加密流量进行WebShell通信管理客户端",
     "homepage": "https://github.com/shack2/skyscorpion",
     "license": "Freeware",
     "suggest": {
@@ -9,6 +9,9 @@
             "java/openjdk"
         ]
     },
+    "pre_install": [
+        "Set-Content \"$dir\\kyscorpion.vbs\"'set ws=createobject(\"wscript.shell\") : ws.Run \"kyscorpion.bat\",0'  -Encoding Ascii"
+    ],
     "url": "https://github.com/arch3rPro/PST-Files/raw/main/Sky20211122.zip",
     "hash": "4564B437034BB0DB68E919057841BEBCA90A2D24F2978BCE517F2A06C978F8E6",
     "bin": "skyscorpion.bat",
