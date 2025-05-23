@@ -10,7 +10,7 @@
         ]
     },
     "pre_install": [
-        "Set-Content \"$dir\\kyscorpion.vbs\"'set ws=createobject(\"wscript.shell\") : ws.Run \"kyscorpion.bat\",0'  -Encoding Ascii"
+        "Set-Content \"$dir\\skyscorpion.vbs\"'set ws=createobject(\"wscript.shell\") : ws.Run \"skyscorpion.bat\",0'  -Encoding Ascii"
     ],
     "url": "https://github.com/arch3rPro/PST-Files/raw/main/Sky20211122.zip",
     "hash": "4564B437034BB0DB68E919057841BEBCA90A2D24F2978BCE517F2A06C978F8E6",
