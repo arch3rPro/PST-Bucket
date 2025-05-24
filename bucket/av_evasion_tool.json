@@ -11,9 +11,7 @@
     },
     "pre_install": [
         "Move-Item \"$dir\\*.exe\" \"$dir\\av_evasion_tool.exe\"",
-        "Set-Content \"$dir\\av_evasion_tool.bat\" '@pushd %~dp0
-cmd.exe /k  av_evasion_tool.exe %*
-@popd' -Encoding Ascii"
+        "Set-Content \"$dir\\av_evasion_tool.bat\" '@pushd %~dp0\ncmd.exe /k  av_evasion_tool.exe %*\n@popd' -Encoding Ascii"
     ],
     "bin": "av_evasion_tool.bat",
     "checkver": "github",
