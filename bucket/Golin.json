@@ -1,12 +1,12 @@
 {
-    "version": "1.2.6",
+    "version": "1.2.7",
     "description": "(Scoop bucket by arch3rpro) Golin - 弱口令检测、 漏洞扫描、端口扫描（协议识别，组件识别）、web目录扫描、等保模拟定级、自动化运维、等保工具（网络安全等级保护现场测评工具）内置3级等保核查命令、基线核查工具、键盘记录器.",
     "homepage": "https://github.com/selinuxG/Golin",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/selinuxG/Golin/releases/download/1.2.6/golin.exe",
-            "hash": "e93dc28d7b179d3427698746a426788c25dab5e99610d81982e749673d554949"
+            "url": "https://github.com/selinuxG/Golin/releases/download/1.2.7/golin.exe",
+            "hash": "1cdbcdf37acbd2d9aeed40cba1b06871917eb17c026a6adf9d153924b95e7c9b"
         }
     },
     "bin": "golin.exe",
