@@ -1,11 +1,11 @@
 {
-    "version": "2025-06-11T19.48.15",
+    "version": "2025-06-14T04.08.48",
     "description": "(Scoop bucket by arch3rpro) Reverse-Shell-Generator Hosted Reverse Shell generator with a ton of functionality. -- (Great for CTFs)",
     "homepage": "https://github.com/0dayCTF/reverse-shell-generator",
     "license": "unknown",
     "notes": "该项目是个静态页面，需要使用浏览器打开index.html进行使用",
     "url": "https://github.com/0dayCTF/reverse-shell-generator/archive/refs/heads/master.zip",
-    "hash": "efd971931752465c7c02e6a452f559e919a6cbf3c5a369c89d32f784b9b265d3",
+    "hash": "cfcbe42340d407ea841caafccfad660766447c0fbb8c6bbd36df8fc3449cf51c",
     "post_install": [
         "Move-Item -Path \"$dir\\reverse-shell-generator-main\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\reverse-shell-generator-main\" -Force -Recurse"
