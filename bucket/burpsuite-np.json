@@ -2,12 +2,12 @@
     "description": "The leading toolkit for web security testing.(Scoop bucket by arch3rpro)",
     "homepage": "https://portswigger.net/",
     "license": "Proprietary",
-    "version": "2025.5.4",
+    "version": "2025.5.5",
     "notes": "需要自行注册",
     "architecture": {
         "64bit": {
-            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2025.5.4&type=WindowsX64",
-            "hash": "e265d91be0e6b0f339d86d9d3a2e35b5c3e109308dd20d51bc6815472eb32c14"
+            "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2025.5.5&type=WindowsX64",
+            "hash": "md5:a2df8b286684f8ae248f0d049ebd508a"
         }
     },
     "installer": {
