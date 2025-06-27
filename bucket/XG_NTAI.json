@@ -1,5 +1,5 @@
 {
-    "version": "2.5",
+    "version": "2.6",
     "description": "(Scoop bucket by arch3rpro) XG_NTAI - 用于Webshell木马免杀、流量加密传输,免杀冰蝎、哥斯拉等Webshell的ASP、PHP、JSP木马文件，生成冰蝎流量加密传输配置文件.",
     "homepage": "https://github.com/xiaogang000/XG_NTAI",
     "license": "Unkown",
@@ -9,8 +9,8 @@
             "java/openjdk"
         ]
     },
-    "url": "https://github.com/xiaogang000/XG_NTAI/releases/download/V2.5/XG_NTAI_V2.5.zip",
-    "hash": "2b85f14d8ed097017cf53cd59330738ae7945afa90370e2553ff8595332bd21f",
+    "url": "https://github.com/xiaogang000/XG_NTAI/releases/download/V2.6/XG_NTAI_V2.6.zip",
+    "hash": "598440849a5c001bccb4dc7bac0bb29af1718a89836d1b858bc02ddc076bb0da",
     "pre_install": [
         "$batContent = @'",
         "@echo off",
