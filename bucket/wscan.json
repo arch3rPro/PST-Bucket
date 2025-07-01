@@ -1,10 +1,10 @@
 {
-    "version": "1.0.33",
+    "version": "1.0.34",
     "description": "(Scoop bucket by arch3rpro) wscan - A web security scanner that focuses on web security, dedicated to making web security accessible to everyone.",
     "homepage": "https://github.com/chushuai/wscan",
     "license": "https://github.com/chushuai/wscan?tab=License-1-ov-file#readme",
-    "url": "https://github.com/chushuai/wscan/releases/download/1.0.33/wscan_windows_amd64.exe.zip",
-    "hash": "34ec06cc52f5288c8d1478ea0b7fb8afc8fc8d73715d0c7cf71fd4f17f4d1b1c",
+    "url": "https://github.com/chushuai/wscan/releases/download/1.0.34/wscan_windows_amd64.exe.zip",
+    "hash": "19caeea22d921cbd417c9c2831b910bccec9c4aea23b065939c7b5598c21d03c",
     "pre_install": "Rename-Item \"$dir\\wscan_windows_amd64.exe\" \"$dir\\wscan.exe\"",
     "bin": "wscan.exe",
     "checkver": {
