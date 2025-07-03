@@ -1,12 +1,12 @@
 {
-    "version": "2025-06-27",
+    "version": "2025-07-03",
     "description": "SearchSploit 是一个用于搜索 Exploit-DB 漏洞数据库的命令行工具，允许本地搜索离线 Exploit 数据库. (Scoop bucket by arch3rpro)",
     "homepage": "https://gitlab.com/exploit-database/exploitdb",
     "notes": "searchsploit运行脚本由arch3rPro独家提供，安装前请确保Git被正确安装",
     "license": "GNU",
     "suggest": "Git Bash",
-    "url": "https://gitlab.com/exploit-database/exploitdb/-/archive/2025-06-27/exploitdb-2025-06-27.zip",
-    "hash": "97ce5cd5e608d5d9e8e8c9b22541461916f6df3431dbbcaca6c131afec2ea571",
+    "url": "https://gitlab.com/exploit-database/exploitdb/-/archive/2025-07-03/exploitdb-2025-07-03.zip",
+    "hash": "807d21aadc508884fc1b139cf21066ade278489fdf0573373dabe5afd85b3241",
     "pre_install": [
         "Set-Content \"$dir\\searchsploit.bat\" '@echo off",
         "@pushd %~dp0",
