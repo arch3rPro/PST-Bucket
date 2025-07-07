@@ -1,20 +1,20 @@
 {
-    "version": "2.13.8",
+    "version": "2.14.0",
     "description": "(Scoop bucket by arch3rpro) gogo - 面向红队的, 高度可控可拓展的自动化引擎",
     "homepage": "https://github.com/chainreactors/gogo",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/chainreactors/gogo/releases/download/v2.13.8/gogo_windows_amd64.exe#/gogo.exe",
-            "hash": "f100ee7c82a3424fa37dea8372ebb281c7388298b16a9369169e2194b09658a2"
+            "url": "https://github.com/chainreactors/gogo/releases/download/v2.14.0/gogo_windows_amd64.exe#/gogo.exe",
+            "hash": "e74098b17d5d95e0014cf9c7f41f2a4e4be8baefc2b0eb42d39ae05a95b08ea5"
         },
         "32bit": {
-            "url": "https://github.com/chainreactors/gogo/releases/download/v2.13.8/gogo_windows_386.exe#/gogo.exe",
-            "hash": "cbfd75489cc6429c548a4510e1e5b7794ded5d352bb6f5328d07f129a44cf8c1"
+            "url": "https://github.com/chainreactors/gogo/releases/download/v2.14.0/gogo_windows_386.exe#/gogo.exe",
+            "hash": "d82546fced278ca14b6721faaa7b36062e0973b85049256cc7832a6bc3ee5290"
         },
         "arm64": {
-            "url": "https://github.com/chainreactors/gogo/releases/download/v2.13.8/gogo_windows_arm64.exe#/gogo.exe",
-            "hash": "5c1761bfc48dfcf5aa7f7aab4aac22cc80983d70dda59e18d2db4714bf8fe45f"
+            "url": "https://github.com/chainreactors/gogo/releases/download/v2.14.0/gogo_windows_arm64.exe#/gogo.exe",
+            "hash": "aad1f4a269c106ba58cb5497cd9d44c529fa44ac273f56f5027d8757fa112a5a"
         }
     },
     "bin": "gogo.exe",
