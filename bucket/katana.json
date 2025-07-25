@@ -1,20 +1,20 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "(Scoop bucket by arch3rpro) - A next-generation crawling and spidering framework",
     "homepage": "https://github.com/projectdiscovery/katana",
     "license": "MIT",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/projectdiscovery/katana/releases/download/v1.2.0/katana_1.2.0_windows_386.zip",
-            "hash": "0595e85297119abb09afcc52a7fb8c2f64a152f95084b25db54b9f97ac0ab696"
+            "url": "https://github.com/projectdiscovery/katana/releases/download/v1.2.1/katana_1.2.1_windows_386.zip",
+            "hash": "267912e51756f8e2e882bffc092fb4f98ff8d353f64af62582845985f7e1536f"
         },
         "64bit": {
-            "url": "https://github.com/projectdiscovery/katana/releases/download/v1.2.0/katana_1.2.0_windows_amd64.zip",
-            "hash": "b6cb998d39fceb8cb613ee7e4e4c9394cc76021f026caa66d5beb5b40124d58b"
+            "url": "https://github.com/projectdiscovery/katana/releases/download/v1.2.1/katana_1.2.1_windows_amd64.zip",
+            "hash": "679bdfa4831ee6145fc503088c6900d3d9edd0c9fa0997e9fbd296886786427d"
         },
         "arm64": {
-            "url": "https://github.com/projectdiscovery/katana/releases/download/v1.2.0/katana_1.2.0_windows_arm64.zip",
-            "hash": "c8f79d0bb3a28e65171d13bbcc34c762c5bd0382afa5f478b449185ccfd8b348"
+            "url": "https://github.com/projectdiscovery/katana/releases/download/v1.2.1/katana_1.2.1_windows_arm64.zip",
+            "hash": "032114dc9d0b1212012b922466de4f1ee5f788dedb39604d753efc8fc63b3fe2"
         }
     },
     "bin": "katana.exe",
