@@ -1,13 +1,13 @@
 {
-    "version": "4.2.7.457",
+    "version": "4.3.0.469",
     "description": "夸克浏览器学习、工作、生活的高效拍档",
     "homepage": "https://www.quark.cn/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://broccoli.uc.cn/apps/quark_icloud_pay/routes/service_help"
     },
-    "url": "https://umcdn.quark.cn/download/37212/quarkpc/pcquark@homepage_oficial/QuarkPC_V4.2.7.457_pc_pf30002_(zh-cn)_release_(Build2315233-250721155603-x64).exe",
-    "hash": "6964489c46689f48b72475278240f29915d65735ded39f9f76eb6aac68197ea5",
+    "url": "https://umcdn.quark.cn/download/37212/quarkpc/pcquark@homepage_oficial/QuarkPC_V4.3.0.469_pc_pf30002_(zh-cn)_release_(Build2338267-250731183047-x64).exe",
+    "hash": "bc6660449295eb8e6d9f91d65e03b2a551561e8b4e7855ef005d093283c7b980",
     "innosetup": true,
     "shortcuts": [
         [
