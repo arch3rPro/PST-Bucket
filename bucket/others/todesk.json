@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.todesk.com/",
     "description": "ToDesk Windows客户端. (Scoop bucket by arch3rpro)",
-    "version": "4.8.0.1",
+    "version": "4.8.1.2",
     "license": "Proprietary",
     "url": "https://dl.todesk.com/windows/ToDesk_Setup.exe#/dl.7z",
-    "hash": "3abe2c9a6051f483276c4fa58cd977e2ca013a238a9c2194cc462c7cb94f96ef",
+    "hash": "4a48e7f862a25ca0c8c12bf948c2e65fb8edc79014269f16da5d0753e419f462",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
         "    New-Item -Force -Path \"$persist_dir\\config.ini\" -ItemType File -Value \"[ConfigInfo]`nautoStart=0\" | Out-Null",
