@@ -1,10 +1,10 @@
 {
-    "version": "2.3.2",
+    "version": "2.4.2",
     "description": "A simple, decentralized mesh VPN with WireGuard support.GUI Version（scoop bucket by arch3rpro)",
     "homepage": "https://easytier.top/",
     "license": "Apache-2.0",
-    "url": "https://github.com/EasyTier/EasyTier/releases/download/v2.3.2/easytier-gui_2.3.2_x64-setup.exe#/dl.7z",
-    "hash": "13eb4130f882bd0806978804d876eda3e85428a306284f31c1d32de42b2187a2",
+    "url": "https://github.com/EasyTier/EasyTier/releases/download/v2.4.2/easytier-gui_2.4.2_x64-setup.exe#/dl.7z",
+    "hash": "94a6b1e78470ff8b1fedbb018b4365251cb4429b5866f23b6b2b7d9d9ec57b3d",
     "bin": "easytier-gui.exe",
     "checkver": {
         "github": "https://github.com/EasyTier/EasyTier"
