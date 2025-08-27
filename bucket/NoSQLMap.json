@@ -1,5 +1,5 @@
 {
-    "version": "2023-12-03T09.34.55",
+    "version": "2025-08-26T23.24.19",
     "description": "(Scoop bucket by arch3rpro) NoSQLMap - Automated NoSQL database enumeration and web application exploitation tool.",
     "homepage": "https://github.com/codingo/NoSQLMap",
     "license": "GPL-3.0",
@@ -7,12 +7,14 @@
         "Python": "python2.7"
     },
     "url": "https://github.com/codingo/NoSQLMap/archive/refs/heads/master.zip",
-    "hash": "8813ae862d1624961ab85716d26cb2da0813d94644ef8410646f2f5b6ef180ef",
+    "hash": "b40b76bfcec50b1049f83cd429bf855af33c0c6633e115aeaeffb9a64a5d9ecd",
     "extract_dir": "NoSQLMap-master",
-    "pre_install": "Set-Content \"$dir\\nosqlmap.bat\" '@pushd %~dp0\npython2 nosqlmap.py %*\n@popd' -Encoding Ascii",
-    "post_install": [
-        "pip2 install couchdb pbkdf2 pymongo ipcalc"
+    "pre_install": [
+        "Set-Content \"$dir\\nosqlmap.bat\" '@pushd %~dp0",
+        "python2 nosqlmap.py %*",
+        "@popd' -Encoding Ascii"
     ],
+    "post_install": "pip2 install couchdb pbkdf2 pymongo ipcalc",
     "bin": "nosqlmap.bat",
     "checkver": {
         "url": "https://api.github.com/repos/codingo/NoSQLMap/commits",
