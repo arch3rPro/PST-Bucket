@@ -1,11 +1,11 @@
 {
-    "version": "2025.9.7",
+    "version": "2025.9.18",
     "description": "(Scoop bucket by arch3rpro) 侦查守卫(observer_ward)Web应用和服务指纹识别工具",
     "homepage": "https://github.com/emo-crab/observer_ward",
     "license": "GPL-3.0 license",
     "notes": "config location: $env:AppData/observer_ward",
-    "url": "https://github.com/emo-crab/observer_ward/releases/download/v2025.9.7/observer_ward_v2025.9.7_i686-pc-windows-msvc.zip",
-    "hash": "1e7eeb074609e0499779059e16debe052858bfb4d2fe8a98f37dad250e7b3181",
+    "url": "https://github.com/emo-crab/observer_ward/releases/download/v2025.9.18/observer_ward_v2025.9.18_i686-pc-windows-msvc.zip",
+    "hash": "30853ae60bca470d48a6869d93bbb728482bbd24cf4d6a4c2d8f6ea039a64c44",
     "bin": "observer_ward.exe",
     "checkver": {
         "github": "https://github.com/emo-crab/observer_ward"
