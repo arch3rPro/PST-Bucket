@@ -11,7 +11,7 @@
         ]
     },
     "url": "https://github.com/qi4L/JYso/releases/download/v1.3.6/JYso-1.3.6.jar#/JYso.jar",
-    "hash": "999937686fd6ba64880a520ef1047f6871e43a749f5fc25468fae14f13a228f8",
+    "hash": "279f401fca7a70605a524565c5a0bc6aab5eb138b7f5f636035290e9700173e1",
     "pre_install": [
         "Set-Content \"$dir\\JYso.bat\" '@pushd %~dp0",
         "@start java.exe -jar \"JYso.jar\" -j %*",
