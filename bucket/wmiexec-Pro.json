@@ -1,11 +1,11 @@
 {
-    "version": "0.3",
+    "version": "0.4",
     "description": "(Scoop bucket by arch3rpro) wmiexec-Pro - New generation of wmiexec.py",
     "homepage": "https://github.com/XiaoliChan/wmiexec-Pro",
     "license": "Unkown",
     "suggest": "Python3",
-    "url": "https://github.com/XiaoliChan/wmiexec-Pro/archive/refs/tags/v0.3.zip",
-    "hash": "0a33ef7324d4c8719dde39ecd44cee22eccda2330036b0c743330d0cb09435e7",
+    "url": "https://github.com/XiaoliChan/wmiexec-Pro/archive/refs/tags/v0.4.zip",
+    "hash": "cfce15211eac0b46c9fbc9b94a7f20f33aaf3c3b615ee663c0fd2f893247f9c1",
     "pre_install": [
         "Set-Content \"$dir\\wmiexec-pro.bat\" '@pushd %~dp0",
         "@python3 \"wmiexec-pro.py\" %*",
