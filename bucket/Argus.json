@@ -1,11 +1,11 @@
 {
-    "version": "2025-10-13T00.38.15",
+    "version": "2025-10-13T23.10.58",
     "description": "(Scoop bucket by arch3rpro) Argus - The Ultimate Information Gathering Toolkit.",
     "homepage": "https://github.com/jasonxtn/argus",
     "license": "Unkown",
     "suggest": "python3.X",
     "url": "https://github.com/jasonxtn/Argus/archive/refs/heads/main.zip",
-    "hash": "dfd3ced6aa817c71ddd9468de2243cb40012710eff06a0814a1a42aa70e09279",
+    "hash": "29d2c672c2b884018e572038f6c8d41afbe314aae6c775534ccbd7cf287081d3",
     "pre_install": [
         "Set-Content \"$dir\\Argus.bat\" '@pushd %~dp0",
         "@python3 \"argus.py\" %*",
