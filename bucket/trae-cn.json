@@ -21,7 +21,7 @@
     ]
   ],
   "checkver": {
-    "url": "https://api.trae.com.cn/icube/api/v1/native/version/trae/latest",
+    "url": "https://api.trae.com.cn/icube/api/v1/native/version/trae/cn/latest",
     "jsonpath": "$.data.manifest.win32.version"
   },
   "autoupdate": {
