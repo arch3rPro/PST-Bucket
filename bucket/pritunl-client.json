@@ -1,5 +1,5 @@
 {
-    "version": "1.3.4439.70",
+    "version": "1.3.4466.51",
     "description": "A cross-platform OpenVPN desktop client.",
     "homepage": "https://client.pritunl.com",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pritunl/pritunl-client-electron/releases/download/1.3.4439.70/Pritunl.exe",
-            "hash": "06a82280c9dada6f8e12e7f950c2ec220a2363413932dff53a9cadcaba23fb76"
+            "url": "https://github.com/pritunl/pritunl-client-electron/releases/download/1.3.4466.51/Pritunl.exe",
+            "hash": "d6b43bf1832d2f2f3f44d7942bb9d6a6c32f17ec4acc711a2458daa8db7cda8b"
         }
     },
     "installer": {
