@@ -1,12 +1,12 @@
 {
-    "version": "1.2.6",
+    "version": "2.0",
     "description": "GooFuzz is a tool to perform fuzzing with an OSINT approach.(Scoop bucket  by arch3rpro)",
     "homepage": "https://github.com/m3n0sd0n4ld/GooFuzz",
     "license": "GPL-3.0",
     "notes": "Scoop bucket Exclusively produced by arch3rpro(https://github.com/arch3rPro/PST-Bucket)",
     "suggest": "Git Bash",
-    "url": "https://github.com/m3n0sd0n4ld/GooFuzz/releases/download/1.2.6/GooFuzz.v.1.2.6.zip",
-    "hash": "6dacc9b35035cef4840842290d3421ca43e43e7c99e8e1a3f27bcdf7f78a5e34",
+    "url": "https://github.com/m3n0sd0n4ld/GooFuzz/releases/download/2.0/GooFuzz.v.2.0.zip",
+    "hash": "19662e12f17487e0fbf7521a787f64093f608d43aa27332051517df0c3d49216",
     "pre_install": [
         "Set-Content \"$dir\\GooFuzz.bat\" '@echo off",
         "@pushd %~dp0",
