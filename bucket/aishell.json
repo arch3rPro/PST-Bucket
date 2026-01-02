@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0-preview.8",
+  "description": "(Scoop bucket by arch3rpro) An interactive shell to work with AI-powered assistance providers",
+  "homepage": "https://github.com/PowerShell/AIShell",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/PowerShell/AIShell/releases/download/v1.0.0-preview.8/AIShell-1.0.0-preview.8-win-x64.zip",
+      "hash": "83e80f047a908e2c19378ddc91b125687271c0f05dbe313ddccc48d85a07ca15"
+    }
+  },
+  "bin": "aish.exe",
+  "depends": [
+    "pwsh",
+    "psreadline"
+  ],
+  "checkver": {
+    "url": "https://api.github.com/repos/PowerShell/AIShell/releases",
+    "jsonpath": "$.[?(@.tag_name =~ /v?([\\d.]+(-preview\\.[\\d]+)?)$/)].tag_name",
+    "regex": "(?:v|V)?([\\d.]+(-preview\\.[\\d]+)?)"
+  },
+  "post_install": "Install-PSResource -Name AIShell -Repository PSGallery -Prerelease -TrustRepository -ErrorAction Stop -WarningAction SilentlyContinue",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/PowerShell/AIShell/releases/download/v$version/AIShell-$version-win-x64.zip"
+      }
+    }
+  }
+}
