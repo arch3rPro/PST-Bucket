@@ -1,24 +1,37 @@
 {
-    "version": "0.6.0",
-    "description": "(Scoop bucket by arch3rpro) An open-source AI agent that lives in your terminal.",
-    "homepage": "https://qwenlm.github.io",
-    "license": "Apache-2.0",
-    "suggest": {
-        "nodejs": "main/nodejs-lts"
-    },
-    "url": "https://github.com/QwenLM/qwen-code/releases/download/v0.6.0/cli.js",
-    "hash": "713c7a4747447013833476d533f7ab1573b90d8e4b75f507a93fd2b2112d9bf1",
-    "bin": [
-        [
-            "node",
-            "qwen",
-            "$dir\\cli.js"
-        ]
-    ],
-    "checkver": {
-        "github": "https://github.com/QwenLM/qwen-code"
-    },
-    "autoupdate": {
-        "url": "https://github.com/QwenLM/qwen-code/releases/download/v$version/cli.js"
+  "version": "0.6.0",
+  "description": "(Scoop bucket by arch3rpro) An open-source AI agent that lives in your terminal",
+  "homepage": "https://github.com/QwenLM/qwen-code",
+  "license": "Apache-2.0",
+  "bin": [
+    [
+      "node_modules\\.bin\\qwen.exe",
+      "qwen"
+    ]
+  ],
+  "installer": {
+    "script": "pushd $dir; bun add --bun @qwen-code/qwen-code@0.6.0; popd"
+  },
+  "pre_install": [
+    "New-Item -Path $persist_dir -ItemType Directory -Force | Out-Null",
+    "if (!(Test-Path -Path $persist_dir\\system-defaults.json)) { New-Item -Path $persist_dir\\system-defaults.json -ItemType File -Value '{}' -Force | Out-Null }"
+  ],
+  "uninstaller": {
+    "script": "pushd $dir; bun rm @qwen-code/qwen-code; popd"
+  },
+  "depends": [
+    "bun"
+  ],
+  "env_set": {
+    "QWEN_CODE_SYSTEM_DEFAULTS_PATH": "$persist_dir\\system-defaults.json"
+  },
+  "checkver": {
+    "url": "https://github.com/QwenLM/qwen-code/tags",
+    "regex": "/v([\\d.]+)\"(?!-)"
+  },
+  "autoupdate": {
+    "installer": {
+      "script": "pushd $dir; bun add --bun @qwen-code/qwen-code@$version; popd"
     }
+  }
 }
