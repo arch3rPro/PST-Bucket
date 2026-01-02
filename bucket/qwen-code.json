@@ -7,7 +7,7 @@
         "nodejs": "main/nodejs-lts"
     },
     "url": "https://github.com/QwenLM/qwen-code/releases/download/v0.6.0-nightly.20260102.105ad743/cli.js",
-    "hash": "unknown",
+    "hash": "2f6370cd07fd3432ba5b31edb67bb6c11647a5cb985d2ed9194fb78430432ccb",
     "bin": [
         [
             "node",
