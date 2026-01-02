@@ -1,6 +1,6 @@
 {
   "version": "1.0.0-preview.8",
-  "description": "(Scoop bucket by arch3rpro) An interactive shell to work with AI-powered assistance providers",
+  "description": "An interactive shell to work with AI-powered assistance providers",
   "homepage": "https://github.com/PowerShell/AIShell",
   "license": "MIT",
   "architecture": {
@@ -10,16 +10,12 @@
     }
   },
   "bin": "aish.exe",
-  "depends": [
-    "pwsh",
-    "psreadline"
-  ],
   "checkver": {
     "url": "https://api.github.com/repos/PowerShell/AIShell/releases",
     "jsonpath": "$.[?(@.tag_name =~ /v?([\\d.]+(-preview\\.[\\d]+)?)$/)].tag_name",
     "regex": "(?:v|V)?([\\d.]+(-preview\\.[\\d]+)?)"
   },
-  "post_install": "Install-PSResource -Name AIShell -Repository PSGallery -Prerelease -TrustRepository -ErrorAction Stop -WarningAction SilentlyContinue",
+  "post_install": "Install-PSResource -Name PSReadLine -Prerelease -TrustRepository -ErrorAction Stop -WarningAction SilentlyContinue; Install-PSResource -Name AIShell -Repository PSGallery -Prerelease -TrustRepository -ErrorAction Stop -WarningAction SilentlyContinue",
   "autoupdate": {
     "architecture": {
       "64bit": {
