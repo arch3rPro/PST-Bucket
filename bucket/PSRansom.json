@@ -1,10 +1,10 @@
 {
-    "version": "2024-01-19T09.50.26",
+    "version": "2026-01-02T11.08.10",
     "description": "(Scoop bucket by arch3rpro) PSRansom - A Windows Ransomware simulator created with PowerShell for educational purposes.",
     "homepage": "https://github.com/JoelGMSec/PSRansom",
     "license": "MIT",
     "url": "https://github.com/JoelGMSec/PSRansom/archive/refs/heads/main.zip",
-    "hash": "52ca04805c0c660edc7af889402d193546298b313949d51d01db8c193565b486",
+    "hash": "03d0195c913178e629cdb2be799a7c5831c9192cb506c4f92a5aaa493beff1f0",
     "pre_install": [
         "Set-Content \"$dir\\PSRansom.bat\" '@pushd %~dp0",
         "@powershell -ExecutionPolicy Bypass -File \"PSRansom.ps1\" %*",
