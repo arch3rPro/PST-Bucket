@@ -1,15 +1,19 @@
 {
-    "version": "0.2",
+    "version": "2.0",
     "description": "(Scoop bucket by arch3rpro) ShiroEXP - Shiro漏洞利用工具",
     "homepage": "https://github.com/Y5neKO/ShiroEXP",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Y5neKO/ShiroEXP/releases/download/v0.2/ShiroEXP-v0.2.zip",
-            "hash": "08ea7024e164a1f422dc8dbb6caaf2dcbf44bb869f59d022d958516319a3002f"
+            "url": "https://github.com/Y5neKO/ShiroEXP/releases/download/v2.0/ShiroEXP-v2.0.zip",
+            "hash": "36d1856aeab987f99a87a38c00c32a66b1a09eaa573258e3cd70c741fce086cb"
         }
     },
-    "pre_install": "Set-Content \"$dir\\ShiroEXP.bat\" '@pushd %~dp0\n java.exe -jar \"ShiroEXP.jar\" %*\n@popd' -Encoding Ascii",
+    "pre_install": [
+        "Set-Content \"$dir\\ShiroEXP.bat\" '@pushd %~dp0",
+        "java.exe -jar \"ShiroEXP.jar\" %*",
+        "@popd' -Encoding Ascii"
+    ],
     "bin": "ShiroEXP.bat",
     "checkver": "github",
     "autoupdate": {
