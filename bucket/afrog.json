@@ -1,16 +1,16 @@
 {
-    "version": "3.2.9",
+    "version": "3.3.0",
     "description": "【Bucket Made by arch3rpro】- afrog 是一款性能卓越、快速稳定、PoC 可定制化的漏洞扫描工具 - A tool for finding vulnerabilities.",
     "homepage": "https://github.com/zan8in/afrog",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zan8in/afrog/releases/download/v3.2.9/afrog_3.2.9_windows_amd64.zip",
-            "hash": "bb375aaeacfa3f941175708bd28c998256d3f6ba85716ed8e1c54166189f092b"
+            "url": "https://github.com/zan8in/afrog/releases/download/v3.3.0/afrog_3.3.0_windows_amd64.zip",
+            "hash": "4461d4f24ceab43b0cf6d991950096c5ddd72138cf3ca0d5d4053e5c20bc1acc"
         },
         "arm64": {
-            "url": "https://github.com/zan8in/afrog/releases/download/v3.2.9/afrog_3.2.9_windows_arm64.zip",
-            "hash": "a19cf09d23d1dd0ec811dda27f31be8500c0db72e094d53bd21c1a4a8f05986b"
+            "url": "https://github.com/zan8in/afrog/releases/download/v3.3.0/afrog_3.3.0_windows_arm64.zip",
+            "hash": "858c645a5c72967d357f46623520435dc44dd9762e2193b0ed162bd9f653f6c7"
         }
     },
     "bin": "afrog.exe",
