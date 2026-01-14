@@ -1,5 +1,5 @@
 {
-    "version": "2.0",
+    "version": "2.0.2",
     "description": "(Scoop bucket by arch3rpro) Hyacinth - 一款 Java 漏洞集合工具",
     "homepage": "https://github.com/pureqh/Hyacinth",
     "license": "Unknown",
@@ -9,8 +9,8 @@
             "java/openjdk"
         ]
     },
-    "url": "https://github.com/pureqh/Hyacinth/releases/download/hyacinth-v2.0/hyacinth-v2.0.jar#/hyacinth.jar",
-    "hash": "14ca41ada2428b60b8ae033f7d35c6e3c3074f75c422b67374301605e4dfb19d",
+    "url": "https://github.com/pureqh/Hyacinth/releases/download/hyacinth-v2.0.2/hyacinth-v2.0.2.jar#/hyacinth.jar",
+    "hash": "89b5bda9bb56a1ba720b177cb366d16968443d235aaf2d7e2db991df1fd310aa",
     "pre_install": [
         "Invoke-WebRequest -Uri \"https://github.com/pureqh/Hyacinth/releases/download/hyacinth-v$version/config.txt\" -OutFile \"$dir\\config.txt\" -UseBasicParsing",
         "$batContent = @'",
