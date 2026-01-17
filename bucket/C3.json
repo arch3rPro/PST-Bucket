@@ -1,5 +1,5 @@
 {
-    "version": "1.5.0",
+    "version": "1.5.3",
     "description": "自定义命令和控制 (C3)。用于快速构建自定义 C2 通道原型的框架，同时仍提供与现有进攻工具包的集成，需要net core3.1框架.(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/WithSecureLabs/C3",
     "license": "BSD 3-Clause",
