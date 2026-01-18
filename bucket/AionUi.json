@@ -1,5 +1,5 @@
 {
-    "version": "1.6.8",
+    "version": "1.4.0",
     "description": "一款免费、本地化、开源的图形用户界面应用，适用于 Gemini CLI、Claude Code、Codex、Qwen Code 等 | Free, local, open-source GUI app for Gemini CLI, Claude Code, Codex, Qwen Code, and more.",
     "homepage": "https://github.com/iOfficeAI/AionUi",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/iOfficeAI/AionUi/releases/download/v1.6.8/AionUi-1.6.8-win-x64.exe",
-            "hash": "5a8698e25d763fa5cf85af70ce929dfac8db589530579d7fe8d9bc4dcf75c09a"
+            "url": "https://github.com/iOfficeAI/AionUi/releases/download/v1.4.0/AionUi-1.4.0-win-x64.exe",
+            "hash": "d84ec5554789c0a5a431d9f13acf4815f01353c20992ca5a581d1737ba14e2c2"
         },
         "arm64": {
-            "url": "https://github.com/iOfficeAI/AionUi/releases/download/v1.6.8/AionUi-1.6.8-win-arm64.exe",
-            "hash": "950389a4617a14074842466ae6531977511f8a097e751e952251388a26995c32"
+            "url": "https://github.com/iOfficeAI/AionUi/releases/download/v1.4.0/AionUi-1.4.0-win-arm64.exe",
+            "hash": "a3f110bdd64ac0a12edf2d7c35b2404841cc841ecf03a5405ba2bb330caae539"
         }
     },
     "shortcuts": [
