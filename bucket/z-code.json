@@ -4,7 +4,7 @@
     "homepage": "https://zcode-ai.com/",
     "license": "Proprietary",
     "url": "https://cdn.zcode-ai.com/zcode/releases/0.14.2/z-code_0.14.2_x64-setup.exe#/dl.7z",
-    "hash": "sha256:REPLACE_WITH_REAL_SHA256",
+    "hash": "df078fb1927767201440da9450cf4bed2b222d44c7f336b09e1957063d40a19e",
     "bin": "z-code.exe",
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
     "shortcuts": [
