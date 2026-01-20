@@ -1,0 +1,23 @@
+{
+    "version": "0.14.2",
+    "description": "（Scoop bucket by arch3rpro）ZCode 是一款专为开发者打造的轻量级可视化AI 编辑器",
+    "homepage": "https://zcode-ai.com/",
+    "license": "Proprietary",
+    "url": "https://cdn.zcode-ai.com/zcode/releases/0.14.2/z-code_0.14.2_x64-setup.exe#/dl.7z",
+    "hash": "sha256:REPLACE_WITH_REAL_SHA256",
+    "bin": "z-code.exe",
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "shortcuts": [
+        [
+            "z-code.exe",
+            "Z Code"
+        ]
+    ],
+    "checkver": {
+        "url": "https://cdn.zcode-ai.com/zcode/releases/",
+        "regex": "(?i)z-code_([\\d.]+)_x64-setup\\.exe"
+    },
+    "autoupdate": {
+        "url": "https://cdn.zcode-ai.com/zcode/releases/$version/z-code_$version_x64-setup.exe#/dl.7z"
+    }
+}
