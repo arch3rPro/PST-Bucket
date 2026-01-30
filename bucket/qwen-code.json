@@ -1,5 +1,5 @@
 {
-    "version": "0.8.1",
+    "version": "0.8.2",
     "description": "(Scoop bucket by arch3rpro) An open-source AI agent that lives in your terminal",
     "homepage": "https://github.com/QwenLM/qwen-code",
     "license": "Apache-2.0",
@@ -12,7 +12,7 @@
     "url": "https://github.com/QwenLM/qwen-code/releases/download/v0.6.0-nightly.20260102.105ad743/cli.js",
     "hash": "2f6370cd07fd3432ba5b31edb67bb6c11647a5cb985d2ed9194fb78430432ccb",
     "installer": {
-        "script": "pushd $dir; bun add --bun @qwen-code/qwen-code@0.8.1; popd"
+        "script": "pushd $dir; bun add --bun @qwen-code/qwen-code@0.8.2; popd"
     },
     "pre_install": [
         "New-Item -Path $persist_dir -ItemType Directory -Force | Out-Null",
