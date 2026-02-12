@@ -1,16 +1,16 @@
 {
-    "version": "1.2.3",
+    "version": "1.2.5",
     "description": "(Scoop bucket by arch3rpro) spray - Next Generation HTTP Dir/File Fuzz Artifact",
     "homepage": "https://github.com/chainreactors/spray",
     "license": "GPL-3.0",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/chainreactors/spray/releases/download/v1.2.3/spray_windows_386.exe#/spray.exe",
-            "hash": "0b4315788146eb8a1be893dc4dcb5d233c6f01a86220a028df5f05958c90d617"
+            "url": "https://github.com/chainreactors/spray/releases/download/v1.2.5/spray_windows_386.exe#/spray.exe",
+            "hash": "3eabea730e9dc5d2fc269aab1ae2cef4134815984f069841df7153015f1c37d1"
         },
         "64bit": {
-            "url": "https://github.com/chainreactors/spray/releases/download/v1.2.3/spray_windows_amd64.exe#/spray.exe",
-            "hash": "f8d22afe139666a156028461a2976c49a1781a7d0d00ec2838a7ee4baadf5d2c"
+            "url": "https://github.com/chainreactors/spray/releases/download/v1.2.5/spray_windows_amd64.exe#/spray.exe",
+            "hash": "71b4a2fe46cdaa630efa2e0b152e88fe8548c1998917936da7b4968deed9a09a"
         }
     },
     "bin": "spray.exe",
