@@ -1,5 +1,5 @@
 {
-    "version": "8.2.1.102",
+    "version": "8.2.5.104",
     "description": "百度网盘 PC 版",
     "homepage": "https://pan.baidu.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "http://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_8.2.1.102.exe#/dl.7z",
-            "hash": "aa4b5ca2905397a44f82d4acbdb6a9e691b059b98ef444db22989a1661965428"
+            "url": "http://issuecdn.baidupcs.com/issue/netdisk/yunguanjia/BaiduNetdisk_8.2.5.104.exe#/dl.7z",
+            "hash": "df680f919a6bef1e862702f93127f96cf2107463c9bb03265e0f0e130172845c"
         }
     },
     "bin": "BaiduNetdisk.exe",
