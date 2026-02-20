@@ -1,5 +1,5 @@
 {
-    "version": "2025-08-26T23.24.19",
+    "version": "2026-02-20T00.37.09",
     "description": "(Scoop bucket by arch3rpro) NoSQLMap - Automated NoSQL database enumeration and web application exploitation tool.",
     "homepage": "https://github.com/codingo/NoSQLMap",
     "license": "GPL-3.0",
@@ -7,7 +7,7 @@
         "Python": "python2.7"
     },
     "url": "https://github.com/codingo/NoSQLMap/archive/refs/heads/master.zip",
-    "hash": "b40b76bfcec50b1049f83cd429bf855af33c0c6633e115aeaeffb9a64a5d9ecd",
+    "hash": "f0cff53f5c956c7c40f57060052db2399030f7bbfc072804fed99802282e64c6",
     "extract_dir": "NoSQLMap-master",
     "pre_install": [
         "Set-Content \"$dir\\nosqlmap.bat\" '@pushd %~dp0",
