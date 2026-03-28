@@ -1,13 +1,13 @@
 {
-    "version": "0.35.2",
+    "version": "0.35.3",
     "description": "(Scoop bucket by arch3rpro) Brings the power of Gemini directly into your terminal",
     "homepage": "https://geminicli.com",
     "license": "Apache-2.0",
     "suggest": {
         "nodejs": "main/nodejs-lts"
     },
-    "url": "https://github.com/google-gemini/gemini-cli/releases/download/v0.35.2/gemini.js",
-    "hash": "14862e04148d30b093b4b1e914dcfa783d98a16af4018b8c69a39f8aad6a1c8a",
+    "url": "https://github.com/google-gemini/gemini-cli/releases/download/v0.35.3/gemini.js",
+    "hash": "23de3233fc24cc20a7261b21bdcd8250dd34c485c97122948cafc458301b351f",
     "bin": [
         [
             "node",
