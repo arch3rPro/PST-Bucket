@@ -1,17 +1,17 @@
 {
-    "version": "2.1.6",
+    "version": "3.3.2",
     "description": "(Scoop bucket by arch3rpro) Wavely - 一个好用的nuclei GUI POC管理工具.",
     "homepage": "https://github.com/perlh/Wavely",
     "notes": "此配置由arch3rPro独家编写，安装时集成了NucleiTP项目，自动整合Nuclei的漏洞POC ",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/perlh/Wavely/releases/download/v2.1.6/Wavely-2.1.6-Windows-amd64.zip",
-            "hash": "3417f7cd6b3cb68a7b067f014809eb22697cdd5721bde7699d30d76fa214c8cd"
+            "url": "https://github.com/perlh/Wavely/releases/download/v3.3.2/Wavely-3.3.2-Windows-amd64.zip",
+            "hash": "4f4a3093dcceaf055af52a38c53bb8b868bd1b2c2b54f9447886978c15d5b014"
         },
         "arm64": {
-            "url": "https://github.com/perlh/Wavely/releases/download/v2.1.6/Wavely-2.1.6-windows-arm64.zip",
-            "hash": "622790a9a7d3bd152dfef23ae1ee0c27049b28aece08a3dd427b44ff784c75c4"
+            "url": "https://github.com/perlh/Wavely/releases/download/v3.3.2/Wavely-3.3.2-windows-arm64.zip",
+            "hash": "c09f6921fdd025b431755fe4e003df5ea25f56e44eb0caa533dd451dbb6f5643"
         }
     },
     "pre_install": [
