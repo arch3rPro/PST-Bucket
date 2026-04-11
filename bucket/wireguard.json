@@ -1,20 +1,20 @@
 {
-    "version": "0.5.3",
+    "version": "0.6.1",
     "homepage": "https://www.wireguard.com/",
     "description": "(Scoop bucket by arch3rpro) WireGuard - 快速、现代、安全的VPN隧道",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://download.wireguard.com/windows-client/wireguard-amd64-0.5.3.msi",
-            "hash": "76fcec042c5989c5b816cd32eaed1e5b1c3b998a4b1c9eca55f299e3314ef7e4"
+            "url": "https://download.wireguard.com/windows-client/wireguard-amd64-0.6.1.msi",
+            "hash": "3721a8f12b0b8ed4d9a3120b0438ebc034ea36057d8256a88e57a773e6f46ff8"
         },
         "32bit": {
-            "url": "https://download.wireguard.com/windows-client/wireguard-x86-0.5.3.msi",
-            "hash": "ad1af1ae3474ef35de3809979aee98758430881b270e47e89e027b3490791d0d"
+            "url": "https://download.wireguard.com/windows-client/wireguard-x86-0.6.1.msi",
+            "hash": "1b4a1559041a0e8d762e6624a06abe4ac053dada36c0f44231068a65fe1a6907"
         },
         "arm64": {
-            "url": "https://download.wireguard.com/windows-client/wireguard-arm64-0.5.3.msi",
-            "hash": "E11F22D22E2E938822C39B88EE04AF814B2FB53B70ACB00A0BD1BCB2C3F36B1C"
+            "url": "https://download.wireguard.com/windows-client/wireguard-arm64-0.6.1.msi",
+            "hash": "8edad7ff716e23215004802dac06cd26749e1ba9ae116b23d14dfc8da2554c12"
         }
     },
     "extract_dir": "WireGuard",
