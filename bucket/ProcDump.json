@@ -1,5 +1,5 @@
 {
-    "version": "11.1",
+    "version": "12.0",
     "description": "(Scoop bucket by arch3rpro) procdump - Capturing process dumps of otherwise difficult to isolate and reproduce CPU spikes.",
     "homepage": "https://learn.microsoft.com/sysinternals/downloads/procdump",
     "notes": "该工具需要上传到目标靶机执行使用，请注意上传对应的架构版本",
@@ -8,7 +8,7 @@
         "url": "https://learn.microsoft.com/sysinternals/license-terms"
     },
     "url": "https://download.sysinternals.com/files/Procdump.zip",
-    "hash": "863e7f078b35327cedc5a1101c60e26c2a9e7f76388d0d0ffe44018b381784b4",
+    "hash": "28588d9cfd3354a3a71204a570b9b60129761962f505b3cfe26daa9a5175c14a",
     "architecture": {
         "64bit": {
             "bin": [
