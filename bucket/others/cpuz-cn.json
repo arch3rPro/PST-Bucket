@@ -1,10 +1,10 @@
 {
-    "version": "2.20.1",
+    "version": "2.20.2",
     "description": "System information software",
     "homepage": "https://www.cpuid.com/softwares/cpu-z.html",
     "license": "Freeware",
-    "url": "https://download.cpuid.com/cpu-z/cpu-z_2.20.1-cn.zip",
-    "hash": "2a128e75fd4cdfa1d253a939cd8bdf959a418e025fe2a115297ce221011d66ac",
+    "url": "https://download.cpuid.com/cpu-z/cpu-z_2.20.2-cn.zip",
+    "hash": "3c6f473c6e635874b64d0ac32b94c666c2532404953131ee66fcda2db0b66d9b",
     "architecture": {
         "64bit": {
             "bin": [
