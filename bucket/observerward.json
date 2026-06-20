@@ -6,7 +6,7 @@
     "notes": "config location: $env:AppData/observer_ward",
     "url": "https://github.com/emo-crab/observer_ward/releases/download/v2026.4.8/observer_ward_v2026.4.8_i686-pc-windows-msvc.zip",
     "hash": "aa7874bd40a1980f05b7c9a43ca24e321dae7971b8fde9c837448f9c5da697ce",
-    "bin": "observer_ward.exe",
+    "bin": "i686-pc-windows-msvc.exe",
     "checkver": {
         "github": "https://github.com/emo-crab/observer_ward"
     },

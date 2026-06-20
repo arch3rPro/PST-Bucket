@@ -14,8 +14,8 @@
         "@popd' -Encoding Ascii"
     ],
     "post_install": [
-        "Move-Item -Path \"$dir\\GooFuzz v.$version\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\GooFuzz v.$version\" -Force -Recurse"
+        "Move-Item -Path \"$dir\\GooFuzz.v.$version\\*\" -Destination \"$dir\\\"",
+        "Remove-Item \"$dir\\GooFuzz.v.$version\" -Force -Recurse"
     ],
     "bin": "GooFuzz.bat",
     "checkver": "github",
