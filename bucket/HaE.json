@@ -1,5 +1,5 @@
 {
-    "version": "4.3.4",
+    "version": "1.0",
     "description": "(Scoop bucket by arch3rpro) HaE - - Highlighter and Extractor, Empower ethical hacker for efficient operations.",
     "homepage": "https://github.com/gh0stkey/HaE",
     "note": "此工具为Burpsuite插件，请下载后导入到Burpsuite使用",
@@ -10,8 +10,8 @@
             "java/openjdk"
         ]
     },
-    "url": "https://github.com/gh0stkey/HaE/releases/download/4.3.4/HaE-4.3.4.jar#/HaE.jar",
-    "hash": "9806032705d8a531cdf81b535d14585af2943ef612543018beb7cae355f351c8",
+    "url": "https://github.com/gh0stkey/HaE/releases/download/1.0/HaE-1.0.jar#/HaE.jar",
+    "hash": "9e506a969c1363d22b482e5d8f47f803edfba68000c94f67710bf7905f5a6c1b",
     "checkver": {
         "url": "https://api.github.com/repos/gh0stkey/HaE/releases/latest",
         "jsonpath": "$.tag_name",
