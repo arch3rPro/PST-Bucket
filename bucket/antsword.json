@@ -18,7 +18,7 @@
     },
     "bin": "AntSword.exe",
     "post_install": [
-        "curl.exe -o \"$dir\\antSword.zip\" -L \"https://github.com/AntSwordProject/antSword/archive/refs/heads/master.zip\"",
+        "Invoke-Download \"https://github.com/AntSwordProject/antSword/archive/refs/heads/master.zip\" \"$dir\\antSword.zip\"",
         "Expand-7zipArchive \"$dir\\antSword.zip\" \"$dir\"",
         "Remove-Item \"$dir\\antSword.zip\" -Force -Recurse",
         "Move-Item \"$dir\\antSword-master\" \"$dir\\antSword\"",
@@ -32,7 +32,7 @@
         "Write-Host 'AntSword 已初始化，工作目录为: ' $workdir",
         "",
         "Write-Host '下载并安装插件...'",
-        "curl.exe -o \"$dir\\antSword-Plugins.zip\" -L \"https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/antSword-Plugins.zip\"",
+        "Invoke-Download \"https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/antSword-Plugins.zip\" \"$dir\\antSword-Plugins.zip\"",
         "Expand-7zipArchive \"$dir\\antSword-Plugins.zip\" \"$dir\\antSword\\antData\\plugins\"",
         "Remove-Item \"$dir\\antSword-Plugins.zip\" -Force -Recurse",
         "Write-Host '插件已安装至: ' \"$dir\\antSword\\antData\\plugins\""
