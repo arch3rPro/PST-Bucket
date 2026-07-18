@@ -1,13 +1,13 @@
 {
-    "version": "1.4.8-0711",
+    "version": "1.4.8-0717",
     "description": "(Scoop bucket by arch3rpro) yakit - 交互式应用安全测试平台-Cyber Security ALL-IN-ONE Platform",
     "homepage": "https://github.com/yaklang/yakit",
     "notes": "安装成功后需手动启动并初始化本地引擎^-^",
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/1.4.8-0711/Yakit-1.4.8-0711-windows-amd64.exe#/dl.7z",
-            "hash": "fbf9e61a2ab856c6232e62deb0902d70e225acae3dd1ae5c0769f08f3c2cd3ce",
+            "url": "https://yaklang.oss-cn-beijing.aliyuncs.com/yak/1.4.8-0717/Yakit-1.4.8-0717-windows-amd64.exe#/dl.7z",
+            "hash": "8f39fcb6b78c803a8112e1307dcb6cf861784eedb844da79063728d93817ff95",
             "extract_dir": "$PLUGINSDIR"
         }
     },
