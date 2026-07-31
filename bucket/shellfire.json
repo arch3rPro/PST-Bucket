@@ -1,11 +1,11 @@
 {
-    "version": "0.14",
+    "version": "0.15",
     "description": "An exploitation shell focusing on exploiting command injection vulnerabilities, eg., LFI, RFI, SSTI, etc.(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/unix-ninja/shellfire",
     "license": "BSD-2-Clause",
     "suggest": "python3",
-    "url": "https://github.com/unix-ninja/shellfire/archive/refs/tags/v0.14.zip",
-    "hash": "7abcb99477fd86c218e5ae97b80d81acb5d0ae29cb1a264142a6387935d353a6",
+    "url": "https://github.com/unix-ninja/shellfire/archive/refs/tags/v0.15.zip",
+    "hash": "c7b2a30b32454746ec6b9bfa73a75b45677aaef5f33ee23c60073221acec9a0b",
     "post_install": [
         "Move-Item -Path \"$dir\\shellfire-$version\\*\" -Destination \"$dir\\\"",
         "Remove-Item \"$dir\\shellfire-$version\" -Force -Recurse",
