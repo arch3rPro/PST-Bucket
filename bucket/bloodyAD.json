@@ -1,10 +1,10 @@
 {
-    "version": "2.5.4",
+    "version": "2.5.5",
     "description": "(Scoop bucket by arch3rpro) bloodyAD - 一个内网AD权限提升框架 an Active Directory Privilege Escalation Framework.",
     "homepage": "https://github.com/CravateRouge/bloodyAD",
     "license": "MIT",
-    "url": "https://github.com/CravateRouge/bloodyAD/releases/download/v2.5.4/bloodyAD.exe",
-    "hash": "aefdb11b6727afb98eeef749b547d25a7ddd51355b9a6b3159c43f20fb7b6412",
+    "url": "https://github.com/CravateRouge/bloodyAD/releases/download/v2.5.5/bloodyAD.exe",
+    "hash": "57a4e7e2d71a4f05f93bef28aed30b61b206020d670e3233c8231f1a0228c2be",
     "bin": "bloodyAD.exe",
     "checkver": {
         "url": "https://github.com/CravateRouge/bloodyAD/releases",
