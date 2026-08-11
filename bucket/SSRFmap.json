@@ -1,11 +1,11 @@
 {
-    "version": "2025-09-04T07.44.11",
+    "version": "2026-08-10T12.02.58",
     "description": "(Scoop bucket by arch3rpro) SSRFmap - Automatic SSRF fuzzer and exploitation tool",
     "homepage": "https://github.com/swisskyrepo/SSRFmap",
     "license": "MIT",
     "suggest": "Python3",
     "url": "https://github.com/swisskyrepo/SSRFmap/archive/refs/heads/master.zip",
-    "hash": "48bc77f5f334d191ee114f02d09f0cf89949789c2f319fbe491c2ffb9cb046cd",
+    "hash": "385f1961f7d26b08c5a73dd864e7d4f60ff22db54326e0c6ef4a077d1b8dc568",
     "pre_install": [
         "Set-Content \"$dir\\SSRFmap.bat\" '@pushd %~dp0",
         "python3 ssrfmap.py %*",
