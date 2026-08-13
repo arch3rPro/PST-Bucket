@@ -1,5 +1,5 @@
 {
-    "version": "2.3.2",
+    "version": "2.3.3",
     "description": "A full-featured download manager.",
     "homepage": "https://imfile.io/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/imfile-io/imfile-desktop/releases/download/v2.3.2/imFile-Setup-2.3.2.exe#/dl.7z",
-            "hash": "sha512:2599d2bda1060bfe601aaf9cfb2f5454d56f32893921489070482e15e882daf68e56a5cf95652c411fc768ff4fe705bccaf011c845554a2fe2979684025f5bdf",
+            "url": "https://github.com/imfile-io/imfile-desktop/releases/download/v2.3.3/imFile-Setup-2.3.3.exe#/dl.7z",
+            "hash": "sha512:715ce74c760e2ef7f4d8c855347885fbf7580e5905484c9aabe8c68534b998e3fff7fe4df995a2019362584fcf05b8d4163f20fec722ec41a78a8ae0ea1ee142",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
