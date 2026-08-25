@@ -1,11 +1,11 @@
 {
-    "version": "2026-07-21T15.04.57",
+    "version": "2026-08-24T13.50.37",
     "description": "(Scoop bucket by arch3rpro) BBOT - The recursive internet scanner for hackers. 🧡",
     "homepage": "https://github.com/blacklanternsecurity/bbot",
     "license": "GPL-3.0",
     "suggest": "Python3 pipx",
     "url": "https://github.com/blacklanternsecurity/bbot/archive/refs/heads/stable.zip",
-    "hash": "16dd59f8f7475f43d9f4f0e21d4703cba1a223f563da4d1eadeae095c5714069",
+    "hash": "80cdbf13692cb40bdb5290da981c801a91e4507a8789169922845e71ee97d64a",
     "extract_dir": "bbot-stable",
     "post_install": "pipx install bbot",
     "checkver": {
