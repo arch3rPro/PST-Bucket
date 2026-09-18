@@ -1,12 +1,12 @@
 {
-    "version": "2.1.274",
+    "version": "2.1.276",
     "description": "(Scoop bucket by arch3rpro) An agentic coding tool that lives in your terminal",
     "homepage": "https://claude.com/product/claude-code",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.274/win32-x64/claude.exe",
-            "hash": "4e4c1746aff835bb05e5ed14cda72d21ee6fbda4147aa99b3135718614da117e"
+            "url": "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.276/win32-x64/claude.exe",
+            "hash": "a863895d829a246d97c1b881fae85593aab97b5b7ea5436ad964798f5f48a022"
         }
     },
     "env_set": {
