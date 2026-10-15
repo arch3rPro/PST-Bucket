@@ -1,5 +1,5 @@
 {
-    "version": "2.2.1",
+    "version": "2.2.2",
     "description": "(Scoop bucket by arch3rpro) Merlin - A cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang.",
     "homepage": "https://github.com/Ne0nd0g/merlin",
     "license": "GPL-3.0",
