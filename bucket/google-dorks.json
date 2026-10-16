@@ -1,10 +1,10 @@
 {
-    "version": "2026-07-25T13.35.47",
+    "version": "2026-10-16T11.36.43",
     "description": "Useful Google Dorks for WebSecurity and Bug Bounty.(Scoop bucket by arch3rpro)",
     "homepage": "https://github.com/Proviesec/google-dorks",
     "license": "Unkown",
     "url": "https://github.com/Proviesec/google-dorks/archive/refs/heads/main.zip",
-    "hash": "49648c15c4a72fd1d2c1f5a26b0e33f9c114309986dec2fea325a4065f490d43",
+    "hash": "b64926eddeedcbfc821cb2028ad78b53c920a6eef59b6b194b3e25563d49ae62",
     "extract_dir": "google-dorks-main",
     "checkver": {
         "url": "https://api.github.com/repos/Proviesec/google-dorks/commits",
